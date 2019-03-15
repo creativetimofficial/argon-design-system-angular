@@ -1,0 +1,195 @@
+<app-basicelements></app-basicelements>
+<app-navigation></app-navigation>
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="tim-title">
+                    <h3>Progress Bar</h3>
+                    <br/>
+                </div>
+                <ngb-progressbar type="success" [value]="25">25</ngb-progressbar><br>
+                <ngb-progressbar type="info" [value]="50">Copying file <b>2 of 4</b>...</ngb-progressbar><br>
+                <ngb-progressbar type="warning" [value]="75" [striped]="true" [animated]="true"><i>50%</i></ngb-progressbar><br>
+                <ngb-progressbar type="danger" [value]="100" [striped]="true">Completed!</ngb-progressbar>
+
+            </div>
+            <div class="col-md-6">
+                <div class="tim-title">
+                    <h3>Pagination</h3>
+                    <br/>
+                </div>
+                <ngb-pagination [collectionSize]="70" [(page)]="page" aria-label="Default pagination"></ngb-pagination>
+                <br/>
+                <ngb-pagination [collectionSize]="100" [(page)]="page1" [maxSize]="5" [rotate]="true"></ngb-pagination>
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="tim-title">
+                    <h3>Navigation Tabs</h3>
+                </div>
+
+                <div class="nav-tabs-navigation">
+                    <div class="nav-tabs-wrapper">
+                        <ngb-tabset [justify]="'center'">
+                            <ngb-tab title="Home">
+                                <ng-template ngbTabContent>
+                                    <p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient. With a smooth metal surface that seamlessly meets the new Retina HD display.</p>
+                                </ng-template>
+                            </ngb-tab>
+                            <ngb-tab title="Profile">
+                                <ng-template ngbTabContent>
+                                    <p>Here is your profile.</p>
+                                </ng-template>
+                            </ngb-tab>
+                            <ngb-tab title="Messages">
+                                <ng-template ngbTabContent>
+                                    <p>Here are your messages.</p>
+                                </ng-template>
+                            </ngb-tab>
+                        </ngb-tabset>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+                <div class="tim-title">
+                    <h3>Labels</h3>
+                </div>
+                <span class="label label-default">Default</span>
+                <span class="label label-primary">Primary</span>
+                <span class="label label-info">Info</span>
+                <span class="label label-success">Success</span>
+                <span class="label label-warning">Warning</span>
+                <span class="label label-danger">Danger</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section section-notifications" id="notifications">
+    <div class="container">
+        <div class="tim-title">
+            <h3>Notification</h3>
+        </div>
+    </div>
+    <app-notification></app-notification>
+</div>
+<app-typography></app-typography>
+<div class="section javascript-components">
+    <div class="container">
+        <div class="tim-title">
+            <h2>Angular Native Components</h2>
+        </div>
+        <div class="row" id="modals">
+            <div class="col-md-6">
+                <div class="tim-title">
+                    <h3>Modal</h3>
+                </div>
+                <app-modal-component></app-modal-component>
+            </div>
+            <div class="col-md-6">
+                <div class="tim-title">
+                    <h3>Popovers</h3>
+                </div>
+
+                <button type="button" class="btn btn-outline-danger btn-round" placement="right"
+                    ngbPopover="Here will be some very useful information about this popover." popoverTitle="Popover on right">
+                    on right
+                </button>
+
+                <button type="button" class="btn btn-outline-danger btn-round" placement="top"
+                    ngbPopover="Here will be some very useful information about this popover." popoverTitle="Popover on top">
+                    on top
+                </button>
+
+                <button type="button" class="btn btn-outline-danger btn-round" placement="left"
+                    ngbPopover="Here will be some very useful information about this popover." popoverTitle="Popover on left">
+                    on left
+                </button>
+
+                <button type="button" class="btn btn-outline-danger btn-round" placement="bottom"
+                    ngbPopover="Here will be some very useful information about this popover." popoverTitle="Popover on bottom">
+                    on bottom
+                </button>
+
+            </div>
+            <br/>
+            <div class="col-md-6">
+                <div class="tim-title">
+                    <h3>Datepicker</h3>
+                </div>
+                <div class="row">
+                    <div class='col-sm-6'>
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <div class="input-group date" [ngClass]="{'input-group-focus':focus===true}">
+                                    <input class="form-control" placeholder="yyyy-mm-dd"
+                                         name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()" (focus)="focus=true" (blur)="focus=false" />
+                                    <div class="input-group-append">
+                                        <span class="glyphicon glyphicon-calendar input-group-text">
+                                          <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="tim-title">
+                    <h3>Tooltips</h3>
+                </div>
+
+                <button type="button" class="btn btn-outline-danger btn-round" placement="right" ngbTooltip="Tooltip on right">
+                   on right
+               </button>
+               <button type="button" class="btn btn-outline-danger btn-round" placement="left" ngbTooltip="Tooltip on left">
+                  on left
+               </button>
+                <button type="button" class="btn btn-outline-danger btn-round" placement="top" ngbTooltip="Tooltip on top">
+                   on top
+                </button>
+                <button type="button" class="btn btn-outline-danger btn-round" placement="bottom" ngbTooltip="Tooltip on bottom">
+                   on bottom
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section" id="carousel">
+    <div class="container">
+        <div class="tim-title">
+            <h3>Carousel</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-8 mr-auto ml-auto">
+                <div class="card page-carousel">
+                    <ngb-carousel>
+                        <ng-template ngbSlide>
+                            <img src="./assets/img/soroush-karimi.jpg" alt="Random first slide">
+                            <div class="carousel-caption">
+                                <p>Somewhere</p>
+                            </div>
+                        </ng-template>
+                        <ng-template ngbSlide>
+                            <img src="./assets/img/federico-beccari.jpg" alt="Random second slide">
+                            <div class="carousel-caption">
+                                <p>Somewhere else</p>
+                            </div>
+                        </ng-template>
+                        <ng-template ngbSlide>
+                            <img src="./assets/img/joshua-stannard.jpg" alt="Random third slide">
+                            <div class="carousel-caption">
+                                <p>Here it is</p>
+                            </div>
+                        </ng-template>
+                    </ngb-carousel>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
