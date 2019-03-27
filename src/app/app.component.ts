@@ -66,7 +66,6 @@ export class AppComponent implements OnInit {
                   // add logic
                   navbar.classList.add('headroom--not-top');
               } else {
-                console.log(number, 'ceva',  window.pageYOffset)
                   // remove logic
                   navbar.classList.remove('headroom--not-top');
               }

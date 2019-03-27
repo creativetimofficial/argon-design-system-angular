@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-footer',
@@ -8,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
     test : Date = new Date();
 
-    constructor() { }
+    constructor(private router: Router ) {}
 
-    ngOnInit() {}
+    ngOnInit() {
+
+    }
+    getPath(){
+      return this.router.url;
+    }
 }
