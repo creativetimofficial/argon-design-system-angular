@@ -1,4 +1,4 @@
-# [Argon Dashboard Angular](https://demos.creative-tim.com/argon-design-system-angular/?ref=adsa-github-readme) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Argon%20Design%20is%20a%20Free%20Bootstrap%20and%20Angular%20Design%20Sysyem%20made%20using%20angular-cli%20%E2%9D%A4%EF%B8%8F%0Ahttps%3A//demos.creative-tim.com/argon-design-system-angular%20%23angular%20%23angular-cli%20%23argon%20%23argondesign%20%23angular%20%23argonangular%20%23angulardesign%20%23bootstrap%20%23design%20%23uikit%20%23freebie%20%20via%20%40CreativeTim)
+# [Argon Design System Angular](https://demos.creative-tim.com/argon-design-system-angular/?ref=adsa-github-readme) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Argon%20Design%20is%20a%20Free%20Bootstrap%20and%20Angular%20Design%20Sysyem%20made%20using%20angular-cli%20%E2%9D%A4%EF%B8%8F%0Ahttps%3A//demos.creative-tim.com/argon-design-system-angular%20%23angular%20%23angular-cli%20%23argon%20%23argondesign%20%23angular%20%23argonangular%20%23angulardesign%20%23bootstrap%20%23design%20%23uikit%20%23freebie%20%20via%20%40CreativeTim)
 
 
 
@@ -7,12 +7,12 @@
 **Fully Coded Components**
 
 Argon Design System Angular is built with over 100 individual components, giving you the freedom of choosing and combining. All components can take variations in color, that you can easily modify using SASS files.
-You will save a lot of time going from prototyping to full-functional code, because all elements are implemented. This Dashboard is coming with pre-built examples, so the development process is seamless, switching from our pages to the real website is very easy to be done.
+You will save a lot of time going from prototyping to full-functional code, because all elements are implemented. This Kit is coming with pre-built examples, so the development process is seamless, switching from our pages to the real website is very easy to be done.
 Every element has multiple states for colors, styles, hover, focus, that you can easily access and use.
 
 **Complex Documentation**
 
-Each element is well presented in a very complex documentation. You can read more about the idea behind this [dashboard here](https://demos.creative-tim.com/argon-design-system-angular/documentation/tutorial?ref=adsa-github-readme). You can check the [components here](https://demos.creative-tim.com/argon-design-system-angular/documentation/alerts?ref=adsa-github-readme) and the [foundation here](https://demos.creative-tim.com/argon-design-system-angular/documentation/colors?ref=adsa-github-readme).
+Each element is well presented in a very complex documentation. You can read more about the idea behind this [kit here](https://demos.creative-tim.com/argon-design-system-angular/documentation/tutorial?ref=adsa-github-readme). You can check the [components here](https://demos.creative-tim.com/argon-design-system-angular/documentation/alerts?ref=adsa-github-readme) and the [foundation here](https://demos.creative-tim.com/argon-design-system-angular/documentation/colors?ref=adsa-github-readme).
 
 **Example Pages**
 
@@ -40,27 +40,32 @@ If you want to get inspiration or just show something directly to your clients, 
 
 | HTML | Angular | Vue  |
 | --- | --- | ---  |
-| [![Argon Design System HTML](https://github.com/creativetimofficial/public-assets/blob/master/argon-design-system/argon-design-system.jpg?raw=true)](https://www.creative-tim.com/product/argon-dashboard?ref=adsa-github-readme)  | [![Argon Design System Angular](https://github.com/creativetimofficial/public-assets/blob/master/argon-design-system-angular/argon-design-system-angular.jpg?raw=true)](https://www.creative-tim.com/product/argon-dashboard-react?ref=adsa-github-readme)  | [![Vue Argon Design System](https://github.com/creativetimofficial/public-assets/blob/master/vue-argon-design-system/vue-argon-design-system.jpg?raw=true)](https://www.creative-tim.com/product/vue-argon-design-system?ref=adsa-github-readme)
+| [![Argon Design System HTML](https://github.com/creativetimofficial/public-assets/blob/master/argon-design-system/argon-design-system.jpg?raw=true)](https://www.creative-tim.com/product/argon-design-system?ref=adsa-github-readme)  | [![Argon Design System Angular](https://github.com/creativetimofficial/public-assets/blob/master/argon-design-system-angular/argon-design-system-angular.jpg?raw=true)](https://www.creative-tim.com/product/argon-design-system-angular?ref=adsa-github-readme)  | [![Vue Argon Design System](https://github.com/creativetimofficial/public-assets/blob/master/vue-argon-design-system/vue-argon-design-system.jpg?raw=true)](https://www.creative-tim.com/product/vue-argon-design-system?ref=adsa-github-readme)
 
 
 ## Demo
 
-| Dashboard Page | Icons Page | User Profile Page  | Tables Page | Login Page | Register Page  |
-| --- | --- | ---  | --- | --- | ---  |
-| [![Dashboard Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-angular/dashboard.png)](https://demos.creative-tim.com/argon-dashboard-angular/dashboard?ref=ada-github-readme)  | [![Icons Page](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-angular/icons.png?raw=true)](https://demos.creative-tim.com/argon-dashboard-angular/icons?ref=ada-github-readme)  | [![User Profile Page](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-angular/user.png?raw=true)](https://demos.creative-tim.com/argon-dashboard-angular/user?ref=ada-github-readme)  | [![Tables Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-dashboard-angular/tables.png)](https://demos.creative-tim.com/argon-dashboard-angular/tables?ref=ada-github-readme)  | [![Login Page](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-angular/login.png?raw=true)](https://demos.creative-tim.com/argon-dashboard-angular/login?ref=ada-github-readme)  | [![Register Page](https://github.com/creativetimofficial/public-assets/blob/master/argon-dashboard-angular/register.png?raw=true)](https://demos.creative-tim.com/argon-dashboard-angular/register?ref=ada-github-readme)  
+| Buttons | Inputs | Navbars  |
+| --- | --- | ---  |
+| [![Buttons](https://github.com/creativetimofficial/public-assets/blob/master/argon-design-system-angular/buttons.png?raw=true)](https://demos.creative-tim.com/argon-design-system-angular/home)  | [![Inputs](https://github.com/creativetimofficial/public-assets/blob/master/argon-design-system-angular/inputs.png?raw=true)](https://demos.creative-tim.com/argon-design-system-angular/home)  | [![Navbar](https://github.com/creativetimofficial/public-assets/blob/master/argon-design-system-angular/navbars.png?raw=true)](https://demos.creative-tim.com/argon-design-system-angular/home)  
 
-[View More](https://demos.creative-tim.com/argon-dashboard-angular/dashboard)
+| Login Page | Landing Page | Profile Page  | Register Page  |
+| --- | --- | ---  | ---  |
+| [![Login Page](https://raw.githubusercontent.com/creativetimofficial/public-assets/master/argon-design-system-angular/login.png)](https://demos.creative-tim.com/argon-design-system-angular/login)  | [![Landing Page](https://github.com/creativetimofficial/public-assets/blob/master/argon-design-system-angular/landing.png?raw=true)](https://demos.creative-tim.com/argon-design-system-angular/landing)  | [![Profile Page](https://github.com/creativetimofficial/public-assets/blob/master/argon-design-system-angular/profile.png?raw=true)](https://demos.creative-tim.com/argon-design-system-angular/user-profile)  | [![Register Page](https://github.com/creativetimofficial/public-assets/blob/master/argon-design-system-angular/register.png?raw=true)](https://demos.creative-tim.com/argon-design-system-angular/register)  
+
+[View More](https://demos.creative-tim.com/argon-design-system-angular/home)
+
 
 
 ## Quick start
 
-- [Download from Github](https://github.com/creativetimofficial/argon-dashboard-angular/archive/master.zip).
-- [Download from Creative Tim](https://www.creative-tim.com/product/argon-dashboard-angular?ref=ada-github-readme).
-- Clone the repo: `git clone https://github.com/creativetimofficial/argon-dashboard-angular.git`.
+- [Download from Github](https://github.com/creativetimofficial/argon-design-system-angular/archive/master.zip).
+- [Download from Creative Tim](https://www.creative-tim.com/product/argon-design-system-angular?ref=adsa-github-readme).
+- Clone the repo: `git clone https://github.com/creativetimofficial/argon-design-system-angular.git`.
 
 
 ## Documentation
-The documentation for the Argon Dashboard Angular is hosted at our [website](https://demos.creative-tim.com/argon-dashboard-angular/documentation/tutorial?ref=ada-github-readme).
+The documentation for the Argon Design System Angular is hosted at our [website](https://demos.creative-tim.com/argon-design-system-angular/documentation/tutorial?ref=adsa-github-readme).
 
 
 ## File Structure
@@ -219,39 +224,39 @@ At present, we officially aim to support the last two versions of the following 
 
 
 ## Resources
-- Demo: <https://demos.creative-tim.com/argon-dashboard-angular/dashboard?ref=ada-github-readme>
-- Download Page: <https://www.creative-tim.com/product/argon-dashboard-angular?ref=ada-github-readme>
-- Documentation: <https://demos.creative-tim.com/argon-dashboard-angular/documentation/tutorial?ref=ada-github-readme>
-- License Agreement: <https://www.creative-tim.com/license?ref=ada-github-readme>
-- Support: <https://www.creative-tim.com/contact-us?ref=ada-github-readme>
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/argon-dashboard-angular/issues?ref=ada-github-readme)
+- Demo: <https://demos.creative-tim.com/argon-design-system-angular/home?ref=adsa-github-readme>
+- Download Page: <https://www.creative-tim.com/product/argon-design-system-angular?ref=adsa-github-readme>
+- Documentation: <https://demos.creative-tim.com/argon-design-system-angular/documentation/tutorial?ref=adsa-github-readme>
+- License Agreement: <https://www.creative-tim.com/license?ref=adsa-github-readme>
+- Support: <https://www.creative-tim.com/contact-us?ref=adsa-github-readme>
+- Issues: [Github Issues Page](https://github.com/creativetimofficial/argon-design-system-angular/issues?ref=adsa-github-readme)
 
 ## Reporting Issues
 
-We use GitHub Issues as the official bug tracker for the Material Kit. Here are some advices for our users that want to report an issue:
+We use GitHub Issues as the official bug tracker for the Argon Design System Angular. Here are some advices for our users that want to report an issue:
 
-1. Make sure that you are using the latest version of the Material Kit. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/?ref=ada-github-readme).
+1. Make sure that you are using the latest version of the Argon Design System Angular. Check the CHANGELOG from your kit on our [website](https://www.creative-tim.com/?ref=ada-github-readme).
 2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
 3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 
 ## Licensing
 
-- Copyright 2018 Creative Tim (https://www.creative-tim.com/?ref=ada-github-readme)
+- Copyright 2019 Creative Tim (https://www.creative-tim.com/?ref=adsa-github-readme)
 
-- Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard-angular/blob/master/LICENSE.md)
+- Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-angular/blob/master/LICENSE.md)
 
 ## Useful Links
 
 - [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w?ref=creativetim)
-- [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=ada-github-readme) (earn money)
-- [Blog Creative Tim](http://blog.creative-tim.com/?ref=ada-github-readme)
-- [Free Products](https://www.creative-tim.com/bootstrap-themes/free?ref=ada-github-readme) from Creative Tim
-- [Premium Products](https://www.creative-tim.com/bootstrap-themes/premium?ref=ada-github-readme) from Creative Tim
-- [React Products](https://www.creative-tim.com/bootstrap-themes/react-themes?ref=ada-github-readme) from Creative Tim
-- [Angular Products](https://www.creative-tim.com/bootstrap-themes/angular-themes?ref=ada-github-readme) from Creative Tim
-- [VueJS Products](https://www.creative-tim.com/bootstrap-themes/vuejs-themes?ref=ada-github-readme) from Creative Tim
-- [More products](https://www.creative-tim.com/bootstrap-themes?ref=ada-github-readme) from Creative Tim
-- Check our Bundles [here](https://www.creative-tim.com/bundles?ref=ada-github-readme)
+- [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=adsa-github-readme) (earn money)
+- [Blog Creative Tim](http://blog.creative-tim.com/?ref=adsa-github-readme)
+- [Free Products](https://www.creative-tim.com/bootstrap-themes/free?ref=adsa-github-readme) from Creative Tim
+- [Premium Products](https://www.creative-tim.com/bootstrap-themes/premium?ref=adsa-github-readme) from Creative Tim
+- [React Products](https://www.creative-tim.com/bootstrap-themes/react-themes?ref=adsa-github-readme) from Creative Tim
+- [Angular Products](https://www.creative-tim.com/bootstrap-themes/angular-themes?ref=adsa-github-readme) from Creative Tim
+- [VueJS Products](https://www.creative-tim.com/bootstrap-themes/vuejs-themes?ref=adsa-github-readme) from Creative Tim
+- [More products](https://www.creative-tim.com/bootstrap-themes?ref=adsa-github-readme) from Creative Tim
+- Check our Bundles [here](https://www.creative-tim.com/bundles?ref=adsa-github-readme)
 
 ### Social Media
 
