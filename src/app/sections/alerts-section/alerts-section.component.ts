@@ -46,8 +46,8 @@ export class AlertsSectionComponent {
       this.backup = this.alerts.map((alert: IAlert) => Object.assign({}, alert));
   }
 
-  public closeAlert(alert: IAlert) {
-      const index: number = this.alerts.indexOf(alert);
-      this.alerts.splice(index, 1);
+  close(alert: IAlert) {
+    this.alerts.splice(this.alerts.indexOf(alert), 1);
   }
+
 }

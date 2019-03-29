@@ -9,6 +9,7 @@ export class SignupComponent implements OnInit {
     test : Date = new Date();
     focus;
     focus1;
+    focus2;
     constructor() { }
 
     ngOnInit() {}

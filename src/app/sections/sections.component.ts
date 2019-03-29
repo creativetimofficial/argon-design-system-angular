@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sections.component.css']
 })
 export class SectionsComponent implements OnInit {
-
+  focus;
+  focus1;
   constructor() { }
 
   ngOnInit() {

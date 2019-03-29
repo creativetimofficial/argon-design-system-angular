@@ -4,7 +4,7 @@
     <span>Alerts</span>
   </h3>
   <div *ngFor="let alert of alerts">
-    <ngb-alert [type]="alert.type"  [dismissible]="true" >
+    <ngb-alert [type]="alert.type"  [dismissible]="true"  (close)="close(alert)" >
       <ng-container *ngIf="alert.icon">
         <div class="alert-inner--icon">
             <i class="{{alert.icon}}"></i>

@@ -14,6 +14,12 @@ export class AngularSectionComponent implements OnInit {
   closeResult: string;
   model1 : NgbDate;
   model2 : NgbDate;
+
+  focus;
+  focus1;
+  focus2;
+  focus3;
+  focus4;
   constructor(private modalService: NgbModal, calendar: NgbCalendar) {
     this.fromDate = calendar.getToday();
     this.toDate = calendar.getNext(calendar.getToday(), 'd', 10);

@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TabsSectionComponent implements OnInit {
   page = 2;
+  page1 = 3;
   constructor() { }
 
   ngOnInit() {

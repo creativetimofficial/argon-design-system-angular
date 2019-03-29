@@ -87,20 +87,20 @@
                   <small>Or sign in with credentials</small>
                 </div>
                 <form role="form">
-                  <div class="form-group mb-3">
+                  <div class="form-group mb-3" [ngClass]="{'focused':focus===true}">
                     <div class="input-group input-group-alternative">
                       <div class="input-group-prepend">
                         <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                       </div>
-                      <input class="form-control" placeholder="Email" type="email">
+                      <input class="form-control" placeholder="Email" type="email" (focus)="focus=true" (blur)="focus=false">
                     </div>
                   </div>
-                  <div class="form-group">
+                  <div class="form-group" [ngClass]="{'focused':focus1===true}">
                     <div class="input-group input-group-alternative">
                       <div class="input-group-prepend">
                         <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                       </div>
-                      <input class="form-control" placeholder="Password" type="password">
+                      <input class="form-control" placeholder="Password" type="password" (focus)="focus1=true" (blur)="focus1=false">
                     </div>
                   </div>
                   <div class="custom-control custom-control-alternative custom-checkbox">
@@ -125,12 +125,12 @@
   <div class="row">
     <div class="col-md-4">
       <small class="d-block text-uppercase font-weight-bold mb-3">Single date</small>
-      <div class="form-group">
+      <div class="form-group" [ngClass]="{'focused':focus2===true}">
         <div class="input-group">
           <div class="input-group-prepend">
             <span class="input-group-text"><i class="ni ni-calendar-grid-58"></i></span>
           </div>
-          <input class="form-control datepicker" placeholder="Select date" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()" type="text" (select)="onDateSelection($event)" autocomplete="off"/>
+          <input class="form-control datepicker" placeholder="Select date" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()" (focus)="focus2=true" (blur)="focus2=false" type="text" (select)="onDateSelection($event)" autocomplete="off"/>
         </div>
       </div>
     </div>
@@ -138,12 +138,12 @@
       <small class="d-block text-uppercase font-weight-bold mb-3">Date range</small>
       <div class="input-daterange datepicker row align-items-center">
         <div class="col">
-          <div class="form-group">
+          <div class="form-group" [ngClass]="{'focused':focus3===true}">
             <div class="input-group">
               <div class="input-group-prepend">
                 <span class="input-group-text"><i class="ni ni-calendar-grid-58"></i></span>
               </div>
-              <input class="form-control datepicker" placeholder="Select date" name="dp1" [(ngModel)]="model1" ngbDatepicker #d1="ngbDatepicker" (click)="d1.toggle()" (select)="mama($event)" type="text" [dayTemplate]="t" (dateSelect)="startDateChanged($event)" autocomplete="off"/>
+              <input class="form-control datepicker" placeholder="Select date" name="dp1" [(ngModel)]="model1" ngbDatepicker #d1="ngbDatepicker" (click)="d1.toggle()" (select)="mama($event)" type="text" [dayTemplate]="t" (dateSelect)="startDateChanged($event)" autocomplete="off" (focus)="focus3=true" (blur)="focus3=false"/>
               <ng-template #t let-date let-focused="focused" >
                <span class="custom-day"
                 [class.text-white]="isActive(date)"
@@ -161,12 +161,12 @@
           </div>
         </div>
         <div class="col">
-          <div class="form-group">
+          <div class="form-group" [ngClass]="{'focused':focus4===true}">
             <div class="input-group">
               <div class="input-group-prepend">
                 <span class="input-group-text"><i class="ni ni-calendar-grid-58"></i></span>
               </div>
-              <input class="form-control datepicker" placeholder="Select date" name="dp2" [(ngModel)]="model2" ngbDatepicker #d2="ngbDatepicker" (click)="d2.toggle()" type="text" [dayTemplate]="t1" (dateSelect)="endDateChanged($event)" autocomplete="off"/>
+              <input class="form-control datepicker" placeholder="Select date" name="dp2" [(ngModel)]="model2" ngbDatepicker #d2="ngbDatepicker" (click)="d2.toggle()" (focus)="focus4=true" (blur)="focus4=false" type="text" [dayTemplate]="t1" (dateSelect)="endDateChanged($event)" autocomplete="off"/>
               <ng-template #t1 let-date let-focused="focused" >
                <span class="custom-day"
                 [class.text-white]="isActive(date)"
