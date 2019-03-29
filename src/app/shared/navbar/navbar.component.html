@@ -25,12 +25,12 @@
         </div>
       </div>
       <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
-        <li class="nav-item" ngbDropdown>
-          <a class="nav-link no-caret" data-toggle="dropdown" role="button" ngbDropdownToggle>
+        <li class="nav-item dropdown">
+          <a class="nav-link no-caret" data-toggle="dropdown" role="button">
             <i class="ni ni-ui-04 d-lg-none"></i>
             <span class="nav-link-inner--text">Components</span>
           </a>
-          <div class="dropdown-menu-xl" ngbDropdownMenu>
+          <div class="dropdown-menu-xl dropdown-menu" >
             <div class="dropdown-menu-inner">
               <a routerLinkActive="active" [routerLink]="['documentation/tutorial']" class="media d-flex align-items-center">
                 <div class="icon icon-shape bg-gradient-primary rounded-circle text-white">
@@ -62,12 +62,12 @@
             </div>
           </div>
         </li>
-        <li class="nav-item" ngbDropdown>
-          <a class="nav-link no-caret" data-toggle="dropdown" role="button" ngbDropdownToggle>
+        <li class="nav-item dropdown">
+          <a class="nav-link no-caret" data-toggle="dropdown" role="button">
             <i class="ni ni-collection d-lg-none"></i>
             <span class="nav-link-inner--text">Examples</span>
           </a>
-          <div class="" ngbDropdownMenu>
+          <div class="dropdown-menu">
             <a [routerLink]="['/landing']" class="dropdown-item">Landing</a>
             <a [routerLink]="['/user-profile']" class="dropdown-item">Profile</a>
             <a [routerLink]="['/login']" class="dropdown-item">Login</a>
