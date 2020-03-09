@@ -31,7 +31,7 @@ ngb-datepicker {
   }
   .ngb-dp-header {
     border-bottom: none !important;
-
+    background: transparent;
     ngb-datepicker-navigation {
       color: $primary;
 
@@ -72,9 +72,10 @@ ngb-datepicker {
     }
   }
   .ngb-dp-months {
-    ngb-datepicker-month-view {
+    ngb-datepicker-month {
       .ngb-dp-week {
         border: none;
+        background: transparent;
         .ngb-dp-weekday {
           color: $primary;
           padding-top: 10px;
