@@ -1,8 +1,8 @@
-import { Component, OnInit, Inject, Renderer, ElementRef, ViewChild, HostListener } from '@angular/core';
+import { Component, OnInit, Inject, Renderer2, ElementRef, ViewChild, HostListener } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { Subscription } from 'rxjs/Subscription';
 import 'rxjs/add/operator/filter';
-import { DOCUMENT } from '@angular/platform-browser';
+import { DOCUMENT } from '@angular/common';
 import { LocationStrategy, PlatformLocation, Location } from '@angular/common';
 
 var didScroll;
@@ -18,7 +18,7 @@ var navbarHeight = 0;
 export class AppComponent implements OnInit {
     private _router: Subscription;
 
-    constructor( private renderer : Renderer, private router: Router, @Inject(DOCUMENT,) private document: any, private element : ElementRef, public location: Location) {}
+    constructor( private renderer : Renderer2, private router: Router, @Inject(DOCUMENT,) private document: any, private element : ElementRef, public location: Location) {}
     @HostListener('window:scroll', ['$event'])
     hasScrolled() {
 
@@ -60,7 +60,7 @@ export class AppComponent implements OnInit {
           }else{
               window.document.activeElement.scrollTop = 0;
           }
-          this.renderer.listenGlobal('window', 'scroll', (event) => {
+          this.renderer.listen('window', 'scroll', (event) => {
               const number = window.scrollY;
               if (number > 150 || window.pageYOffset > 150) {
                   // add logic

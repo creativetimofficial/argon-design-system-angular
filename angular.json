@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "argon-design-system-angular"
+  "defaultProject": "argon-design-system-angular",
+  "cli": {
+    "analytics": false
+  }
 }
