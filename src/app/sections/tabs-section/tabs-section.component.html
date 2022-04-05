@@ -6,78 +6,99 @@
       <div class="mb-3">
         <small class="text-uppercase font-weight-bold">With icons</small>
       </div>
-      <ul ngbNav #nav="ngbNav" [(activeId)]="active1" class="custom-tab-content flex-column flex-md-row nav-tabs"
-        type="pills">
-        <li [ngbNavItem]="1">
-          <a ngbNavLink><i class="ni ni-cloud-upload-96 mr-2"></i> Home</a>
-          <ng-template ngbNavContent>
-            <p class="description">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
-              stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.
-              Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
-            <p class="description">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
-              stumptown aliqua, retro synth master cleanse.</p>
-          </ng-template>
-        </li>
-        <li [ngbNavItem]="2">
-          <a ngbNavLink>
-            <i class="ni ni-bell-55 mr-2"></i> Profile
-          </a>
-          <ng-template ngbNavContent>
-            <p class="description">Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia
-              cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
-          </ng-template>
-        </li>
-        <li [ngbNavItem]="3">
-          <a ngbNavLink>
-            <i class="ni ni-calendar-grid-58 mr-2"></i> Messages
-          </a>
-          <ng-template ngbNavContent>
-            <p class="description">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
-              stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.
-              Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
-          </ng-template>
-        </li>
-      </ul>
-      <div [ngbNavOutlet]="nav" class="mt-2"></div>
+      <div class="custom-tab-content flex-column flex-md-row">
+        <ul ngbNav #nav="ngbNav" [(activeId)]="active1" class="nav nav-pills justify-content-center" type="pills">
+          <li class="nav-item" [ngbNavItem]="1">
+            <a class="nav-link" ngbNavLink><i class="ni ni-cloud-upload-96 mr-2"></i> Home</a>
+            <ng-template ngbNavContent>
+              <div class="tab-content">
+                <p class="description">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
+                  stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan
+                  helvetica.
+                  Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+                <p class="description">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
+                  stumptown aliqua, retro synth master cleanse.</p>
+              </div>
+            </ng-template>
+          </li>
+          <li class="nav-item" [ngbNavItem]="2">
+            <a class="nav-link" ngbNavLink>
+              <i class="ni ni-bell-55 mr-2"></i> Profile
+            </a>
+            <ng-template ngbNavContent>
+              <div class="tab-content">
+                <p class="description">Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat
+                  salvia
+                  cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+              </div>
+            </ng-template>
+          </li>
+          <li class="nav-item" [ngbNavItem]="3">
+            <a class="nav-link" ngbNavLink>
+              <i class="ni ni-calendar-grid-58 mr-2"></i> Messages
+            </a>
+            <ng-template ngbNavContent>
+              <div class="tab-content">
+                <p class="description">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
+                  stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan
+                  helvetica.
+                  Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+              </div>
+            </ng-template>
+          </li>
+        </ul>
+      </div>
+
+      <div [ngbNavOutlet]="nav" class="custom-tab-content"></div>
     </div>
     <div class="col-lg-6 mt-5 mt-lg-0">
       <!-- Menu -->
       <div class="mb-3">
         <small class="text-uppercase font-weight-bold">With text</small>
       </div>
-      <ul ngbNav #nav1="ngbNav" [(activeId)]="active" class="custom-tab-content flex-column flex-md-row nav-tabs"
-        type="pills">
-        <li [ngbNavItem]="1">
-          <a ngbNavLink> Home</a>
-          <ng-template ngbNavContent>
-            <p class="description">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
-              stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.
-              Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
-            <p class="description">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
-              stumptown aliqua, retro synth master cleanse.</p>
-          </ng-template>
-        </li>
-        <li [ngbNavItem]="2">
-          <a ngbNavLink>
-            Profile
-          </a>
-          <ng-template ngbNavContent>
-            <p class="description">Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia
-              cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
-          </ng-template>
-        </li>
-        <li [ngbNavItem]="3">
-          <a ngbNavLink>
-            Messages
-          </a>
-          <ng-template ngbNavContent>
-            <p class="description">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
-              stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.
-              Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
-          </ng-template>
-        </li>
-      </ul>
-      <div [ngbNavOutlet]="nav1" class="mt-2"></div>
+      <div class="custom-tab-content flex-column flex-md-row">
+        <ul ngbNav #nav1="ngbNav" [(activeId)]="active" class="nav nav-pills justify-content-center" type="pills">
+          <li class="nav-item" [ngbNavItem]="1">
+            <a class="nav-link" ngbNavLink> Home</a>
+            <ng-template ngbNavContent>
+              <div class="tab-content">
+                <p class="description">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
+                  stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan
+                  helvetica.
+                  Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+                <p class="description">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
+                  stumptown aliqua, retro synth master cleanse.</p>
+              </div>
+            </ng-template>
+          </li>
+          <li class="nav-item" [ngbNavItem]="2">
+            <a class="nav-link" ngbNavLink>
+              Profile
+            </a>
+            <ng-template ngbNavContent>
+              <div class="tab-content">
+                <p class="description">Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat
+                  salvia
+                  cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+              </div>
+            </ng-template>
+          </li>
+          <li class="nav-item" [ngbNavItem]="3">
+            <a class="nav-link" ngbNavLink>
+              Messages
+            </a>
+            <ng-template ngbNavContent>
+              <div class="tab-content">
+                <p class="description">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu
+                  stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan
+                  helvetica.
+                  Reprehenderit butcher retro keffiyeh dreamcatcher synth.</p>
+              </div>
+            </ng-template>
+          </li>
+        </ul>
+      </div>
+      <div [ngbNavOutlet]="nav1" class="custom-tab-content"></div>
     </div>
   </div>
 
@@ -110,10 +131,12 @@
     <div class="col-lg-5">
       <h3 class="h4 text-success font-weight-bold mb-5">Pagination</h3>
       <nav aria-label="Page navigation example" class="mb-4">
-        <ngb-pagination [collectionSize]="50" [(page)]="page" [directionLinks]="false"></ngb-pagination>
+
+        <ngb-pagination [collectionSize]="70" [(page)]="page" [directionLinks]="false"></ngb-pagination>
       </nav>
       <nav aria-label="Page navigation example">
-        <ngb-pagination [collectionSize]="50" [(page)]="page1" aria-label="Default pagination">
+        <ngb-pagination [collectionSize]="50" [(page)]="page1" (pageChange)="page1 = $event"
+          aria-label="Default pagination">
           <ng-template ngbPaginationPrevious><i _ngcontent-c9="" class="fa fa-angle-left"></i></ng-template>
           <ng-template ngbPaginationNext><i _ngcontent-c9="" class="fa fa-angle-right"></i></ng-template>
         </ngb-pagination>
