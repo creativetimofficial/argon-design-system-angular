@@ -142,33 +142,35 @@
         </ngb-pagination>
       </nav>
     </div>
-  </div>
-  <div class="col-lg-5">
-    <h3 class="h4 text-success font-weight-bold mb-5">Navigation Pills</h3>
-    <ul ngbNav #nav2="ngbNav" [(activeId)]="active2" type="pills" class="nav-pills-circle">
-      <li [ngbNavItem]="1">
-        <a ngbNavLink>
-          <span class="nav-link-icon d-block"><i class="ni ni-atom"></i></span>
-        </a>
-      </li>
-      <li [ngbNavItem]="2">
-        <a ngbNavLink>
-          <span class="nav-link-icon d-block"><i class="ni ni-chat-round"></i></span>
-        </a>
-      </li>
-      <li [ngbNavItem]="3">
-        <a ngbNavLink>
-          <span class="nav-link-icon d-block"><i class="ni ni-cloud-download-95"></i></span>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="col-lg-5">
-    <h3 class="h4 text-success font-weight-bold mb-5">Labels</h3>
-    <span class="badge badge-pill badge-primary text-uppercase">Primary</span>
-    <span class="badge badge-pill badge-success text-uppercase">Success</span>
-    <span class="badge badge-pill badge-danger text-uppercase">Danger</span>
-    <span class="badge badge-pill badge-warning text-uppercase">Warning</span>
-    <span class="badge badge-pill badge-info text-uppercase">Info</span>
+    <div class="col-lg-5">
+      <h3 class="h4 text-success font-weight-bold mb-5">Navigation Pills</h3>
+      <div class="nav nav-pills justify-content-start">
+        <ul ngbNav #nav2="ngbNav" [(activeId)]="active2" type="pills" class="nav-pills-circle">
+          <li [ngbNavItem]="1">
+            <a ngbNavLink>
+              <span class="nav-link-icon d-block"><i class="ni ni-atom"></i></span>
+            </a>
+          </li>
+          <li [ngbNavItem]="2">
+            <a ngbNavLink>
+              <span class="nav-link-icon d-block"><i class="ni ni-chat-round"></i></span>
+            </a>
+          </li>
+          <li [ngbNavItem]="3">
+            <a ngbNavLink>
+              <span class="nav-link-icon d-block"><i class="ni ni-cloud-download-95"></i></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-5">
+      <h3 class="h4 text-success font-weight-bold mb-5">Labels</h3>
+      <span class="badge badge-pill badge-primary text-uppercase">Primary</span>
+      <span class="badge badge-pill badge-success text-uppercase">Success</span>
+      <span class="badge badge-pill badge-danger text-uppercase">Danger</span>
+      <span class="badge badge-pill badge-warning text-uppercase">Warning</span>
+      <span class="badge badge-pill badge-info text-uppercase">Info</span>
+    </div>
   </div>
 </div>
