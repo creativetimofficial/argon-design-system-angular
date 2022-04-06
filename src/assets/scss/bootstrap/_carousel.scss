@@ -198,7 +198,8 @@
     text-indent: -999px;
     cursor: pointer;
     background-color: rgba($carousel-indicator-active-bg, .5);
-
+    border: 0;
+    outline: 0;
     // Use pseudo classes to increase the hit area by 10px on top and bottom.
     &::before {
       position: absolute;
