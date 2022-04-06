@@ -40,22 +40,21 @@
     border: 0;
   }
 
-  button.btn-close:after {
-    content: '×';
-    font-size: 1.3rem;
-    background-color: transparent;
-    color: rgba(255, 255, 255, .6);
+  button.btn-close {
+    &::after {
+      content: '×';
+      font-size: 1.3rem;
+      background-color: transparent;
+      color: rgba(255, 255, 255, .6);
+    }
+    &:hover::after {
+      opacity: 1 !important;
+      color: rgba(255, 255, 255, 255);
+    }
+    &:focus {
+      outline: 0 !important;
+    }
   }
-
-  button.btn-close:hover::after {
-    opacity: 1 !important;
-    color: rgba(255, 255, 255, 255);
-  }
-
-  button.btn-close:focus {
-    outline: 0 !important;
-  }
-
 }
 
 
