@@ -28,6 +28,7 @@
   width: 100%;
   backface-visibility: hidden;
   perspective: 1000px;
+  height: 400px;
 }
 
 .carousel-item.active,
@@ -241,4 +242,7 @@
   padding-bottom: 20px;
   color: $carousel-caption-color;
   text-align: center;
+}
+.bootstrap-slider{
+  height: 400px;
 }
