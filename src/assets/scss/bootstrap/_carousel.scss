@@ -16,6 +16,9 @@
   position: relative;
   width: 100%;
   overflow: hidden;
+  .visually-hidden {
+    display: none;
+  }
 }
 
 .carousel-item {
@@ -25,6 +28,7 @@
   width: 100%;
   backface-visibility: hidden;
   perspective: 1000px;
+  height: 400px;
 }
 
 .carousel-item.active,
@@ -120,7 +124,8 @@
   width: $carousel-control-width;
   color: $carousel-control-color;
   text-align: center;
-  opacity: $carousel-control-opacity;
+  background-color: transparent;
+  border: 0;
   // We can't have a transition here because WebKit cancels the carousel
   // animation if you trip this while in the middle of another animation.
 
@@ -130,6 +135,9 @@
     text-decoration: none;
     outline: 0;
     opacity: .9;
+  }
+  .visually-hidden{
+    display: none;
   }
 }
 .carousel-control-prev {
@@ -181,7 +189,7 @@
   margin-left: $carousel-control-width;
   list-style: none;
 
-  li {
+  button {
     position: relative;
     flex: 0 1 auto;
     width: $carousel-indicator-width;
@@ -191,7 +199,8 @@
     text-indent: -999px;
     cursor: pointer;
     background-color: rgba($carousel-indicator-active-bg, .5);
-
+    border: 0;
+    outline: 0;
     // Use pseudo classes to increase the hit area by 10px on top and bottom.
     &::before {
       position: absolute;
@@ -233,4 +242,7 @@
   padding-bottom: 20px;
   color: $carousel-caption-color;
   text-align: center;
+}
+.bootstrap-slider{
+  height: 400px;
 }

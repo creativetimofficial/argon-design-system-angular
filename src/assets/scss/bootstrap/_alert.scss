@@ -30,12 +30,30 @@
   padding-right: ($close-font-size + $alert-padding-x * 2);
 
   // Adjust close link position
-  .close {
+  .btn-close {
     position: absolute;
     top: 0;
     right: 0;
     padding: $alert-padding-y $alert-padding-x;
     color: inherit;
+    background-color: transparent;
+    border: 0;
+  }
+
+  button.btn-close {
+    &::after {
+      content: '×';
+      font-size: 1.3rem;
+      background-color: transparent;
+      color: rgba(255, 255, 255, .6);
+    }
+    &:hover::after {
+      opacity: 1 !important;
+      color: rgba(255, 255, 255, 255);
+    }
+    &:focus {
+      outline: 0 !important;
+    }
   }
 }
 
@@ -44,7 +62,8 @@
 //
 // Generate contextual modifier classes for colorizing the alert.
 
-@each $color, $value in $theme-colors {
+@each $color,
+$value in $theme-colors {
   .alert-#{$color} {
     @include alert-variant(theme-color-level($color, $alert-bg-level), theme-color-level($color, $alert-border-level), theme-color-level($color, $alert-color-level));
   }

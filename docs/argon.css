@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* Argon Design System Angular - v1.2.0
+* Argon Design System Angular - v1.3.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/argon-design-system-angular
@@ -16454,7 +16454,7 @@ article h5+figure {
     text-align: center;
     border: none
 }
-
+.datepicker
 .table-striped .datepicker table tr td,
 .table-striped .datepicker table tr th {
     background-color: transparent

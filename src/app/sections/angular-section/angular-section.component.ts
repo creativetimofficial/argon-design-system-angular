@@ -14,6 +14,7 @@ export class AngularSectionComponent implements OnInit {
   closeResult: string;
   model1 : NgbDate;
   model2 : NgbDate;
+  model : NgbDate;
 
   focus;
   focus1;

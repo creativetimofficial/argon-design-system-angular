@@ -55,7 +55,8 @@ ngb-datepicker {
         }
       }
       ngb-datepicker-navigation-select {
-        .custom-select {
+        .custom-select,
+        .form-select {
           font-weight: 300;
           color: $primary;
           border: none !important;

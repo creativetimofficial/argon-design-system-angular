@@ -130,7 +130,7 @@
           <div class="input-group-prepend">
             <span class="input-group-text"><i class="ni ni-calendar-grid-58"></i></span>
           </div>
-          <input class="form-control datepicker" placeholder="Select date" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()" (focus)="focus2=true" (blur)="focus2=false" type="text" (select)="onDateSelection($event)" autocomplete="off"/>
+          <input class="form-control datepicker" placeholder="Select date" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker" (click)="d.toggle()" (focus)="focus2=true" (blur)="focus2=false" type="text" autocomplete="off"/>
         </div>
       </div>
     </div>
@@ -143,7 +143,7 @@
               <div class="input-group-prepend">
                 <span class="input-group-text"><i class="ni ni-calendar-grid-58"></i></span>
               </div>
-              <input class="form-control datepicker" placeholder="Select date" name="dp1" [(ngModel)]="model1" ngbDatepicker #d1="ngbDatepicker" (click)="d1.toggle()" (select)="mama($event)" type="text" [dayTemplate]="t" (dateSelect)="startDateChanged($event)" autocomplete="off" (focus)="focus3=true" (blur)="focus3=false"/>
+              <input class="form-control datepicker" placeholder="Select date" name="dp1" [(ngModel)]="model1" ngbDatepicker #d1="ngbDatepicker" (click)="d1.toggle()" type="text" [dayTemplate]="t" (dateSelect)="startDateChanged($event)" autocomplete="off" (focus)="focus3=true" (blur)="focus3=false"/>
               <ng-template #t let-date let-focused="focused" >
                <span class="custom-day"
                 [class.text-white]="isActive(date)"
