@@ -1,5 +1,10 @@
 // General
 
+c-button{
+    &:not(:last-child) {
+        margin-right: .5rem;
+    }
+}
 .btn {
     position: relative;
     text-transform: $btn-text-transform;

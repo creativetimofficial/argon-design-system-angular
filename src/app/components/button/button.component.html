@@ -1,0 +1,7 @@
+<button (click)="onClick.emit($event)" (focus)="onFocus.emit($event)"
+    [ngClass]="[size ? size : '', severity,class ? class : '']" class="btn" type="button">{{ !icon ? content : '' }}
+    <span *ngIf="icon" class="btn-icon">
+        <span class="btn-inner--icon"><i [ngClass]="icon ? icon : 'ni ni-bag-17'"></i></span>
+        <span *ngIf="content" class="btn-inner--text">{{content}}</span>
+    </span>
+</button>

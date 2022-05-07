@@ -19,6 +19,8 @@ import { NucleoSectionComponent } from './nucleo-section/nucleo-section.componen
 import { VersionsSectionComponent } from './versions-section/versions-section.component';
 import { NgbdModalComponent } from './modal/modal.component';
 import { NgbdModalContent } from './modal/modal.component';
+import { ButtonComponent } from '../components/button/button.component';
+import { LinkComponent } from '../components/link/link.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { NgbdModalContent } from './modal/modal.component';
     NucleoSectionComponent,
     VersionsSectionComponent,
     NgbdModalComponent,
-    NgbdModalContent
+    NgbdModalContent,
+    ButtonComponent,
+    LinkComponent
   ],
   entryComponents: [NgbdModalContent],
   imports: [
