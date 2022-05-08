@@ -1,11 +1,14 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, NgModule, OnInit, Output, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'c-button',
-  templateUrl: './button.component.html',
-  styleUrls: ['./button.component.css']
+  templateUrl: './button.html',
+  styleUrls: ['./button.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  encapsulation: ViewEncapsulation.None,
 })
-export class ButtonComponent implements OnInit {
+export class Button implements OnInit {
   @Input() content: string;
 
   @Input() icon: string;
@@ -51,5 +54,10 @@ export class ButtonComponent implements OnInit {
       this.severity = this.severityDictionary[this.severity] ? this.severityDictionary[this.severity] : this.severityDictionary['primary'];
     }
   }
-
 }
+@NgModule({
+  imports: [CommonModule],
+  exports: [Button],
+  declarations: [Button]
+})
+export class ButtonModule { }
