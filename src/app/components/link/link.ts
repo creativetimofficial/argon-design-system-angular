@@ -1,11 +1,14 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, NgModule, OnInit, Output, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'c-link',
-  templateUrl: './link.component.html',
-  styleUrls: ['./link.component.css']
+  templateUrl: './link.html',
+  styleUrls: ['./link.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  encapsulation: ViewEncapsulation.None,
 })
-export class LinkComponent implements OnInit {
+export class Link implements OnInit {
   @Input() content: string;
 
   @Input() class: string;
@@ -31,3 +34,9 @@ export class LinkComponent implements OnInit {
   }
 
 }
+@NgModule({
+  imports: [CommonModule],
+  exports: [Link],
+  declarations: [Link]
+})
+export class LinkModule { }

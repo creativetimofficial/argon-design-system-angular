@@ -20,7 +20,7 @@ import { VersionsSectionComponent } from './versions-section/versions-section.co
 import { NgbdModalComponent } from './modal/modal.component';
 import { NgbdModalContent } from './modal/modal.component';
 import { ButtonModule } from '../components/button/button';
-import { LinkComponent } from '../components/link/link.component';
+import { LinkModule } from '../components/link/link';
 
 @NgModule({
   declarations: [
@@ -36,8 +36,7 @@ import { LinkComponent } from '../components/link/link.component';
     NucleoSectionComponent,
     VersionsSectionComponent,
     NgbdModalComponent,
-    NgbdModalContent,
-    LinkComponent
+    NgbdModalContent
   ],
   entryComponents: [NgbdModalContent],
   imports: [
@@ -47,7 +46,8 @@ import { LinkComponent } from '../components/link/link.component';
     RouterModule,
     NouisliderModule,
     JwBootstrapSwitchNg2Module,
-    ButtonModule
+    ButtonModule,
+    LinkModule
   ],
   exports:[ SectionsComponent ]
 })
