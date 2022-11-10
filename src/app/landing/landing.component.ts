@@ -16,10 +16,10 @@ export class LandingComponent implements OnInit {
   ngOnInit() {}
 
   scrollLeft(){
-    this.widgetsContent.nativeElement.scrollLeft -= 150;
+    this.widgetsContent.nativeElement.scrollLeft -= 220;
   }
 
   scrollRight(){
-    this.widgetsContent.nativeElement.scrollLeft += 150;
+    this.widgetsContent.nativeElement.scrollLeft += 220;
   }
 }
