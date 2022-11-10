@@ -148,14 +148,7 @@ h1 {
 .buttons-lft-rgt {
   border-radius: 50%;
 }
-.sympCard {
-  border-radius: 25%;
-}
-.symptoms_content1 .grid3-image-wrapper {
-  width: 100%;
-  padding: 50%;
-  position: relative;
-  -webkit-box-shadow: 0px 0px 8px rgb(153 153 153 / 25%);
-  border-radius: 24px;
-  margin-bottom: 5px;
+
+.rounded {
+  border-radius: 25px !important;
 }
