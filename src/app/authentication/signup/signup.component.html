@@ -1,0 +1,97 @@
+<div class="signup_container">
+<div class="signup_left_container">
+  <img src="/assets/img/doctor-patient.jpg" />
+</div>
+
+<div class="signup_right_container">
+  <form [formGroup]="register">
+    <div class="card card-hidden">
+      <div class="card-header card-header-info text-center">
+        <h4 class="card-title">Signup</h4>
+      </div>
+      <div class="card-body">
+        <div class="row row-grid social text-right" style="padding-left: 48px">
+          <div *ngIf="!isDoctor">Are you a doctor? <a routerLink="/signup" (click)="checkDoctorPatient()" class="text-warning">Signup Here</a></div>
+          <div *ngIf="isDoctor"><a routerLink="/signup" (click)="checkDoctorPatient()" class="text-info">Not a doctor?</a></div>
+
+          <div style="padding-left: 10px" *ngIf="!isProvider">Are you provider ? <a routerLink="/signup" (click)="checkProvider()" class="text-warning">Signup Here</a></div>
+          <div *ngIf="isProvider"><a routerLink="/signup" (click)="checkProvider()" class="text-info">Not a provider?</a></div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="material-icons">face</i>
+              </span>
+            </div>
+            <input type="text" class="form-control" formControlName="fullName"
+            placeholder="Full Name..." required />
+          </div>
+          <div class="text-danger input-group" *ngIf="m.fullName.touched && m.fullName.invalid" style="color: red; padding-left: 55px">
+            <small *ngIf="m.fullName.errors?.required">Full name is required</small>
+            <small *ngIf="m.fullName.errors?.minlength">Name must be at least 4 characters</small>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="material-icons">mail</i>
+              </span>
+            </div>
+            <input type="email" class="form-control" formControlName="email" 
+            placeholder="Email..." required />
+          </div>
+          <div *ngIf="m.email.touched && m.email.invalid" style="color: red; padding-left: 55px">
+            <small *ngIf="m.email.errors?.required">Email is required</small>
+            <small *ngIf="m.email.errors?.pattern">Please enter a valid email address</small>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="material-icons">phone</i>
+              </span>
+            </div>
+            <input type="number" class="form-control" formControlName="mobileNumber" placeholder="Mobile..." required />
+          </div>
+          <div *ngIf="m.mobileNumber.touched && m.mobileNumber.invalid" style="color: red; padding-left: 55px">
+            <small *ngIf="m.mobileNumber.errors?.required">Please enter mobile number</small>
+            <small *ngIf="m.mobileNumber.errors?.pattern">Mobile number is not 10 digit</small>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="material-icons">lock_outline</i>
+              </span>
+            </div>
+            <input [type]="showPassword ? 'text' : 'password'" formControlName="password" placeholder="Password..." class="form-control" required/>
+            <div class="input-group-append">
+              <span class="input-group-text">
+                <i class="fa" [ngClass]="{
+                  'fa-eye-slash': !showPassword,
+                  'fa-eye': showPassword}"
+                (click)="showHidePassword()"></i>
+              </span>
+            </div>
+          </div>
+          <div *ngIf="m.password.touched && m.password.invalid" style="color: red; padding-left: 55px">
+            <small *ngIf="m.password.errors?.required">Password is required</small>
+            <small *ngIf="m.password.errors?.minlength">Password must be at least 8 characters</small>
+            <small *ngIf="m.password.errors?.passwordStrength && !m.password.errors?.minlength">{{m.password.errors['passwordStrength']}}</small>
+          </div>
+        </div>
+        <mat-checkbox class="form-check">
+          I agree to the
+          <a href="#something" class="text-info">terms and conditions</a>.
+        </mat-checkbox>
+        <div class="text-center">
+          <a (click)= "goSignup()" class="btn btn-info btn-lg">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
