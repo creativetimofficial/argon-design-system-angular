@@ -18,12 +18,16 @@ h1 {
   color: white;
 }
 
+.align_symptoms {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
 p {
   font-family: "Poppins", sans-serif;
   color: white;
-}
-
-.button {
 }
 
 $fuschia: #16b3ac;
@@ -37,10 +41,8 @@ $baby-blue: #f8faff;
   outline: none;
   font-family: "Poppins", sans-serif;
   display: inline-block;
-  font-size: 1em;
+  font-size: 14px;
   padding: 10px 2em;
-  margin-top: 100px;
-  margin-bottom: 60px;
   -webkit-appearance: none;
   appearance: none;
   background-color: $button-bg;
@@ -51,6 +53,7 @@ $baby-blue: #f8faff;
   position: relative;
   transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
   box-shadow: 0 2px 25px rgba(22, 179, 172, 0.5);
+  width: fit-content;
 
   &:focus {
     outline: 0;
