@@ -155,6 +155,426 @@
   </section> -->
   <section class="section section-lg">
     <div class="container">
+      <h2>Not sure which doctor to consult?</h2>
+      <h4><span>Know more details on specialities</span></h4>
+      <div class="row mt-5">
+        <div class="col-lg-12 slider-container">
+          <div class="slides-container">
+            <div #widgetsContent class="slides">
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="px-4">
+                  <img
+                    src="./assets/img/hospital/physician.svg"
+                    alt="Rounded image"
+                    class="img-fluid rounded"
+                    style="width: 150px"
+                  />
+                  <h5 class="text-center">
+                    <span>Physician</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="px-4">
+                  <img
+                    src="./assets/img/hospital/gynaecologist.svg"
+                    alt="Circle image"
+                    class="img-fluid rounded"
+                    style="width: 150px"
+                  />
+                  <h5 class="text-center">
+                    <span>Gynaecologist</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="px-4">
+                  <img
+                    src="./assets/img/hospital/pediatrician.svg"
+                    alt="Raised image"
+                    class="img-fluid rounded"
+                    style="width: 150px"
+                  />
+                  <h5 class="text-center">
+                    <span>Pediatrician</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="px-4">
+                  <img
+                    src="./assets/img/hospital/orthopedician.svg"
+                    alt="Raised circle image"
+                    class="img-fluid rounded"
+                    style="width: 150px"
+                  />
+                  <h5 class="title text-center">
+                    <span>Orthopedician</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="px-4">
+                  <img
+                    src="./assets/img/hospital/eye-specialist.svg"
+                    alt="Raised circle image"
+                    class="img-fluid rounded"
+                    style="width: 150px"
+                  />
+                  <h5 class="text-center">
+                    <span>Eye Specialist</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="px-4">
+                  <img
+                    src="./assets/img/hospital/physiotherapist.svg"
+                    alt="Raised circle image"
+                    class="img-fluid rounded"
+                    style="width: 150px"
+                  />
+                  <h5 class="title text-center">
+                    <span>Physiotherapist</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="px-4">
+                  <img
+                    src="./assets/img/hospital/dentist.svg"
+                    alt="Raised circle image"
+                    class="img-fluid rounded"
+                    style="width: 150px"
+                  />
+                  <h5 class="text-center">
+                    <span>Dentist</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="px-4">
+                  <img
+                    src="./assets/img/hospital/more.svg"
+                    alt="Raised circle image"
+                    class="img-fluid rounded"
+                    style="width: 150px"
+                  />
+                  <h5 class="text-center">
+                    <span>View all</span>
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="controls">
+            <button
+              class="btn btn-neutral leftLst buttons-lft-rgt"
+              (click)="scrollLeft()"
+            >
+              <i class="fa fa-angle-left" style="font-size: 30px"></i>
+            </button>
+            <button
+              class="btn btn-neutral rightLst buttons-lft-rgt"
+              (click)="scrollRight()"
+            >
+              <i class="fa fa-angle-right" style="font-size: 30px"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section-lg">
+    <div class="container">
+      <h2>
+        Search by Common Symptoms
+        <button
+          type="button"
+          class="btn btn-info my-4 float-right"
+          style="border-radius: 12px"
+        >
+          Search
+        </button>
+      </h2>
+
+      <!-- <h4><span>Know more details on specialities</span></h4> -->
+      <div class="row mt-5">
+        <div class="col-lg-12 slider-container">
+          <div class="slides-container">
+            <div #widgetsSymptoms class="slides">
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="px-4">
+                  <img
+                    src="./assets/img/hospital/Acidity.png"
+                    alt="Rounded image"
+                    class="img-fluid rounded shadow shadow-lg--hover"
+                    style="width: 150px"
+                  />
+                  <h5 class="text-center">
+                    <span>Acidity</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="px-4">
+                  <img
+                    src="./assets/img/hospital/Acne-01.png"
+                    alt="Circle image"
+                    class="img-fluid rounded shadow shadow-lg--hover"
+                    style="width: 150px"
+                  />
+                  <h5 class="text-center">
+                    <span>Acne</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="px-4">
+                  <img
+                    src="./assets/img/hospital/Anxiety.png"
+                    alt="Raised image"
+                    class="img-fluid rounded shadow shadow-lg--hover"
+                    style="width: 150px"
+                  />
+                  <h5 class="text-center">
+                    <span>Anxiety</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="px-4">
+                  <img
+                    src="./assets/img/hospital/Back-Pain.png"
+                    alt="Raised circle image"
+                    class="img-fluid rounded shadow shadow-lg--hover"
+                    style="width: 150px"
+                  />
+                  <h5 class="title text-center">
+                    <span>Back-Pain</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="px-4">
+                  <img
+                    src="./assets/img/hospital/Constipation.png"
+                    alt="Raised circle image"
+                    class="img-fluid rounded shadow shadow-lg--hover"
+                    style="width: 150px"
+                  />
+                  <h5 class="text-center">
+                    <span>Constipation</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="px-4">
+                  <img
+                    src="./assets/img/hospital/Cough-01.png"
+                    alt="Raised circle image"
+                    class="img-fluid rounded shadow shadow-lg--hover img-center"
+                    style="width: 150px"
+                  />
+                  <h5 class="title text-center">
+                    <span>Cough</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="px-4">
+                  <img
+                    src="./assets/img/hospital/Depression-01.png"
+                    alt="Raised circle image"
+                    class="img-fluid rounded shadow shadow-lg--hover"
+                    style="width: 150px"
+                  />
+                  <h5 class="text-center">
+                    <span>Depression</span>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="px-4">
+                  <img
+                    src="./assets/img/hospital/Erectile-Dysfunction-01.png"
+                    alt="Raised circle image"
+                    class="img-fluid rounded shadow shadow-lg--hover"
+                    style="width: 150px"
+                  />
+                  <h5 class="text-center">
+                    <span>Erectile-Dysfunction</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="px-4">
+                  <img
+                    src="./assets/img/hospital/Fever-01.png"
+                    alt="Raised circle image"
+                    class="img-fluid rounded shadow shadow-lg--hover"
+                    style="width: 150px"
+                  />
+                  <h5 class="text-center">
+                    <span>Fever</span>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="px-4">
+                  <img
+                    src="./assets/img/hospital/Hairfall-01.png"
+                    alt="Raised circle image"
+                    class="img-fluid rounded shadow shadow-lg--hover"
+                    style="width: 150px"
+                  />
+                  <h5 class="text-center">
+                    <span>Hairfall</span>
+                  </h5>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="px-4">
+                  <img
+                    src="./assets/img/hospital/Headache.png"
+                    alt="Raised circle image"
+                    class="img-fluid rounded shadow shadow-lg--hover"
+                    style="width: 150px"
+                  />
+                  <h5 class="text-center">
+                    <span>Headache</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="px-4">
+                  <img
+                    src="./assets/img/hospital/Period-Issue-01.png"
+                    alt="Raised circle image"
+                    class="img-fluid rounded shadow shadow-lg--hover"
+                    style="width: 150px"
+                  />
+                  <h5 class="text-center">
+                    <span>Period-Issue</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="px-4">
+                  <img
+                    src="./assets/img/hospital/Piles.png"
+                    alt="Raised circle image"
+                    class="img-fluid rounded shadow shadow-lg--hover"
+                    style="width: 150px"
+                  />
+                  <h5 class="text-center">
+                    <span>Piles</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="px-4">
+                  <img
+                    src="./assets/img/hospital/Pregnancy.png"
+                    alt="Raised circle image"
+                    class="img-fluid rounded shadow shadow-lg--hover"
+                    style="width: 150px"
+                  />
+                  <h5 class="text-center">
+                    <span>Pregnancy</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="px-4">
+                  <img
+                    src="./assets/img/hospital/Stomach-ache.png"
+                    alt="Raised circle image"
+                    class="img-fluid rounded shadow shadow-lg--hover"
+                    style="width: 150px"
+                  />
+                  <h5 class="text-center">
+                    <span>Stomach-ache</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="px-4">
+                  <img
+                    src="./assets/img/hospital/Throat-Pain.png"
+                    alt="Raised circle image"
+                    class="img-fluid rounded shadow shadow-lg--hover"
+                    style="width: 150px"
+                  />
+                  <h5 class="text-center">
+                    <span>Throat-Pain</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="px-4">
+                  <img
+                    src="./assets/img/hospital/Diabetes-01.png"
+                    alt="Raised circle image"
+                    class="img-fluid rounded shadow shadow-lg--hover"
+                    style="width: 150px"
+                  />
+                  <h5 class="text-center">
+                    <span>Diabetes</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="px-4">
+                  <img
+                    src="./assets/img/hospital/UTI.png"
+                    alt="Raised circle image"
+                    class="img-fluid rounded shadow shadow-lg--hover"
+                    style="width: 150px"
+                  />
+                  <h5 class="text-center">
+                    <span>UTI</span>
+                  </h5>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <div class="px-4">
+                  <img
+                    src="./assets/img/hospital/Weight-Loss-01.png"
+                    alt="Raised circle image"
+                    class="img-fluid rounded shadow shadow-lg--hover"
+                    style="width: 150px"
+                  />
+                  <h5 class="text-center">
+                    <span>Weight-Loss-01</span>
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="controls">
+            <button
+              class="btn btn-neutral leftLst buttons-lft-rgt"
+              (click)="scrollLeftSymp()"
+            >
+              <i class="fa fa-angle-left" style="font-size: 30px"></i>
+            </button>
+            <button
+              class="btn btn-neutral rightLst buttons-lft-rgt"
+              (click)="scrollRightSymp()"
+            >
+              <i class="fa fa-angle-right" style="font-size: 30px"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section-lg">
+    <div class="container">
       <div class="row row-grid align-items-center">
         <div class="col-md-6 order-md-2">
           <img
