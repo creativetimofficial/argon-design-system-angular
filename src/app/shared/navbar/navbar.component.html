@@ -1,15 +1,26 @@
-<nav id="navbar-main"
-  class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
+<nav
+  id="navbar-main"
+  class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned"
+>
   <div class="container">
     <a class="navbar-brand mr-lg-5" [routerLink]="['/home']">
-      <!-- <img src="./assets/img/brand/argon-white.png" /> -->
-      <span class="logo">Doc <span>Care</span></span>
+      <img src="./assets/img/first-aid-kit.png" />
+      <span class="logo">docCare</span>
     </a>
-    <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
-      [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="isCollapsed = !isCollapsed"
+      [attr.aria-expanded]="!isCollapsed"
+      aria-controls="navbar_global"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed">
+    <div
+      class="navbar-collapse collapse"
+      id="navbar_global"
+      [ngbCollapse]="isCollapsed"
+    >
       <div class="navbar-collapse-header">
         <div class="row">
           <div class="col-6 collapse-brand">
@@ -18,8 +29,13 @@
             </a>
           </div>
           <div class="col-6 collapse-close">
-            <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed"
-              [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+            <button
+              type="button"
+              class="navbar-toggler"
+              (click)="isCollapsed = !isCollapsed"
+              [attr.aria-expanded]="!isCollapsed"
+              aria-controls="navbar_global"
+            >
               <span></span>
               <span></span>
             </button>
@@ -34,9 +50,14 @@
           </a>
           <div class="dropdown-menu-xl dropdown-menu">
             <div class="dropdown-menu-inner">
-              <a routerLinkActive="active" [routerLink]="['documentation/tutorial']"
-                class="media d-flex align-items-center">
-                <div class="icon icon-shape bg-gradient-primary rounded-circle text-white">
+              <a
+                routerLinkActive="active"
+                [routerLink]="['documentation/tutorial']"
+                class="media d-flex align-items-center"
+              >
+                <div
+                  class="icon icon-shape bg-gradient-primary rounded-circle text-white"
+                >
                   <i class="ni ni-spaceship"></i>
                 </div>
                 <div class="media-body ml-3">
@@ -47,9 +68,14 @@
                   </p>
                 </div>
               </a>
-              <a routerLinkActive="active" [routerLink]="['documentation/colors']"
-                class="media d-flex align-items-center">
-                <div class="icon icon-shape bg-gradient-success rounded-circle text-white">
+              <a
+                routerLinkActive="active"
+                [routerLink]="['documentation/colors']"
+                class="media d-flex align-items-center"
+              >
+                <div
+                  class="icon icon-shape bg-gradient-success rounded-circle text-white"
+                >
                   <i class="ni ni-palette"></i>
                 </div>
                 <div class="media-body ml-3">
@@ -60,9 +86,14 @@
                   </p>
                 </div>
               </a>
-              <a routerLinkActive="active" [routerLink]="['documentation/alerts']"
-                class="media d-flex align-items-center">
-                <div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
+              <a
+                routerLinkActive="active"
+                [routerLink]="['documentation/alerts']"
+                class="media d-flex align-items-center"
+              >
+                <div
+                  class="icon icon-shape bg-gradient-warning rounded-circle text-white"
+                >
                   <i class="ni ni-ui-04"></i>
                 </div>
                 <div class="media-body ml-3">
@@ -83,7 +114,9 @@
           </a>
           <div class="dropdown-menu">
             <a [routerLink]="['/landing']" class="dropdown-item">Landing</a>
-            <a [routerLink]="['/user-profile']" class="dropdown-item">Profile</a>
+            <a [routerLink]="['/user-profile']" class="dropdown-item"
+              >Profile</a
+            >
             <a [routerLink]="['/login']" class="dropdown-item">Login</a>
             <a [routerLink]="['/register']" class="dropdown-item">Register</a>
           </div>
@@ -91,14 +124,20 @@
       </ul>
       <ul class="navbar-nav align-items-lg-center ml-lg-auto">
         <li class="nav-item d-none d-lg-block ml-lg-4">
-          <a href="https://www.creative-tim.com/product/argon-design-system-angular?ref=adsa-navbar" target="_blank"
-            class="btn">
+          <a
+            href="https://www.creative-tim.com/product/argon-design-system-angular?ref=adsa-navbar"
+            target="_blank"
+            class="btn"
+          >
             <span class="nav-link-inner--text">login</span>
           </a>
         </li>
         <li class="nav-item d-none d-lg-block ml-lg-4">
-          <a href="https://www.creative-tim.com/product/argon-design-system-angular?ref=adsa-navbar" target="_blank"
-            class="btn">
+          <a
+            href="https://www.creative-tim.com/product/argon-design-system-angular?ref=adsa-navbar"
+            target="_blank"
+            class="btn"
+          >
             <span class="nav-link-inner--text">signup</span>
           </a>
         </li>
