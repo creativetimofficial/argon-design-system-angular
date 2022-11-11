@@ -164,77 +164,40 @@
         <div class="col-lg-12 slider-container">
           <div class="slides-container">
             <div #widgetsContent class="slides">
-              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <div class="px-4">
-                  <img src="./assets/img/hospital/physician.svg" alt="Physician" class="img-responsive" />
-                  <h5 class="text-center">
-                    <span>Physician</span>
-                  </h5>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <div class="px-4">
-                  <img src="./assets/img/hospital/gynaecologist.svg" alt="Gynaecologist" class="img-responsive" />
-                  <h5 class="text-center">
-                    <span>Gynaecologist</span>
-                  </h5>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <div class="px-4">
-                  <img src="./assets/img/hospital/pediatrician.svg" alt="Pediatrician" class="img-responsive" />
-                  <h5 class="text-center">
-                    <span>Pediatrician</span>
-                  </h5>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <div class="px-4">
-                  <img src="./assets/img/hospital/orthopedician.svg" alt="Orthopedician" class="img-responsive" />
-                  <h5 class="title text-center">
-                    <span>Orthopedician</span>
-                  </h5>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <div class="px-4">
-                  <img src="./assets/img/hospital/eye-specialist.svg" alt="Eye Specialist" class="img-responsive" />
-                  <h5 class="text-center">
-                    <span>Eye Specialist</span>
-                  </h5>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <div class="px-4">
-                  <img src="./assets/img/hospital/physiotherapist.svg" alt="Physiotherapist" class="img-responsive" />
-                  <h5 class="title text-center">
-                    <span>Physiotherapist</span>
-                  </h5>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <div class="px-4">
-                  <img src="./assets/img/hospital/dentist.svg" alt="Dentist" class="img-responsive" />
-                  <h5 class="text-center">
-                    <span>Dentist</span>
-                  </h5>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <div class="px-4">
-                  <img src="./assets/img/hospital/more.svg" alt="More" class="img-responsive" />
-                  <h5 class="text-center">
-                    <span>View all</span>
-                  </h5>
+              <div *ngFor="let spl of specialitiesImgs">
+                <div
+                  class="col-md-6 col-lg-3 mb-5 mb-lg-0 text-center"
+                  style="display: flex"
+                >
+                  <div class="px-2">
+                    <img
+                      src="{{ spl.img }}"
+                      alt="{{ spl.title }}"
+                      class="img-center img-responsive"
+                    />
+                    <div class="pt-4">
+                      <h5 class="title">
+                        <span class="d-block mb-1 text-center">{{
+                          spl.title
+                        }}</span>
+                      </h5>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="controls">
-            <button class="btn btn-neutral leftLst buttons-lft-rgt" (click)="scrollLeft()">
+            <button
+              class="btn btn-neutral leftLst buttons-lft-rgt"
+              (click)="scrollLeft()"
+            >
               <i class="fa fa-angle-left" style="font-size: 30px"></i>
             </button>
-            <button class="btn btn-neutral rightLst buttons-lft-rgt" (click)="scrollRight()">
+            <button
+              class="btn btn-neutral rightLst buttons-lft-rgt"
+              (click)="scrollRight()"
+            >
               <i class="fa fa-angle-right" style="font-size: 30px"></i>
             </button>
           </div>
@@ -254,203 +217,38 @@
         <div class="col-lg-12 slider-container">
           <div class="slides-container">
             <div #widgetsSymptoms class="slides">
-              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <div class="px-4">
-                  <img src="./assets/img/hospital/Acidity.png"
-                    class="rounded img-center img-fluid shadow shadow-lg--hover" style="width: 200px" />
-                  <div class="pt-4 text-center">
-                    <h5 class="title">
-                      <span class="d-block mb-1">Acidity</span>
-                    </h5>
+              <div *ngFor="let sym of symptomsImgs">
+                <div
+                  class="col-md-6 col-lg-3 mb-5 mb-lg-0 text-center"
+                  style="display: flex"
+                >
+                  <div class="px-2">
+                    <img
+                      src="{{ sym.img }}"
+                      class="rounded img-center shadow shadow-lg--hover"
+                      style="width: 175px"
+                    />
+                    <div class="pt-4 text-center">
+                      <h5 class="title">
+                        <span class="d-block mb-1">{{ sym.title }}</span>
+                      </h5>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <div class="px-4">
-                  <img src="./assets/img/hospital/Acne-01.png" alt="Circle image"
-                    class="img-fluid rounded shadow shadow-lg--hover" style="width: 150px" />
-                  <div class="pt-4 text-center">
-                    <h5 class="title">
-                      <span class="d-block mb-1">Acne</span>
-                    </h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <div class="px-4">
-                  <img src="./assets/img/hospital/Anxiety.png" alt="Raised image"
-                    class="img-fluid rounded shadow shadow-lg--hover" style="width: 150px" />
-                  <div class="pt-4 text-center">
-                    <h5 class="title">
-                      <span class="d-block mb-1">Anxiety</span>
-                    </h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <div class="px-4">
-                  <img src="./assets/img/hospital/Back-Pain.png" alt="Raised circle image"
-                    class="img-fluid rounded shadow shadow-lg--hover" style="width: 150px" />
-                  <div class="pt-4 text-center">
-                    <h5 class="title">
-                      <span class="d-block mb-1">Back-Pain</span>
-                    </h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <div class="px-4">
-                  <img src="./assets/img/hospital/Constipation.png" alt="Raised circle image"
-                    class="img-fluid rounded shadow shadow-lg--hover" style="width: 150px" />
-                  <div class="pt-4 text-center">
-                    <h5 class="title">
-                      <span class="d-block mb-1">Constipation</span>
-                    </h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <div class="px-4">
-                  <img src="./assets/img/hospital/Cough-01.png" alt="Raised circle image"
-                    class="img-fluid rounded shadow shadow-lg--hover img-center" style="width: 150px" />
-                  <div class="pt-4 text-center">
-                    <h5 class="title">
-                      <span class="d-block mb-1">Cough</span>
-                    </h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <div class="px-4">
-                  <img src="./assets/img/hospital/Depression-01.png" alt="Raised circle image"
-                    class="img-fluid rounded shadow shadow-lg--hover" style="width: 150px" />
-                  <div class="pt-4 text-center">
-                    <h5 class="title">
-                      <span class="d-block mb-1">Depression</span>
-                    </h5>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <div class="px-4">
-                  <img src="./assets/img/hospital/Erectile-Dysfunction-01.png" alt="Raised circle image"
-                    class="img-fluid rounded shadow shadow-lg--hover" style="width: 150px" />
-                  <div class="pt-4 text-center">
-                    <h5 class="title">
-                      <span class="d-block mb-1">Erectile-Dysfunction</span>
-                    </h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <div class="px-4">
-                  <img src="./assets/img/hospital/Fever-01.png" alt="Raised circle image"
-                    class="img-fluid rounded shadow shadow-lg--hover" style="width: 150px" />
-                  <h5 class="text-center">
-                    <span>Fever</span>
-                  </h5>
-                </div>
-              </div>
-
-              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <div class="px-4">
-                  <img src="./assets/img/hospital/Hairfall-01.png" alt="Raised circle image"
-                    class="img-fluid rounded shadow shadow-lg--hover" style="width: 150px" />
-                  <h5 class="text-center">
-                    <span>Hairfall</span>
-                  </h5>
-                </div>
-              </div>
-
-              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <div class="px-4">
-                  <img src="./assets/img/hospital/Headache.png" alt="Raised circle image"
-                    class="img-fluid rounded shadow shadow-lg--hover" style="width: 150px" />
-                  <h5 class="text-center">
-                    <span>Headache</span>
-                  </h5>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <div class="px-4">
-                  <img src="./assets/img/hospital/Period-Issue-01.png" alt="Raised circle image"
-                    class="img-fluid rounded shadow shadow-lg--hover" style="width: 150px" />
-                  <h5 class="text-center">
-                    <span>Period-Issue</span>
-                  </h5>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <div class="px-4">
-                  <img src="./assets/img/hospital/Piles.png" alt="Raised circle image"
-                    class="img-fluid rounded shadow shadow-lg--hover" style="width: 150px" />
-                  <h5 class="text-center">
-                    <span>Piles</span>
-                  </h5>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <div class="px-4">
-                  <img src="./assets/img/hospital/Pregnancy.png" alt="Raised circle image"
-                    class="img-fluid rounded shadow shadow-lg--hover" style="width: 150px" />
-                  <h5 class="text-center">
-                    <span>Pregnancy</span>
-                  </h5>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <div class="px-4">
-                  <img src="./assets/img/hospital/Stomach-ache.png" alt="Raised circle image"
-                    class="img-fluid rounded shadow shadow-lg--hover" style="width: 150px" />
-                  <h5 class="text-center">
-                    <span>Stomach-ache</span>
-                  </h5>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <div class="px-4">
-                  <img src="./assets/img/hospital/Throat-Pain.png" alt="Raised circle image"
-                    class="img-fluid rounded shadow shadow-lg--hover" style="width: 150px" />
-                  <h5 class="text-center">
-                    <span>Throat-Pain</span>
-                  </h5>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <div class="px-4">
-                  <img src="./assets/img/hospital/Diabetes-01.png" alt="Raised circle image"
-                    class="img-fluid rounded shadow shadow-lg--hover" style="width: 150px" />
-                  <h5 class="text-center">
-                    <span>Diabetes</span>
-                  </h5>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <div class="px-4">
-                  <img src="./assets/img/hospital/UTI.png" alt="Raised circle image"
-                    class="img-fluid rounded shadow shadow-lg--hover" style="width: 150px" />
-                  <h5 class="text-center">
-                    <span>UTI</span>
-                  </h5>
-                </div>
-              </div>
-              <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <div class="px-4">
-                  <img src="./assets/img/hospital/Weight-Loss-01.png" alt="Raised circle image"
-                    class="img-fluid rounded shadow shadow-lg--hover" style="width: 150px" />
-                  <h5 class="text-center">
-                    <span>Weight-Loss-01</span>
-                  </h5>
                 </div>
               </div>
             </div>
           </div>
           <div class="controls">
-            <button class="btn btn-neutral leftLst buttons-lft-rgt" (click)="scrollLeftSymp()">
+            <button
+              class="btn btn-neutral leftLst buttons-lft-rgt"
+              (click)="scrollLeftSymp()"
+            >
               <i class="fa fa-angle-left" style="font-size: 30px"></i>
             </button>
-            <button class="btn btn-neutral rightLst buttons-lft-rgt" (click)="scrollRightSymp()">
+            <button
+              class="btn btn-neutral rightLst buttons-lft-rgt"
+              (click)="scrollRightSymp()"
+            >
               <i class="fa fa-angle-right" style="font-size: 30px"></i>
             </button>
           </div>
@@ -463,53 +261,48 @@
       <!-- <h2>Start a Self-Check</h2> -->
       <!-- <h4><span>Answer a few questions. Know your health risks.</span></h4> -->
       <div class="align_symptoms">
-        <h2>Search by Symptoms</h2>
+        <h2>Search by Diagnosis</h2>
         <button class="button">Search</button>
       </div>
       <div class="row mt-5">
-        <div class="col-md-6 col-lg-2 mb-5 mb-lg-0">
-          <div class="px-4">
-            <img src="./assets/img/hospital/self-check-Migraine.png" alt="Migraine" class="img-responsive"
-              style="width: 150px" />
-            <h5 class="text-center">
-              <span>Migraine</span>
-            </h5>
+        <div class="col-lg-12 slider-container">
+          <div class="slides-container">
+            <div #widgetsDiagnosis class="slides">
+              <div *ngFor="let daigno of diagnosisImgs">
+                <div
+                  class="col-md-6 col-lg-3 mb-5 mb-lg-0 text-center"
+                  style="display: flex"
+                >
+                  <div class="px-2">
+                    <img
+                      src="{{ daigno.img }}"
+                      alt="{{ daigno.title }}"
+                      class="img-center img-responsive"
+                      style="width: 170px"
+                    />
+                    <div class="pt-4 text-center">
+                      <h5 class="title">
+                        <span class="d-block mb-1">{{ daigno.title }}</span>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-2 mb-5 mb-lg-0">
-          <div class="px-4">
-            <img src="./assets/img/hospital/selfcheck-Diabetes.png" alt="Diabetes" class="img-responsive"
-              style="width: 150px" />
-            <h5 class="text-center">
-              <span>Diabetes</span>
-            </h5>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-2 mb-5 mb-lg-0">
-          <div class="px-4">
-            <img src="./assets/img/hospital/selfcheck-Thyroid.png" alt="Thyroid" class="img-responsive"
-              style="width: 150px" />
-            <h5 class="text-center">
-              <span>Thyroid</span>
-            </h5>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-2 mb-5 mb-lg-0">
-          <div class="px-4">
-            <img src="./assets/img/hospital/selfcheck-Heart-Health.png" alt="Heart Health" class="img-responsive"
-              style="width: 150px" />
-            <h5 class="title text-center">
-              <span>Heart Health</span>
-            </h5>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-2 mb-5 mb-lg-0">
-          <div class="px-4">
-            <img src="./assets/img/hospital/selfcheck-COVID.png" alt="COVID-19" class="img-responsive"
-              style="width: 150px" />
-            <h5 class="text-center">
-              <span>COVID-19</span>
-            </h5>
+          <div class="controls">
+            <button
+              class="btn btn-neutral leftLst buttons-lft-rgt"
+              (click)="scrollLeftDiagno()"
+            >
+              <i class="fa fa-angle-left" style="font-size: 30px"></i>
+            </button>
+            <button
+              class="btn btn-neutral rightLst buttons-lft-rgt"
+              (click)="scrollRightDiagno()"
+            >
+              <i class="fa fa-angle-right" style="font-size: 30px"></i>
+            </button>
           </div>
         </div>
       </div>
@@ -519,11 +312,16 @@
     <div class="container">
       <div class="row row-grid align-items-center">
         <div class="col-md-6 order-md-2">
-          <img src="./assets/img/theme/promo-1.png" class="img-fluid floating" />
+          <img
+            src="./assets/img/theme/promo-1.png"
+            class="img-fluid floating"
+          />
         </div>
         <div class="col-md-6 order-md-1">
           <div class="pr-md-5">
-            <div class="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
+            <div
+              class="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5"
+            >
               <i class="ni ni-settings-gear-65"></i>
             </div>
             <h3>Awesome features</h3>
@@ -579,11 +377,23 @@
       <div class="row row-grid align-items-center">
         <div class="col-md-6">
           <div class="card bg-default shadow border-0">
-            <img src="./assets/img/theme/img-1-1200x1000.jpg" class="card-img-top" />
+            <img
+              src="./assets/img/theme/img-1-1200x1000.jpg"
+              class="card-img-top"
+            />
             <blockquote class="card-blockquote">
-              <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="svg-bg">
+              <svg
+                preserveAspectRatio="none"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 583 95"
+                class="svg-bg"
+              >
                 <polygon points="0,52 583,95 0,95" class="fill-default" />
-                <polygon points="0,42 583,95 683,0 0,95" opacity=".2" class="fill-default" />
+                <polygon
+                  points="0,42 583,95 683,0 0,95"
+                  opacity=".2"
+                  class="fill-default"
+                />
               </svg>
               <h4 class="display-3 font-weight-bold text-white">
                 Design System
@@ -598,7 +408,9 @@
         </div>
         <div class="col-md-6">
           <div class="pl-md-5">
-            <div class="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle mb-5">
+            <div
+              class="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle mb-5"
+            >
               <i class="ni ni-settings"></i>
             </div>
             <h3>Our customers</h3>
@@ -614,8 +426,11 @@
               The kit comes with three pre-built pages to help you get started
               faster. You can change the text and images and you're good to go.
             </p>
-            <a href="javascript:void(0)" class="font-weight-bold text-warning mt-5">A beautiful UI Kit for impactful
-              websites</a>
+            <a
+              href="javascript:void(0)"
+              class="font-weight-bold text-warning mt-5"
+              >A beautiful UI Kit for impactful websites</a
+            >
           </div>
         </div>
       </div>
@@ -626,13 +441,18 @@
       <div class="row row-grid align-items-center">
         <div class="col-md-6 order-lg-2 ml-lg-auto">
           <div class="position-relative pl-md-5">
-            <img src="./assets/img/ill/ill-2.svg" class="img-center img-fluid" />
+            <img
+              src="./assets/img/ill/ill-2.svg"
+              class="img-center img-fluid"
+            />
           </div>
         </div>
         <div class="col-lg-6 order-lg-1">
           <div class="d-flex px-3">
             <div>
-              <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
+              <div
+                class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary"
+              >
                 <i class="ni ni-building text-primary"></i>
               </div>
             </div>
@@ -649,7 +469,9 @@
             <div class="card-body">
               <div class="d-flex px-3">
                 <div>
-                  <div class="icon icon-shape bg-gradient-success rounded-circle text-white">
+                  <div
+                    class="icon icon-shape bg-gradient-success rounded-circle text-white"
+                  >
                     <i class="ni ni-satisfied"></i>
                   </div>
                 </div>
@@ -660,7 +482,9 @@
                     sea-ice then thaws every summer, and that process will
                     continue whatever.
                   </p>
-                  <a href="javascript:void(0)" class="text-success">Learn more</a>
+                  <a href="javascript:void(0)" class="text-success"
+                    >Learn more</a
+                  >
                 </div>
               </div>
             </div>
@@ -669,7 +493,9 @@
             <div class="card-body">
               <div class="d-flex px-3">
                 <div>
-                  <div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
+                  <div
+                    class="icon icon-shape bg-gradient-warning rounded-circle text-white"
+                  >
                     <i class="ni ni-active-40"></i>
                   </div>
                 </div>
@@ -680,7 +506,9 @@
                     sea-ice then thaws every summer, and that process will
                     continue whatever.
                   </p>
-                  <a href="javascript:void(0)" class="text-warning">Learn more</a>
+                  <a href="javascript:void(0)" class="text-warning"
+                    >Learn more</a
+                  >
                 </div>
               </div>
             </div>
@@ -690,8 +518,14 @@
     </div>
     <!-- SVG separator -->
     <div class="separator separator-bottom separator-skew zindex-100">
-      <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
-        xmlns="http://www.w3.org/2000/svg">
+      <svg
+        x="0"
+        y="0"
+        viewBox="0 0 2560 100"
+        preserveAspectRatio="none"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
       </svg>
     </div>
@@ -711,21 +545,33 @@
       <div class="row">
         <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
           <div class="px-4">
-            <img src="./assets/img/theme/team-1-800x800.jpg"
-              class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px" />
+            <img
+              src="./assets/img/theme/team-1-800x800.jpg"
+              class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
+              style="width: 200px"
+            />
             <div class="pt-4 text-center">
               <h5 class="title">
                 <span class="d-block mb-1">Ryan Tompson</span>
                 <small class="h6 text-muted">Web Developer</small>
               </h5>
               <div class="mt-3">
-                <a href="javascript:void(0)" class="btn btn-warning btn-icon-only rounded-circle">
+                <a
+                  href="javascript:void(0)"
+                  class="btn btn-warning btn-icon-only rounded-circle"
+                >
                   <i class="fa fa-twitter"></i>
                 </a>
-                <a href="javascript:void(0)" class="btn btn-warning btn-icon-only rounded-circle">
+                <a
+                  href="javascript:void(0)"
+                  class="btn btn-warning btn-icon-only rounded-circle"
+                >
                   <i class="fa fa-facebook"></i>
                 </a>
-                <a href="javascript:void(0)" class="btn btn-warning btn-icon-only rounded-circle">
+                <a
+                  href="javascript:void(0)"
+                  class="btn btn-warning btn-icon-only rounded-circle"
+                >
                   <i class="fa fa-dribbble"></i>
                 </a>
               </div>
@@ -734,21 +580,33 @@
         </div>
         <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
           <div class="px-4">
-            <img src="./assets/img/theme/team-2-800x800.jpg"
-              class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px" />
+            <img
+              src="./assets/img/theme/team-2-800x800.jpg"
+              class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
+              style="width: 200px"
+            />
             <div class="pt-4 text-center">
               <h5 class="title">
                 <span class="d-block mb-1">Romina Hadid</span>
                 <small class="h6 text-muted">Marketing Strategist</small>
               </h5>
               <div class="mt-3">
-                <a href="javascript:void(0)" class="btn btn-primary btn-icon-only rounded-circle">
+                <a
+                  href="javascript:void(0)"
+                  class="btn btn-primary btn-icon-only rounded-circle"
+                >
                   <i class="fa fa-twitter"></i>
                 </a>
-                <a href="javascript:void(0)" class="btn btn-primary btn-icon-only rounded-circle">
+                <a
+                  href="javascript:void(0)"
+                  class="btn btn-primary btn-icon-only rounded-circle"
+                >
                   <i class="fa fa-facebook"></i>
                 </a>
-                <a href="javascript:void(0)" class="btn btn-primary btn-icon-only rounded-circle">
+                <a
+                  href="javascript:void(0)"
+                  class="btn btn-primary btn-icon-only rounded-circle"
+                >
                   <i class="fa fa-dribbble"></i>
                 </a>
               </div>
@@ -757,21 +615,33 @@
         </div>
         <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
           <div class="px-4">
-            <img src="./assets/img/theme/team-3-800x800.jpg"
-              class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px" />
+            <img
+              src="./assets/img/theme/team-3-800x800.jpg"
+              class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
+              style="width: 200px"
+            />
             <div class="pt-4 text-center">
               <h5 class="title">
                 <span class="d-block mb-1">Alexander Smith</span>
                 <small class="h6 text-muted">UI/UX Designer</small>
               </h5>
               <div class="mt-3">
-                <a href="javascript:void(0)" class="btn btn-info btn-icon-only rounded-circle">
+                <a
+                  href="javascript:void(0)"
+                  class="btn btn-info btn-icon-only rounded-circle"
+                >
                   <i class="fa fa-twitter"></i>
                 </a>
-                <a href="javascript:void(0)" class="btn btn-info btn-icon-only rounded-circle">
+                <a
+                  href="javascript:void(0)"
+                  class="btn btn-info btn-icon-only rounded-circle"
+                >
                   <i class="fa fa-facebook"></i>
                 </a>
-                <a href="javascript:void(0)" class="btn btn-info btn-icon-only rounded-circle">
+                <a
+                  href="javascript:void(0)"
+                  class="btn btn-info btn-icon-only rounded-circle"
+                >
                   <i class="fa fa-dribbble"></i>
                 </a>
               </div>
@@ -780,21 +650,33 @@
         </div>
         <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
           <div class="px-4">
-            <img src="./assets/img/theme/team-4-800x800.jpg"
-              class="rounded-circle img-center img-fluid shadow shadow-lg--hover" style="width: 200px" />
+            <img
+              src="./assets/img/theme/team-4-800x800.jpg"
+              class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
+              style="width: 200px"
+            />
             <div class="pt-4 text-center">
               <h5 class="title">
                 <span class="d-block mb-1">John Doe</span>
                 <small class="h6 text-muted">Founder and CEO</small>
               </h5>
               <div class="mt-3">
-                <a href="javascript:void(0)" class="btn btn-success btn-icon-only rounded-circle">
+                <a
+                  href="javascript:void(0)"
+                  class="btn btn-success btn-icon-only rounded-circle"
+                >
                   <i class="fa fa-twitter"></i>
                 </a>
-                <a href="javascript:void(0)" class="btn btn-success btn-icon-only rounded-circle">
+                <a
+                  href="javascript:void(0)"
+                  class="btn btn-success btn-icon-only rounded-circle"
+                >
                   <i class="fa fa-facebook"></i>
                 </a>
-                <a href="javascript:void(0)" class="btn btn-success btn-icon-only rounded-circle">
+                <a
+                  href="javascript:void(0)"
+                  class="btn btn-success btn-icon-only rounded-circle"
+                >
                   <i class="fa fa-dribbble"></i>
                 </a>
               </div>
@@ -820,8 +702,11 @@
               </p>
             </div>
             <div class="col-lg-3 ml-lg-auto">
-              <a href="https://www.creative-tim.com/product/argon-design-system-angular?ref=adsa-landing-page"
-                class="btn btn-lg btn-block btn-white">Download Angular</a>
+              <a
+                href="https://www.creative-tim.com/product/argon-design-system-angular?ref=adsa-landing-page"
+                class="btn btn-lg btn-block btn-white"
+                >Download Angular</a
+              >
             </div>
           </div>
         </div>
@@ -842,7 +727,9 @@
       </div>
       <div class="row row-grid mt-5">
         <div class="col-lg-4">
-          <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
+          <div
+            class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary"
+          >
             <i class="ni ni-settings text-primary"></i>
           </div>
           <h5 class="text-white mt-3">Building tools</h5>
@@ -852,7 +739,9 @@
           </p>
         </div>
         <div class="col-lg-4">
-          <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
+          <div
+            class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary"
+          >
             <i class="ni ni-ruler-pencil text-primary"></i>
           </div>
           <h5 class="text-white mt-3">Grow your market</h5>
@@ -862,7 +751,9 @@
           </p>
         </div>
         <div class="col-lg-4">
-          <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary">
+          <div
+            class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary"
+          >
             <i class="ni ni-atom text-primary"></i>
           </div>
           <h5 class="text-white mt-3">Launch time</h5>
@@ -875,8 +766,14 @@
     </div>
     <!-- SVG separator -->
     <div class="separator separator-bottom separator-skew zindex-100">
-      <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
-        xmlns="http://www.w3.org/2000/svg">
+      <svg
+        x="0"
+        y="0"
+        viewBox="0 0 2560 100"
+        preserveAspectRatio="none"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
       </svg>
     </div>
@@ -889,30 +786,55 @@
             <div class="card-body p-lg-5">
               <h4 class="mb-1">Want to work with us?</h4>
               <p class="mt-0">Your project is very important to us.</p>
-              <div class="form-group mt-5" [ngClass]="{ focused: focus === true }">
+              <div
+                class="form-group mt-5"
+                [ngClass]="{ focused: focus === true }"
+              >
                 <div class="input-group input-group-alternative">
                   <div class="input-group-prepend">
-                    <span class="input-group-text"><i class="ni ni-user-run"></i></span>
+                    <span class="input-group-text"
+                      ><i class="ni ni-user-run"></i
+                    ></span>
                   </div>
-                  <input class="form-control" placeholder="Your name" type="text" (focus)="focus = true"
-                    (blur)="focus = false" />
+                  <input
+                    class="form-control"
+                    placeholder="Your name"
+                    type="text"
+                    (focus)="focus = true"
+                    (blur)="focus = false"
+                  />
                 </div>
               </div>
               <div class="form-group" [ngClass]="{ focused: focus1 === true }">
                 <div class="input-group input-group-alternative">
                   <div class="input-group-prepend">
-                    <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                    <span class="input-group-text"
+                      ><i class="ni ni-email-83"></i
+                    ></span>
                   </div>
-                  <input class="form-control" placeholder="Email address" type="email" (focus)="focus1 = true"
-                    (blur)="focus1 = false" />
+                  <input
+                    class="form-control"
+                    placeholder="Email address"
+                    type="email"
+                    (focus)="focus1 = true"
+                    (blur)="focus1 = false"
+                  />
                 </div>
               </div>
               <div class="form-group mb-4">
-                <textarea class="form-control form-control-alternative" name="name" rows="4" cols="80"
-                  placeholder="Type a message..."></textarea>
+                <textarea
+                  class="form-control form-control-alternative"
+                  name="name"
+                  rows="4"
+                  cols="80"
+                  placeholder="Type a message..."
+                ></textarea>
               </div>
               <div>
-                <button type="button" class="btn btn-default btn-round btn-block btn-lg">
+                <button
+                  type="button"
+                  class="btn btn-default btn-round btn-block btn-lg"
+                >
                   Send Message
                 </button>
               </div>
@@ -937,53 +859,91 @@
             look!
           </p>
           <div class="btn-wrapper">
-            <a href="https://www.creative-tim.com/product/argon-design-system-angular?ref=adsa-landing-page"
-              class="btn btn-primary mb-3 mb-sm-0">Download Angular</a>
+            <a
+              href="https://www.creative-tim.com/product/argon-design-system-angular?ref=adsa-landing-page"
+              class="btn btn-primary mb-3 mb-sm-0"
+              >Download Angular</a
+            >
           </div>
           <div class="text-center">
             <h4 class="display-4 mb-5 mt-5">Available on these technologies</h4>
             <div class="row justify-content-center">
               <div class="col-lg-2 col-4">
-                <a href="https://www.creative-tim.com/product/argon-design-system?ref=adsa-landing-page" target="_blank"
-                  placement="top" ngbTooltip="Bootstrap 4 - Most popular front-end component library">
+                <a
+                  href="https://www.creative-tim.com/product/argon-design-system?ref=adsa-landing-page"
+                  target="_blank"
+                  placement="top"
+                  ngbTooltip="Bootstrap 4 - Most popular front-end component library"
+                >
                   <img
                     src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/bootstrap.jpg"
-                    class="img-fluid" />
+                    class="img-fluid"
+                  />
                 </a>
               </div>
               <div class="col-lg-2 col-4">
-                <a href="https://www.creative-tim.com/product/argon-design-system-angular?ref=adsa-landing-page"
-                  target="_blank" placement="top" ngbTooltip="Angular - One framework. Mobile &amp; desktop">
-                  <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/angular.jpg"
-                    class="img-fluid" />
+                <a
+                  href="https://www.creative-tim.com/product/argon-design-system-angular?ref=adsa-landing-page"
+                  target="_blank"
+                  placement="top"
+                  ngbTooltip="Angular - One framework. Mobile &amp; desktop"
+                >
+                  <img
+                    src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/angular.jpg"
+                    class="img-fluid"
+                  />
                 </a>
               </div>
               <div class="col-lg-2 col-4">
-                <a href="https://www.creative-tim.com/product/vue-argon-design-system?ref=adsa-landing-page"
-                  target="_blank" placement="top" ngbTooltip="Vue.js - The progressive javascript framework">
-                  <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/vue.jpg"
-                    class="img-fluid" />
+                <a
+                  href="https://www.creative-tim.com/product/vue-argon-design-system?ref=adsa-landing-page"
+                  target="_blank"
+                  placement="top"
+                  ngbTooltip="Vue.js - The progressive javascript framework"
+                >
+                  <img
+                    src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/vue.jpg"
+                    class="img-fluid"
+                  />
                 </a>
               </div>
               <div class="col-lg-2 col-4">
-                <a href="https://www.sketchapp.com/?ref=creative-tim" target="_blank" placement="top"
-                  ngbTooltip="[Coming Soon] Sketch - Digital design toolkit">
-                  <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/sketch.jpg"
-                    class="img-fluid opacity-3" />
+                <a
+                  href="https://www.sketchapp.com/?ref=creative-tim"
+                  target="_blank"
+                  placement="top"
+                  ngbTooltip="[Coming Soon] Sketch - Digital design toolkit"
+                >
+                  <img
+                    src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/sketch.jpg"
+                    class="img-fluid opacity-3"
+                  />
                 </a>
               </div>
               <div class="col-lg-2 col-4">
-                <a href="https://www.adobe.com/products/photoshop.html?ref=creative-tim" target="_blank" placement="top"
-                  ngbTooltip="[Coming Soon] Adobe Photoshop - Software for digital images manipulation">
-                  <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/ps.jpg"
-                    class="img-fluid opacity-3" />
+                <a
+                  href="https://www.adobe.com/products/photoshop.html?ref=creative-tim"
+                  target="_blank"
+                  placement="top"
+                  ngbTooltip="[Coming Soon] Adobe Photoshop - Software for digital images manipulation"
+                >
+                  <img
+                    src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/ps.jpg"
+                    class="img-fluid opacity-3"
+                  />
                 </a>
               </div>
               <div class="col-lg-2 col-4">
-                <a href="https://reactjs.org/?ref=creative-tim" target="_blank" placement="top"
-                  ngbTooltip="[Coming Soon] React - A JavaScript library for building user interfaces">
-                  <img src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/react.jpg"
-                    class="img-fluid opacity-3" />
+                <a
+                  href="https://reactjs.org/?ref=creative-tim"
+                  target="_blank"
+                  placement="top"
+                  ngbTooltip="[Coming Soon] React - A JavaScript library for building user interfaces"
+                >
+                  <img
+                    src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/react.jpg"
+                    class="img-fluid opacity-3"
+                  />
                 </a>
               </div>
             </div>
