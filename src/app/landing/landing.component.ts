@@ -8,6 +8,26 @@ import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
 export class LandingComponent implements OnInit {
   @ViewChild("widgetsContent") widgetsContent: ElementRef;
   @ViewChild("widgetsSymptoms") widgetsSymptoms: ElementRef;
+  @ViewChild("widgetsDiagnosis") widgetsDiagnosis: ElementRef;
+
+  specialitiesImgs = [
+    { img: './assets/img/hospital/physician.svg', title: 'Physician' },
+    { img: './assets/img/hospital/gynaecologist.svg', title: 'Gynaecologist'},
+    { img: './assets/img/hospital/pediatrician.svg', title: 'Pediatrician'},
+    { img: './assets/img/hospital/orthopedician.svg', title: 'Orthopedician'},
+    { img: './assets/img/hospital/eye-specialist.svg', title: 'Eye Specialist'},
+    { img: './assets/img/hospital/physiotherapist.svg', title: 'physiotherapist'},
+    { img: './assets/img/hospital/dentist.svg', title: 'Dentist'},
+    { img: './assets/img/hospital/more.svg', title: 'View all'},
+  ];
+
+  diagnosisImgs = [
+    { img: './assets/img/hospital/self-check-Migraine.png', title: 'Migraine' },
+    { img: './assets/img/hospital/selfcheck-Diabetes.png', title: 'Diabetes'},
+    { img: './assets/img/hospital/selfcheck-Thyroid.png', title: 'Thyroid'},
+    { img: './assets/img/hospital/selfcheck-Heart-Health.png', title: 'Heart Health'},
+    { img: './assets/img/hospital/selfcheck-COVID.png', title: 'COVID-19'},
+  ];
 
   focus: any;
   focus1: any;
@@ -15,11 +35,11 @@ export class LandingComponent implements OnInit {
   constructor() {}
 
   scrollLeft() {
-    this.widgetsContent.nativeElement.scrollLeft -= 220;
+    this.widgetsContent.nativeElement.scrollLeft -= 230;
   }
 
   scrollRight() {
-    this.widgetsContent.nativeElement.scrollLeft += 220;
+    this.widgetsContent.nativeElement.scrollLeft += 230;
   }
   scrollLeftSymp() {
     this.widgetsSymptoms.nativeElement.scrollLeft -= 220;
@@ -27,6 +47,14 @@ export class LandingComponent implements OnInit {
 
   scrollRightSymp() {
     this.widgetsSymptoms.nativeElement.scrollLeft += 220;
+  }
+
+  scrollLeftDiagno() {
+    this.widgetsDiagnosis.nativeElement.scrollLeft -= 220;
+  }
+
+  scrollRightDiagno() {
+    this.widgetsDiagnosis.nativeElement.scrollLeft += 220;
   }
 
   ngOnInit() {
