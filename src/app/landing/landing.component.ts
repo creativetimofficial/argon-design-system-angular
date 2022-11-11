@@ -41,7 +41,7 @@ export class LandingComponent implements OnInit {
     { img: "./assets/img/hospital/Acidity.png", title: "Acidity" },
     { img: "./assets/img/hospital/Acne-01.png", title: "Acne" },
     { img: "./assets/img/hospital/Anxiety.png", title: "Anxiety" },
-    { img: "./assets/img/hospital/Back-Pain.png", title: "BackPain" },
+    { img: "./assets/img/hospital/Back-Pain.png", title: "Back-Pain" },
     {
       img: "./assets/img/hospital/Constipation.png",
       title: "Constipation",
