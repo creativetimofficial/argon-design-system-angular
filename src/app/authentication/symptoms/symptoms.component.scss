@@ -1,67 +1,3 @@
-.WC_SymptomSelection__Content {
-    width: 100%;
-    height: 100%;
-    padding: 1em;
-    overflow: auto;
-}
-.SymptomSearch {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #fff;
-    border-radius: 20px;
-    border: 1px solid #e2e2e2;
-    box-shadow: 0 0 16px rgb(109 130 152 / 30%);
-    padding: 0.5em;
-    overflow: hidden;
-}
-
-.SymptomSearch__Search {
-    width: 20px;
-    height: 25px;
-}
-
-.SymptomSearch__Search__Img {
-    width: 100%;
-    height: 100%;
-}
-
-.SymptomSearch__Wrapper {
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.SymptomSearch__Wrapper__Input {
-    box-shadow: none;
-    border: none;
-    width: 90%;
-    font-size: 1.1em;
-    margin-left: 0.5em;
-}
-
-.SymptomSearch__Wrapper__Placeholder {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    position: absolute;
-    left: 5px;
-    cursor: text;
-}
-
-.per__Placeholder__Key {
-    color: #0094b5;
-    font-size: .8em;
-}
-
-.per__Placeholder__Value {
-    color: #abc0d6;
-    font-size: .8em;
-    margin-left: 0.5em;
-}
 
 .WC_PrimarySymptom__Title {
     color: #011c23;
@@ -69,7 +5,7 @@
     font-weight: 500;
     margin: 0.5em 0;
     padding-left: 50px;
-    padding-top: 100px;
+    padding-top: 10px;
 }
 
 .WC_SymptomGroup__TopBar__Title {
@@ -107,3 +43,38 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+.btn-color {
+    border-radius: 50%;
+    background-color: #fff2ee;
+    width: 150px;
+    height: 150px;
+    top: 30px;
+    font-size: 25px;
+    color: #d17d7d;
+  }
+
+  .main_conatainer {
+    //background-image: linear-gradient(to right, #16b3ac, #d2dc02);
+    height: 50px;
+    //display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    //align-items: center;
+    //margin: 20px;
+    //@error: 30px;
+    // box-shadow: ;
+  }
+
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    width: 80% !important;
+    margin: 0 auto;
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+  }
+  
