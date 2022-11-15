@@ -10,14 +10,7 @@
     
     // box-shadow: ;
   }
-  sectio
 
-  .container1 {
-    display: flex;
-    flex-direction: column;
-    width: 60% !important;
-    margin: 0 auto;
-  }
 
   .main_card {
     height: 220px;
@@ -30,10 +23,20 @@
 
   }
 
-  .rounded {
-    border-radius: 25px !important;
-    padding: 10px;
-  }
+.container1 {
+  display: flex;
+  flex-direction: column;
+  width: 60% !important;
+  margin: 0 auto;
+}
+
+
+.main_card {
+  height: 250px;
+  border-radius: 5%;
+  display: flex;
+  padding-bottom: 1.2em;
+}
 
   // .button {
   //   border-radius: 10px;
@@ -172,3 +175,14 @@
   margin-top: -3%;
 }
 
+=======
+.rounded {
+  border-radius: 25px !important;
+  padding: 10px;
+}
+
+.button {
+  border-radius: 10px;
+  border: none;
+  font-size: 10px;
+}

@@ -27,6 +27,8 @@ import { PediatricianComponent } from './pediatrician/pediatrician.component';
 import { OrthopedicianComponent } from './orthopedician/orthopedician.component';
 import { EyespecialistComponent } from './eyespecialist/eyespecialist.component';
 import { DentistComponent } from './dentist/dentist.component';
+import { MigrainetreatmentdocsComponent } from './migrainetreatmentdocs/migrainetreatmentdocs.component';
+import { DiabetestreatmentdocsComponent } from './diabetestreatmentdocs/diabetestreatmentdocs.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +46,8 @@ import { DentistComponent } from './dentist/dentist.component';
     OrthopedicianComponent,
     EyespecialistComponent,
     DentistComponent,
+    MigrainetreatmentdocsComponent,
+    DiabetestreatmentdocsComponent,
   ],
   imports: [
     BrowserModule,

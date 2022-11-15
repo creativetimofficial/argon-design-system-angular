@@ -15,6 +15,9 @@ import { PediatricianComponent } from "./pediatrician/pediatrician.component";
 import { DentistComponent } from "./dentist/dentist.component";
 import { EyespecialistComponent } from "./eyespecialist/eyespecialist.component";
 import { OrthopedicianComponent } from "./orthopedician/orthopedician.component";
+import { PhysiciansComponent } from "./physicians/physicians.component";
+import { MigrainetreatmentdocsComponent } from "./migrainetreatmentdocs/migrainetreatmentdocs.component";
+import { DiabetestreatmentdocsComponent } from "./diabetestreatmentdocs/diabetestreatmentdocs.component";
 
 const routes: Routes = [
   { path: "home", component: HomeComponent },
@@ -22,7 +25,7 @@ const routes: Routes = [
   // { path: "register", component: SignupComponent },
   { path: "landing", component: LandingComponent },
   { path: "doctor", component: DoctorsComponent },
-// { path: "login", component: LoginComponent },
+  // { path: "login", component: LoginComponent },
   { path: "", redirectTo: "home", pathMatch: "full" },
   { path: "selfcheck", component: SelfcheckComponent },
   { path: "physicians", component: PhysiciansComponent },
@@ -32,6 +35,14 @@ const routes: Routes = [
   { path: "eyespecialist", component: EyespecialistComponent },
   { path: "dentist", component: DentistComponent },
   
+  {
+    path: "migraine-treatment-doctors",
+    component: MigrainetreatmentdocsComponent,
+  },
+  {
+    path: "diabetes-treatment-doctors",
+    component: DiabetestreatmentdocsComponent,
+  },
 ];
 
 @NgModule({
