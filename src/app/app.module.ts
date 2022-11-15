@@ -19,6 +19,7 @@ import { LoginComponent } from "./login/login.component";
 import { AuthenticationModule } from "./authentication/authentication.module";
 import { ToolConstService } from "./services/tool-const.service";
 import { NotificationsService } from "./services/notifications.service";
+import { SelfcheckComponent } from "./selfcheck/selfcheck.component";
 
 @NgModule({
   declarations: [
@@ -28,16 +29,18 @@ import { NotificationsService } from "./services/notifications.service";
     NavbarComponent,
     FooterComponent,
     LoginComponent,
+    SelfcheckComponent,
   ],
   imports: [
     BrowserModule,
     NgbModule,
-    FormsModule,
-    ReactiveFormsModule,
+
     RouterModule,
     AppRoutingModule,
     HomeModule,
     AuthenticationModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [NotificationsService, ToolConstService, MatNativeDateModule],
   bootstrap: [AppComponent],
