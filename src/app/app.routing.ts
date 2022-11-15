@@ -7,12 +7,9 @@ import { HomeComponent } from "./home/home.component";
 import { ProfileComponent } from "./profile/profile.component";
 import { LandingComponent } from "./landing/landing.component";
 import { LoginComponent } from "./login/login.component";
-<<<<<<< HEAD
 import { SelfcheckComponent } from "./selfcheck/selfcheck.component";
-=======
 import { DoctorsComponent } from "./doctors/doctors.component";
 import { PhysiciansComponent } from './physicians/physicians.component';
->>>>>>> master
 
 const routes: Routes = [
   { path: "home", component: HomeComponent },
@@ -22,11 +19,9 @@ const routes: Routes = [
   { path: "doctor", component: DoctorsComponent },
 // { path: "login", component: LoginComponent },
   { path: "", redirectTo: "home", pathMatch: "full" },
-<<<<<<< HEAD
   { path: "selfcheck", component: SelfcheckComponent },
-=======
   { path: "physicians", component: PhysiciansComponent },
->>>>>>> master
+  
 ];
 
 @NgModule({
