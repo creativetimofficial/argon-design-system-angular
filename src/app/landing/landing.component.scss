@@ -309,3 +309,32 @@ $baby-blue: #f8faff;
   font-size: 25px;
   color: #d17d7d;
 }
+
+.container {
+  background-image: linear-gradient(to right, #16b3ac, #d2dc02);
+  height: 200px;
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+  border-radius: 30px;
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-right: 40px;
+}
+
+.container2 {
+  background-image: linear-gradient(to right, #16b3ac, #d2dc02);
+  height: 200px;
+  width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+  border-radius: 30px;
+  margin-top: 50px;
+  margin-right: 30px;
+}

@@ -20,6 +20,8 @@ import { AuthenticationModule } from "./authentication/authentication.module";
 import { ToolConstService } from "./services/tool-const.service";
 import { NotificationsService } from "./services/notifications.service";
 import { SelfcheckComponent } from "./selfcheck/selfcheck.component";
+import { DoctorsComponent } from './doctors/doctors.component';
+import { PhysiciansComponent } from './physicians/physicians.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { SelfcheckComponent } from "./selfcheck/selfcheck.component";
     FooterComponent,
     LoginComponent,
     SelfcheckComponent,
+    DoctorsComponent,
+    PhysiciansComponent,
   ],
   imports: [
     BrowserModule,

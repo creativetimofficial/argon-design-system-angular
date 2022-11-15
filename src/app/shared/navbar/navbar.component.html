@@ -1,5 +1,7 @@
-<nav id="navbar-main"
-  class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom--top headroom--pinned">
+<nav
+  id="navbar-main"
+  class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom--top headroom--pinned"
+>
   <!-- <nav
   id="navbar-main"
   class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned"
@@ -9,11 +11,20 @@
       <img src="./assets/img/first-aid-kit.png" />
       <span class="logo">docCare</span>
     </a>
-    <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
-      [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="isCollapsed = !isCollapsed"
+      [attr.aria-expanded]="!isCollapsed"
+      aria-controls="navbar_global"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed">
+    <div
+      class="navbar-collapse collapse"
+      id="navbar_global"
+      [ngbCollapse]="isCollapsed"
+    >
       <div class="navbar-collapse-header">
         <div class="row">
           <div class="col-6 collapse-brand">
@@ -22,8 +33,13 @@
             </a>
           </div>
           <div class="col-6 collapse-close">
-            <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed"
-              [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+            <button
+              type="button"
+              class="navbar-toggler"
+              (click)="isCollapsed = !isCollapsed"
+              [attr.aria-expanded]="!isCollapsed"
+              aria-controls="navbar_global"
+            >
               <span></span>
               <span></span>
             </button>
@@ -34,13 +50,20 @@
         <li class="nav-item dropdown">
           <a class="nav-link no-caret" data-toggle="dropdown" role="button">
             <i class="ni ni-ui-04 d-lg-none"></i>
-            <span class="nav-link-inner--text"><strong>Find Doctors</strong></span>
+            <span class="nav-link-inner--text"
+              ><strong>Find Doctors</strong></span
+            >
           </a>
           <div class="dropdown-menu-xl dropdown-menu">
             <div class="dropdown-menu-inner">
-              <a routerLinkActive="active" [routerLink]="['documentation/tutorial']"
-                class="media d-flex align-items-center">
-                <div class="icon icon-shape bg-gradient-primary rounded-circle text-white">
+              <a
+                routerLinkActive="active"
+                [routerLink]="['documentation/tutorial']"
+                class="media d-flex align-items-center"
+              >
+                <div
+                  class="icon icon-shape bg-gradient-primary rounded-circle text-white"
+                >
                   <i class="ni ni-spaceship"></i>
                 </div>
                 <div class="media-body ml-3">
@@ -51,9 +74,14 @@
                   </p>
                 </div>
               </a>
-              <a routerLinkActive="active" [routerLink]="['documentation/colors']"
-                class="media d-flex align-items-center">
-                <div class="icon icon-shape bg-gradient-success rounded-circle text-white">
+              <a
+                routerLinkActive="active"
+                [routerLink]="['documentation/colors']"
+                class="media d-flex align-items-center"
+              >
+                <div
+                  class="icon icon-shape bg-gradient-success rounded-circle text-white"
+                >
                   <i class="ni ni-palette"></i>
                 </div>
                 <div class="media-body ml-3">
@@ -64,9 +92,14 @@
                   </p>
                 </div>
               </a>
-              <a routerLinkActive="active" [routerLink]="['documentation/alerts']"
-                class="media d-flex align-items-center">
-                <div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
+              <a
+                routerLinkActive="active"
+                [routerLink]="['documentation/alerts']"
+                class="media d-flex align-items-center"
+              >
+                <div
+                  class="icon icon-shape bg-gradient-warning rounded-circle text-white"
+                >
                   <i class="ni ni-ui-04"></i>
                 </div>
                 <div class="media-body ml-3">
@@ -83,11 +116,14 @@
         <li class="nav-item dropdown">
           <a class="nav-link no-caret" data-toggle="dropdown" role="button">
             <i class="ni ni-collection d-lg-none"></i>
-            <span class="nav-link-inner--text"><strong>Health Checks</strong></span>
+            <span class="nav-link-inner--text"
+              ><strong>Health Checks</strong></span
+            >
           </a>
           <div class="dropdown-menu">
             <a [routerLink]="['/landing']" class="dropdown-item">Landing</a>
             <a [routerLink]="['/user-profile']" class="dropdown-item">Profile</a>
+            <a [routerLink]="['/doctor']" class="dropdown-item">Doctors</a>
             <a [routerLink]="['/login']" class="dropdown-item">Login</a>
             <a [routerLink]="['/register']" class="dropdown-item">Register</a>
           </div>
@@ -95,11 +131,14 @@
         <li class="nav-item dropdown">
           <a class="nav-link no-caret" data-toggle="dropdown" role="button">
             <i class="ni ni-collection d-lg-none"></i>
-            <span class="nav-link-inner--text"><strong>Self Checks</strong></span>
+            <span class="nav-link-inner--text"
+              ><strong>Self Checks</strong></span
+            >
           </a>
           <div class="dropdown-menu">
             <a [routerLink]="['/landing']" class="dropdown-item">Landing</a>
             <a [routerLink]="['/user-profile']" class="dropdown-item">Profile</a>
+            <a [routerLink]="['/doctor']" class="dropdown-item">Doctors</a>
             <a [routerLink]="['/login']" class="dropdown-item">Login</a>
             <a [routerLink]="['/register']" class="dropdown-item">Register</a>
           </div>
@@ -107,17 +146,20 @@
       </ul>
       <ul class="navbar-nav align-items-lg-center ml-lg-auto">
         <li class="nav-item d-none d-lg-block ml-lg-4">
-          <a href="https://www.creative-tim.com/product/argon-design-system-angular?ref=adsa-navbar" target="_blank"
-            class="btn">
+          <a
+            href="https://www.creative-tim.com/product/argon-design-system-angular?ref=adsa-navbar"
+            target="_blank"
+            class="btn"
+          >
             <span class="nav-link-inner--text">login</span>
           </a>
         </li>
-        <li class="nav-item d-none d-lg-block ml-lg-4">
+        <!-- <li class="nav-item d-none d-lg-block ml-lg-4">
           <a href="https://www.creative-tim.com/product/argon-design-system-angular?ref=adsa-navbar" target="_blank"
             class="btn">
             <span class="nav-link-inner--text">signup</span>
           </a>
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>
