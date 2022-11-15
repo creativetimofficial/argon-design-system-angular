@@ -1,10 +1,10 @@
 <main>
-    <!-- <div class="main_conatainer">
-    </div> -->
+    <div class="main_conatainer">
+    </div>
 
     <section class="section section-lg">
         <div class="container1">
-            <div *ngFor="let docInfo of physiciansInfo">
+            <div *ngFor="let docInfo of gynaecInfo">
                 <div class="card mb-2 main_card">
                     <div class="row g-0" style="padding: 20px;">
                         <div class="col-md-3 text-center">
@@ -22,7 +22,8 @@
                             <p class="card-text text-muted">{{docInfo.quali}}</p>
                             <p class="card-text">{{docInfo.prof}}</p>
                             <p class="card-text">
-                                <small >{{docInfo.lang}}</small></p>
+                                <small >{{docInfo.lang}}</small>
+                            </p>
                             <p class="card-text">
                                 <small >{{docInfo.fee}}</small>
                             </p>
