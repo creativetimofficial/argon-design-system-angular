@@ -15,6 +15,7 @@ export class MigrainetreatmentdocsComponent implements OnInit {
       quali: "MBBS, MD (General Medicine)",
       prof: "Neurologist",
       lang: "English, Hindi",
+      fee: "₹300 Consultation fee",
     },
     {
       img: "./assets/img/hospital/doctor2.jpeg",
@@ -23,6 +24,7 @@ export class MigrainetreatmentdocsComponent implements OnInit {
       quali: "MBBS",
       prof: "Neurologist",
       lang: "English",
+      fee: "₹300 Consultation fee",
     },
     {
       img: "./assets/img/hospital/doctor3.jpeg",
@@ -31,6 +33,7 @@ export class MigrainetreatmentdocsComponent implements OnInit {
       quali: "MBBS, MS",
       prof: "Neurologist",
       lang: "English, Hindi",
+      fee: "₹300 Consultation fee",
     },
     {
       img: "./assets/img/hospital/doctor4.jpeg",
@@ -39,6 +42,7 @@ export class MigrainetreatmentdocsComponent implements OnInit {
       quali: "MBBS, DNB",
       prof: "Neurologist",
       lang: "English",
+      fee: "₹300 Consultation fee",
     },
     {
       img: "./assets/img/hospital/doctor5.jpeg",
@@ -47,6 +51,7 @@ export class MigrainetreatmentdocsComponent implements OnInit {
       quali: "MBBS, MD (General Medicine)",
       prof: "Neurologist",
       lang: "English, Hindi",
+      fee: "₹300 Consultation fee",
     },
   ];
   ngOnInit(): void {}

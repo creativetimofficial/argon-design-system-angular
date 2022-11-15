@@ -7,7 +7,7 @@ import { Component, OnInit } from "@angular/core";
 })
 export class DiabetestreatmentdocsComponent implements OnInit {
   constructor() {}
-  migrainedocInfo = [
+  diabetesdocInfo = [
     {
       img: "./assets/img/hospital/doctor1.jpeg",
       name: "Dr.Maria L. Collazo-Clavell",
@@ -15,6 +15,7 @@ export class DiabetestreatmentdocsComponent implements OnInit {
       quali: "MBBS, MD (General Medicine)",
       prof: "Diabetes",
       lang: "English",
+      fee: "₹300 Consultation fee",
     },
     {
       img: "./assets/img/hospital/doctor2.jpeg",
@@ -23,6 +24,7 @@ export class DiabetestreatmentdocsComponent implements OnInit {
       quali: "MBBS",
       prof: "Diabetes",
       lang: "English",
+      fee: "₹300 Consultation fee",
     },
     {
       img: "./assets/img/hospital/doctor3.jpeg",
@@ -30,7 +32,8 @@ export class DiabetestreatmentdocsComponent implements OnInit {
       exp: "14 years exp",
       quali: "MBBS, MS",
       prof: "Diabetes",
-      lang: "English, Hindi",
+      lang: "English",
+      fee: "₹300 Consultation fee",
     },
     {
       img: "./assets/img/hospital/doctor4.jpeg",
@@ -39,6 +42,7 @@ export class DiabetestreatmentdocsComponent implements OnInit {
       quali: "MBBS, DNB",
       prof: "Diabetes",
       lang: "English",
+      fee: "₹300 Consultation fee",
     },
     {
       img: "./assets/img/hospital/doctor5.jpeg",
@@ -47,6 +51,7 @@ export class DiabetestreatmentdocsComponent implements OnInit {
       quali: "MBBS, MD (General Medicine)",
       prof: "Diabetes",
       lang: "English",
+      fee: "₹300 Consultation fee",
     },
   ];
   ngOnInit(): void {}
