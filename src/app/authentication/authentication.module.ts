@@ -8,6 +8,7 @@ import { ForgotPasswordComponent } from "./forgot-password/forgot-password.compo
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { SignupComponent } from "./signup/signup.component";
 import { MatCheckboxModule } from "@angular/material/checkbox";
+import { SymptomsComponent } from './symptoms/symptoms.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { MatCheckboxModule } from "@angular/material/checkbox";
     SignupComponent,
     ResetPasswordComponent,
     ForgotPasswordComponent,
+    SymptomsComponent,
   ],
   imports: [
     CommonModule,
