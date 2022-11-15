@@ -11,7 +11,7 @@ export class LandingComponent implements OnInit {
   @ViewChild("widgetsDiagnosis") widgetsDiagnosis: ElementRef;
 
   specialitiesImgs = [
-    { img: "./assets/img/hospital/physician.svg", title: "Physician" },
+    { img: "./assets/img/hospital/physician.svg", title: "Physician"},
     { img: "./assets/img/hospital/gynaecologist.svg", title: "Gynaecologist" },
     { img: "./assets/img/hospital/pediatrician.svg", title: "Pediatrician" },
     { img: "./assets/img/hospital/orthopedician.svg", title: "Orthopedician" },
