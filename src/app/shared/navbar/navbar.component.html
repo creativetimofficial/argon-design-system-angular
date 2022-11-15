@@ -7,7 +7,7 @@
   class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned"
 > -->
   <div class="container">
-    <a class="navbar-brand mr-lg-5" [routerLink]="['/home']">
+    <a class="navbar-brand mr-lg-5" [routerLink]="['/landing']">
       <img src="./assets/img/first-aid-kit.png" />
       <span class="logo">docCare</span>
     </a>
@@ -122,7 +122,9 @@
           </a>
           <div class="dropdown-menu">
             <a [routerLink]="['/landing']" class="dropdown-item">Landing</a>
-            <a [routerLink]="['/user-profile']" class="dropdown-item">Profile</a>
+            <a [routerLink]="['/user-profile']" class="dropdown-item"
+              >Profile</a
+            >
             <a [routerLink]="['/doctor']" class="dropdown-item">Doctors</a>
             <a [routerLink]="['/login']" class="dropdown-item">Login</a>
             <a [routerLink]="['/register']" class="dropdown-item">Register</a>
@@ -137,21 +139,23 @@
           </a>
           <div class="dropdown-menu">
             <a [routerLink]="['/landing']" class="dropdown-item">Landing</a>
-            <a [routerLink]="['/user-profile']" class="dropdown-item">Profile</a>
+            <a [routerLink]="['/user-profile']" class="dropdown-item"
+              >Profile</a
+            >
             <a [routerLink]="['/doctor']" class="dropdown-item">Doctors</a>
-            <a [routerLink]="['/login']" class="dropdown-item">Login</a>
-            <a [routerLink]="['/register']" class="dropdown-item">Register</a>
+            <a [routerLink]="['/signin']" class="dropdown-item">Login</a>
+            <a [routerLink]="['/signup']" class="dropdown-item">Register</a>
           </div>
         </li>
       </ul>
       <ul class="navbar-nav align-items-lg-center ml-lg-auto">
         <li class="nav-item d-none d-lg-block ml-lg-4">
-          <a
-            href="https://www.creative-tim.com/product/argon-design-system-angular?ref=adsa-navbar"
-            target="_blank"
-            class="btn"
-          >
-            <span class="nav-link-inner--text">login</span>
+          <a [routerLink]="['/signin']" class="btn">
+            <span
+              class="nav-link-inner--text"
+              style="text-transform: capitalize"
+              >Login</span
+            >
           </a>
         </li>
         <!-- <li class="nav-item d-none d-lg-block ml-lg-4">

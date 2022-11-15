@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-landing",
@@ -74,7 +75,7 @@ export class LandingComponent implements OnInit {
   focus: any;
   focus1: any;
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   scrollLeft() {
     this.widgetsContent.nativeElement.scrollLeft -= 230;
@@ -93,6 +94,24 @@ export class LandingComponent implements OnInit {
 
   scrollLeftDiagno() {
     this.widgetsDiagnosis.nativeElement.scrollLeft -= 230;
+  }
+
+  symptomsRoute() {
+    setTimeout(() => {
+      this.router.navigateByUrl("/symptoms");
+    }, 500);
+  }
+
+  specialitiesRoute() {
+    setTimeout(() => {
+      this.router.navigateByUrl("/physicians");
+    }, 500);
+  }
+
+  diagnosisRoute() {
+    setTimeout(() => {
+      this.router.navigateByUrl("/selfcheck");
+    }, 500);
   }
 
   scrollRightDiagno() {
