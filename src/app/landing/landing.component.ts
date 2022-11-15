@@ -12,7 +12,7 @@ export class LandingComponent implements OnInit {
   @ViewChild("widgetsDiagnosis") widgetsDiagnosis: ElementRef;
 
   specialitiesImgs = [
-    { img: "./assets/img/hospital/physician.svg", title: "Physician" },
+    { img: "./assets/img/hospital/physician.svg", title: "Physician"},
     { img: "./assets/img/hospital/gynaecologist.svg", title: "Gynaecologist" },
     { img: "./assets/img/hospital/pediatrician.svg", title: "Pediatrician" },
     { img: "./assets/img/hospital/orthopedician.svg", title: "Orthopedician" },
@@ -29,14 +29,31 @@ export class LandingComponent implements OnInit {
   ];
 
   diagnosisImgs = [
-    { img: "./assets/img/hospital/self-check-Migraine.png", title: "Migraine" },
-    { img: "./assets/img/hospital/selfcheck-Diabetes.png", title: "Diabetes" },
-    { img: "./assets/img/hospital/selfcheck-Thyroid.png", title: "Thyroid" },
+    {
+      img: "./assets/img/hospital/self-check-Migraine.png",
+      title: "Migraine",
+      url: "/migraine-treatment-doctors",
+    },
+    {
+      img: "./assets/img/hospital/selfcheck-Diabetes.png",
+      title: "Diabetes",
+      url: "/diabetes-treatment-doctors",
+    },
+    {
+      img: "./assets/img/hospital/selfcheck-Thyroid.png",
+      title: "Thyroid",
+      url: "#",
+    },
     {
       img: "./assets/img/hospital/selfcheck-Heart-Health.png",
       title: "Heart Health",
+      url: "#",
     },
-    { img: "./assets/img/hospital/selfcheck-COVID.png", title: "COVID-19" },
+    {
+      img: "./assets/img/hospital/selfcheck-COVID.png",
+      title: "COVID-19",
+      url: "/physicians",
+    },
   ];
   symptomsImgs = [
     { img: "./assets/img/hospital/Acidity.png", title: "Acidity" },

@@ -22,6 +22,13 @@ import { NotificationsService } from "./services/notifications.service";
 import { SelfcheckComponent } from "./selfcheck/selfcheck.component";
 import { DoctorsComponent } from './doctors/doctors.component';
 import { PhysiciansComponent } from './physicians/physicians.component';
+import { GynaecologistComponent } from './gynaecologist/gynaecologist.component';
+import { PediatricianComponent } from './pediatrician/pediatrician.component';
+import { OrthopedicianComponent } from './orthopedician/orthopedician.component';
+import { EyespecialistComponent } from './eyespecialist/eyespecialist.component';
+import { DentistComponent } from './dentist/dentist.component';
+import { MigrainetreatmentdocsComponent } from './migrainetreatmentdocs/migrainetreatmentdocs.component';
+import { DiabetestreatmentdocsComponent } from './diabetestreatmentdocs/diabetestreatmentdocs.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +41,13 @@ import { PhysiciansComponent } from './physicians/physicians.component';
     SelfcheckComponent,
     DoctorsComponent,
     PhysiciansComponent,
+    GynaecologistComponent,
+    PediatricianComponent,
+    OrthopedicianComponent,
+    EyespecialistComponent,
+    DentistComponent,
+    MigrainetreatmentdocsComponent,
+    DiabetestreatmentdocsComponent,
   ],
   imports: [
     BrowserModule,

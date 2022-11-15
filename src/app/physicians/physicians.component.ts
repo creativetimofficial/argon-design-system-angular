@@ -9,16 +9,16 @@ export class PhysiciansComponent implements OnInit {
 
   physiciansInfo = [
     { img: "./assets/img/hospital/doctor1.jpeg", name: "Dr. John", exp: "22 years exp",
-    quali: "MBBS, MD (General Medicine)", prof: "Physician", lang: "English, Hindi" },
+    quali: "MBBS, MD (General Medicine)", prof: "Physician", lang: "English, Hindi", fee: "₹300 Consultation fee"},
     { img: "./assets/img/hospital/doctor2.jpeg", name: "Dr. Stephen", exp: "18 years exp",
-    quali: "MBBS", prof: "Orthopedician", lang: "English"},
+    quali: "MBBS, MD", prof: "Physician", lang: "English", fee: "₹500 Consultation fee"},
     { img: "./assets/img/hospital/doctor3.jpeg", name: "Dr. Andrew Hall", exp: "14 years exp",
-    quali: "MBBS, MS", prof: "Physician", lang: "English, Hindi" },
+    quali: "MBBS, MD (General Medicine)", prof: "Physician", lang: "English, Hindi", fee: "₹400 Consultation fee" },
     { img: "./assets/img/hospital/doctor4.jpeg", name: "Dr. Elizabeth", exp: "12 years exp",
-    quali: "MBBS, DNB", prof: "Gynaecologist", lang: "English" },
+    quali: "MBBS, MD", prof: "Physician", lang: "English", fee: "₹400 Consultation fee" },
     {
       img: "./assets/img/hospital/doctor5.jpeg", name: "Dr. Rebecca", exp: "8 years exp",
-      quali: "BDS, MDS", prof: "Dentist", lang: "English, Hindi"
+      quali: "MBBS, MS", prof: "Physician", lang: "English, Hindi", fee: "₹300 Consultation fee"
     },
   ];
 
