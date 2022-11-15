@@ -15,7 +15,6 @@ import { PediatricianComponent } from "./pediatrician/pediatrician.component";
 import { DentistComponent } from "./dentist/dentist.component";
 import { EyespecialistComponent } from "./eyespecialist/eyespecialist.component";
 import { OrthopedicianComponent } from "./orthopedician/orthopedician.component";
-import { PhysiciansComponent } from "./physicians/physicians.component";
 import { MigrainetreatmentdocsComponent } from "./migrainetreatmentdocs/migrainetreatmentdocs.component";
 import { DiabetestreatmentdocsComponent } from "./diabetestreatmentdocs/diabetestreatmentdocs.component";
 
