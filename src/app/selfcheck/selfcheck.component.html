@@ -1,0 +1,242 @@
+<main>
+  <div class="main_conatainer"></div>
+
+  <section class="section section-lg">
+    <div class="container1">
+      <div class="card card-profile shadow">
+        <div class="px-8">
+          <div
+            class="row justify-content-center surveysparrow-chat__split-layer"
+            style="width: 100%"
+          >
+            <!-- <img src="./assets/img/hospital/Depression-01.png" /> -->
+
+            <div class="text-center" style="color: aqua">
+              <button
+                type="submit"
+                class="btn btn-danger btn-lg btn-block col-md-12"
+              >
+                Covid-19 Self Assessment
+              </button>
+              <h4 class="display-6">Do you have any of these symptoms?</h4>
+            </div>
+
+            <div class="container">
+              <div class="row custom-wrapper">
+                <div class="col-md-12">
+                  <!-- Form starts -->
+                  <form #myForm="ngForm">
+                    <!-- Gender -->
+                    <div class="group-gap">
+                      <h5 class="mb-3">
+                        <ul>
+                          <li>
+                            Severe difficulty breathing (struggling to breathe
+                            or speak)
+                          </li>
+                          <li>
+                            Severe chest pain Extreme fatigue (having a hard
+                            time waking up or staying awake)
+                          </li>
+                          <li>
+                            Confusion or disorientation Loss of consciousness
+                          </li>
+                        </ul>
+                      </h5>
+                      <div class="d-block my-3 text-center">
+                        <div class="custom-control custom-radio">
+                          <input
+                            id="q1"
+                            type="radio"
+                            class="custom-control-input"
+                            value="q1"
+                            name="q1"
+                            ngModel
+                            required
+                          />
+                          <label class="custom-control-label" for="q1"
+                            >yes</label
+                          >
+                        </div>
+
+                        <div class="custom-control custom-radio">
+                          <input
+                            id="q2"
+                            type="radio"
+                            class="custom-control-input"
+                            value="q2"
+                            name="q2"
+                            ngModel
+                            required
+                          />
+                          <label class="custom-control-label" for="q2"
+                            >No</label
+                          >
+                        </div>
+
+                        <div class="invalid-feedback">
+                          <p>Please select either value</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="group-gap">
+                      <h5 class="mb-3">
+                        <ul>
+                          <li>
+                            Difficult or impossible to lie down because you’re
+                            having trouble breathing
+                          </li>
+                          <li>
+                            Unable to manage chronic health conditions because
+                            you’re having trouble breathing
+                          </li>
+                        </ul>
+                      </h5>
+                      <div class="d-block my-3 text-center">
+                        <div class="custom-control custom-radio">
+                          <input
+                            id="q3"
+                            type="radio"
+                            class="custom-control-input"
+                            value="q3"
+                            name="q3"
+                            ngModel
+                            required
+                          />
+                          <label class="custom-control-label" for="q3"
+                            >yes</label
+                          >
+                        </div>
+
+                        <div class="custom-control custom-radio">
+                          <input
+                            id="q4"
+                            type="radio"
+                            class="custom-control-input"
+                            value="q4"
+                            name="q4"
+                            ngModel
+                            required
+                          />
+                          <label class="custom-control-label" for="q4"
+                            >No</label
+                          >
+                        </div>
+
+                        <div class="invalid-feedback">
+                          <p>Please select either value</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="group-gap">
+                      <h5 class="mb-3">
+                        <ul>
+                          <li>
+                            Fever or chills, Cough Shortness of breath, Sore
+                            throat, Loss or change of sense of smell or taste
+                            Headache Extreme fatigue or tiredness
+                          </li>
+                        </ul>
+                      </h5>
+                      <div class="d-block my-3 text-center">
+                        <div class="custom-control custom-radio">
+                          <input
+                            id="q5"
+                            type="radio"
+                            class="custom-control-input"
+                            value="q5"
+                            name="q5"
+                            ngModel
+                            required
+                          />
+                          <label class="custom-control-label" for="q5"
+                            >yes</label
+                          >
+                        </div>
+
+                        <div class="custom-control custom-radio">
+                          <input
+                            id="q6"
+                            type="radio"
+                            class="custom-control-input"
+                            value="q6"
+                            name="q6"
+                            ngModel
+                            required
+                          />
+                          <label class="custom-control-label" for="q6"
+                            >No</label
+                          >
+                        </div>
+
+                        <div class="invalid-feedback">
+                          <p>Please select either value</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="group-gap">
+                      <h5 class="mb-3">
+                        <ul>
+                          <li>
+                            Runny nose,Sneezing Diarrhea, for example having
+                            loose or watery stool that you don't normally have
+                            Loss of appetite Nausea or vomiting Body or muscle
+                            aches, for example, aches or pains in your body that
+                            you don't normally have
+                          </li>
+                        </ul>
+                      </h5>
+                      <div class="d-block my-3 text-center">
+                        <div class="custom-control custom-radio">
+                          <input
+                            id="q7"
+                            type="radio"
+                            class="custom-control-input"
+                            value="q7"
+                            name="q7"
+                            ngModel
+                            required
+                          />
+                          <label class="custom-control-label" for="q7"
+                            >yes</label
+                          >
+                        </div>
+
+                        <div class="custom-control custom-radio">
+                          <input
+                            id="q8"
+                            type="radio"
+                            class="custom-control-input"
+                            value="q8"
+                            name="gender"
+                            ngModel
+                            required
+                          />
+                          <label class="custom-control-label" for="q8"
+                            >No</label
+                          >
+                        </div>
+
+                        <div class="invalid-feedback">
+                          <p>Please select either value</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Submit Button -->
+                    <button
+                      type="submit"
+                      class="btn btn-danger btn-lg btn-block"
+                    >
+                      Find out
+                    </button>
+                  </form>
+                  <!-- Form ends -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
