@@ -1,179 +1,3 @@
-<!-- <div class="wrapper wrapper-full-page">
-  <div
-    class="page-header login-page header-filter"
-    filter-color="black"
-    style="
-      background-image: url('./assets/img/login.jpg');
-      background-size: cover;
-      background-position: top center;
-    "
-  >
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-6 ml-auto mr-auto">
-          <form [formGroup]="login">
-            <div class="card card-login card-hidden">
-              <div class="card-header card-header-info text-center">
-                <h4 class="card-title">Log in</h4>
-                <div class="social-line">
-                  <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
-                    <i class="fa fa-facebook-square"></i>
-                  </a>
-                  <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                  <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
-                    <i class="fa fa-google-plus"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="card-body">
-                <p class="card-description text-center">Or Be Classical</p>
-
-                <span class="bmd-form-group">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">
-                        <i class="material-icons">email</i>
-                      </span>
-                    </div>
-
-                    <input
-                      formControlName="email"
-                      placeholder="Email/Phone"
-                      id="email"
-                      type="text"
-                      required
-                      class="form-control"
-                    />
-                  </div>
-                  <span
-                    style="color: red; padding-left: 55px"
-                    class="text-danger input-group"
-                    *ngIf="
-                      login.controls['email'].hasError('required') &&
-                      (login.controls['email'].dirty ||
-                        login.controls['email'].touched)
-                    "
-                    >This field is required</span
-                  >
-                  <span
-                    style="color: red; padding-left: 55px"
-                    class="text-danger input-group"
-                    *ngIf="
-                      login.controls['email'].hasError('pattern') &&
-                      (login.controls['email'].dirty ||
-                        login.controls['email'].touched)
-                    "
-                    >Please enter valid email address or phone number</span
-                  >
-                </span>
-                <span class="bmd-form-group">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">
-                        <i class="material-icons">lock_outline</i>
-                      </span>
-                    </div>
-                    <input
-                      type="password"
-                      class="form-control"
-                      placeholder="Password"
-                      formControlName="password"
-                      [type]="showPassword ? 'text' : 'password'"
-                      required
-                    />
-                    <div class="input-group-append">
-                      <span class="input-group-text">
-                        <i
-                          class="fa"
-                          [ngClass]="{
-                            'fa-eye-slash': !showPassword,
-                            'fa-eye': showPassword
-                          }"
-                          (click)="showHidePassword()"
-                        ></i>
-                      </span>
-                    </div>
-                  </div>
-                  <div
-                    class="errors"
-                    style="color: red; padding-left: 55px"
-                    *ngIf="
-                      login.get('password').invalid &&
-                      (login.get('password').touched ||
-                        login.get('password').dirty)
-                    "
-                  >
-                    <div
-                      class="error-text"
-                      *ngIf="login.get('password').errors?.required"
-                    >
-                      password is required
-                    </div>
-                    <div
-                      class="error-text"
-                      *ngIf="login.get('password').errors?.minlength"
-                    >
-                      Password must be at least 8 characters
-                    </div>
-                    <div
-                      class="error-text"
-                      *ngIf="
-                        login.get('password').errors?.passwordStrength &&
-                        !login.get('password').errors?.minlength
-                      "
-                    >
-                      {{ login.get("password").errors["passwordStrength"] }}
-                    </div>
-                  </div>
-                </span>
-              </div>
-              <div class="card-footer justify-content-center">
-                <button
-                  (click)="submitForm()"
-                  class="btn btn-info btn-link btn-lg"
-                >
-                  Lets Go
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <footer class="footer">
-      <div class="container">
-        <nav class="pull-left">
-          <ul>
-            <li>
-              <a href="https://www.creative-tim.com"> Creative Tim </a>
-            </li>
-            <li>
-              <a href="https://creative-tim.com/about-us"> About Us </a>
-            </li>
-            <li>
-              <a href="http://blog.creative-tim.com"> Blog </a>
-            </li>
-            <li>
-              <a href="https://www.creative-tim.com/license"> Licenses </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="copyright pull-right">
-          &copy;
-          {{ test | date: "yyyy" }}, made with
-          <i class="material-icons">favorite</i> by
-          <a href="https://www.creative-tim.com" target="_blank"
-            >Creative Tim</a
-          >
-          for a better web.
-        </div>
-      </div>
-    </footer>
-  </div>
-</div> -->
-
 <div class="signin_container">
   <div class="signin_left_container">
     <img src="/assets/img/new/10130.jpg" />
@@ -183,7 +7,7 @@
     <form [formGroup]="login">
       <div class="card card-login card-hidden">
         <div class="card-header card-header-info text-center">
-          <h4 class="card-title">Sign in</h4>
+          <h4 class="card-title">Sign in with</h4>
           <div class="social-line">
             <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
               <i class="fa fa-facebook-square"></i>
@@ -196,8 +20,12 @@
             </a>
           </div>
         </div>
+        <div class="forgot_text" style="margin-top: 20px">
+          Don't have an account? &nbsp;
+          <a href="/signup"> Sign-up </a>
+        </div>
         <div class="card-body">
-          <span class="bmd-form-group">
+          <div class="bmd-form-group" style="padding-bottom: 10px">
             <div class="input-group">
               <div class="input-group-prepend">
                 <span class="input-group-text">
@@ -215,7 +43,7 @@
               />
             </div>
             <span
-              style="color: red; padding-left: 55px"
+              style="color: red; padding-left: 10px; font-size: small"
               class="text-danger input-group"
               *ngIf="
                 login.controls['email'].hasError('required') &&
@@ -225,7 +53,7 @@
               >This field is required</span
             >
             <span
-              style="color: red; padding-left: 55px"
+              style="color: red; padding-left: 10px; font-size: small"
               class="text-danger input-group"
               *ngIf="
                 login.controls['email'].hasError('pattern') &&
@@ -234,8 +62,8 @@
               "
               >Please enter valid email address or phone number</span
             >
-          </span>
-          <span class="bmd-form-group">
+          </div>
+          <div class="bmd-form-group" style="padding-bottom: 10px">
             <div class="input-group">
               <div class="input-group-prepend">
                 <span class="input-group-text">
@@ -263,7 +91,7 @@
                 </span>
               </div>
               <span
-                style="color: red; padding-left: 55px"
+                style="color: red; padding-left: 10px; font-size: small"
                 class="text-danger input-group"
                 *ngIf="
                   login.controls['password'].hasError('required') &&
@@ -274,12 +102,16 @@
                 This field is required
               </span>
             </div>
-          </span>
+          </div>
         </div>
-        <div class="card-footer justify-content-center">
-          <button (click)="submitForm()" class="btn btn-info btn-lg">
-            Sign in
-          </button>
+        <div class="forgot_text">
+          <a href="/forgot"> Forgot password? </a>
+        </div>
+        <div
+          class="justify-content-center text-center"
+          style="padding-bottom: 10px"
+        >
+          <button (click)="submitForm()" class="btn btn-info">Sign in</button>
         </div>
       </div>
     </form>
