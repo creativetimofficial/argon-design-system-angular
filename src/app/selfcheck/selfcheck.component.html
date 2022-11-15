@@ -4,22 +4,20 @@
   <section class="section section-lg">
     <div class="container1">
       <div class="card card-profile shadow">
-        <div class="px-8">
+        <div>
+          <button class="btn btn-danger btn-lg btn-block" style="width: 100%">
+            Covid-19 Self Assessment
+          </button>
+          <h4 class="display-6 text-center">
+            Do you have any of these symptoms?
+          </h4>
+        </div>
+        <div class="px-4">
           <div
             class="row justify-content-center surveysparrow-chat__split-layer"
             style="width: 100%"
           >
             <!-- <img src="./assets/img/hospital/Depression-01.png" /> -->
-
-            <div class="text-center" style="color: aqua">
-              <button
-                type="submit"
-                class="btn btn-danger btn-lg btn-block col-md-12"
-              >
-                Covid-19 Self Assessment
-              </button>
-              <h4 class="display-6">Do you have any of these symptoms?</h4>
-            </div>
 
             <div class="container">
               <div class="row custom-wrapper">
@@ -43,35 +41,39 @@
                           </li>
                         </ul>
                       </h5>
-                      <div class="d-block my-3 text-center">
+
+                      <div
+                        class="d-block my-3 text-center custom-control custom-radio mb-3"
+                      >
                         <div class="custom-control custom-radio">
                           <input
-                            id="q1"
-                            type="radio"
+                            name="custom-radio-1"
                             class="custom-control-input"
-                            value="q1"
-                            name="q1"
-                            ngModel
-                            required
+                            id="customRadio1"
+                            type="radio"
                           />
-                          <label class="custom-control-label" for="q1"
-                            >yes</label
+                          <label
+                            class="custom-control-label"
+                            for="customRadio1"
                           >
+                            <span>yes</span>
+                          </label>
                         </div>
 
                         <div class="custom-control custom-radio">
                           <input
-                            id="q2"
-                            type="radio"
+                            name="custom-radio-1"
                             class="custom-control-input"
-                            value="q2"
-                            name="q2"
-                            ngModel
-                            required
+                            id="customRadio2"
+                            checked
+                            type="radio"
                           />
-                          <label class="custom-control-label" for="q2"
-                            >No</label
+                          <label
+                            class="custom-control-label"
+                            for="customRadio2"
                           >
+                            <span>no</span>
+                          </label>
                         </div>
 
                         <div class="invalid-feedback">
@@ -92,35 +94,38 @@
                           </li>
                         </ul>
                       </h5>
-                      <div class="d-block my-3 text-center">
+                      <div
+                        class="d-block my-3 text-center custom-control custom-radio mb-3"
+                      >
                         <div class="custom-control custom-radio">
                           <input
-                            id="q3"
-                            type="radio"
+                            name="custom-radio-3"
                             class="custom-control-input"
-                            value="q3"
-                            name="q3"
-                            ngModel
-                            required
+                            id="customRadio3"
+                            type="radio"
                           />
-                          <label class="custom-control-label" for="q3"
-                            >yes</label
+                          <label
+                            class="custom-control-label"
+                            for="customRadio3"
                           >
+                            <span>yes</span>
+                          </label>
                         </div>
 
                         <div class="custom-control custom-radio">
                           <input
-                            id="q4"
-                            type="radio"
+                            name="custom-radio-3"
                             class="custom-control-input"
-                            value="q4"
-                            name="q4"
-                            ngModel
-                            required
+                            id="customRadio4"
+                            checked
+                            type="radio"
                           />
-                          <label class="custom-control-label" for="q4"
-                            >No</label
+                          <label
+                            class="custom-control-label"
+                            for="customRadio4"
                           >
+                            <span>no</span>
+                          </label>
                         </div>
 
                         <div class="invalid-feedback">
@@ -138,35 +143,38 @@
                           </li>
                         </ul>
                       </h5>
-                      <div class="d-block my-3 text-center">
+                      <div
+                        class="d-block my-3 text-center custom-control custom-radio mb-3"
+                      >
                         <div class="custom-control custom-radio">
                           <input
-                            id="q5"
-                            type="radio"
+                            name="custom-radio-4"
                             class="custom-control-input"
-                            value="q5"
-                            name="q5"
-                            ngModel
-                            required
+                            id="customRadio5"
+                            type="radio"
                           />
-                          <label class="custom-control-label" for="q5"
-                            >yes</label
+                          <label
+                            class="custom-control-label"
+                            for="customRadio5"
                           >
+                            <span>yes</span>
+                          </label>
                         </div>
 
                         <div class="custom-control custom-radio">
                           <input
-                            id="q6"
-                            type="radio"
+                            name="custom-radio-4"
                             class="custom-control-input"
-                            value="q6"
-                            name="q6"
-                            ngModel
-                            required
+                            id="customRadio6"
+                            type="radio"
+                            checked
                           />
-                          <label class="custom-control-label" for="q6"
-                            >No</label
+                          <label
+                            class="custom-control-label"
+                            for="customRadio6"
                           >
+                            <span>no</span>
+                          </label>
                         </div>
 
                         <div class="invalid-feedback">
@@ -178,43 +186,45 @@
                       <h5 class="mb-3">
                         <ul>
                           <li>
-                            Runny nose,Sneezing Diarrhea, for example having
-                            loose or watery stool that you don't normally have
-                            Loss of appetite Nausea or vomiting Body or muscle
-                            aches, for example, aches or pains in your body that
-                            you don't normally have
+                            Runny nose, Sneezing, Diarrhea, Loss of appetite,
+                            Nausea or vomiting Body or muscle aches, for example
+                            aches or pains in your body that you don't normally
+                            have
                           </li>
                         </ul>
                       </h5>
-                      <div class="d-block my-3 text-center">
+                      <div
+                        class="d-block my-3 text-center custom-control custom-radio mb-3"
+                      >
                         <div class="custom-control custom-radio">
                           <input
-                            id="q7"
-                            type="radio"
+                            name="custom-radio-5"
                             class="custom-control-input"
-                            value="q7"
-                            name="q7"
-                            ngModel
-                            required
+                            id="customRadio7"
+                            type="radio"
                           />
-                          <label class="custom-control-label" for="q7"
-                            >yes</label
+                          <label
+                            class="custom-control-label"
+                            for="customRadio7"
                           >
+                            <span>yes</span>
+                          </label>
                         </div>
 
                         <div class="custom-control custom-radio">
                           <input
-                            id="q8"
-                            type="radio"
+                            name="custom-radio-5"
                             class="custom-control-input"
-                            value="q8"
-                            name="gender"
-                            ngModel
-                            required
+                            id="customRadio8"
+                            type="radio"
+                            checked
                           />
-                          <label class="custom-control-label" for="q8"
-                            >No</label
+                          <label
+                            class="custom-control-label"
+                            for="customRadio8"
                           >
+                            <span>no</span>
+                          </label>
                         </div>
 
                         <div class="invalid-feedback">
@@ -223,12 +233,6 @@
                       </div>
                     </div>
                     <!-- Submit Button -->
-                    <button
-                      type="submit"
-                      class="btn btn-danger btn-lg btn-block"
-                    >
-                      Find out
-                    </button>
                   </form>
                   <!-- Form ends -->
                 </div>
@@ -236,6 +240,14 @@
             </div>
           </div>
         </div>
+        <a routerLink="/physicians">
+          <button
+            type="submit"
+            class="btn btn-danger btn-lg btn-block text-center"
+          >
+            Find out
+          </button></a
+        >
       </div>
     </div>
   </section>
