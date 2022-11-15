@@ -24,25 +24,37 @@
             Consult<br />
             Doctor Online
           </h1>
-          <img src="/assets/img/circle-right.png" style="height: 50px; object-fit: cover" />
+          <img
+            src="/assets/img/circle-right.png"
+            style="height: 50px; object-fit: cover"
+          />
         </div>
       </div>
-      <img src="/assets/img/consult.png" style="height: 200px; object-fit: cover" />
+      <img
+        src="/assets/img/consult.png"
+        style="height: 200px; object-fit: cover"
+      />
     </div>
 
     <div class="container2">
       <div>
         <div>
-          <h1 style="margin-left: 25px; margin-top: 60px;">
+          <h1 style="margin-left: 25px; margin-top: 60px">
             Book A Cab/Auto/Bike
           </h1>
-          <p style="margin-left: 25px;"> To consult a Doctor</p>
-          <a href="" style="margin-left: 200px;">
-            <img src="/assets/img/circle-right.png" style="height: 50px; object-fit: cover;margin-top: -100px;" />
+          <p style="margin-left: 25px">To consult a Doctor</p>
+          <a href="" style="margin-left: 200px">
+            <img
+              src="/assets/img/circle-right.png"
+              style="height: 50px; object-fit: cover; margin-top: -100px"
+            />
           </a>
         </div>
       </div>
-      <img src="/assets/img/cab.png" style="height: 150px; object-fit: cover; margin-right: 25px;" />
+      <img
+        src="/assets/img/cab.png"
+        style="height: 150px; object-fit: cover; margin-right: 25px"
+      />
     </div>
   </section>
 
@@ -59,14 +71,21 @@
           <div class="slides-container">
             <div #widgetsContent class="slides">
               <div *ngFor="let spl of specialitiesImgs">
-                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 text-center" style="display: flex">
+                <div
+                  class="col-md-6 col-lg-3 mb-5 mb-lg-0 text-center"
+                  style="display: flex"
+                >
                   <div class="px-2">
-                    <img src="{{ spl.img }}" alt="{{ spl.title }}" class="img-center img-responsive" />
+                    <img
+                      src="{{ spl.img }}"
+                      alt="{{ spl.title }}"
+                      class="img-center img-responsive"
+                    />
                     <div class="pt-4">
                       <h5 class="title">
                         <span class="d-block mb-1 text-center">{{
                           spl.title
-                          }}</span>
+                        }}</span>
                       </h5>
                     </div>
                   </div>
@@ -75,10 +94,16 @@
             </div>
           </div>
           <div class="controls">
-            <button class="btn btn-neutral leftLst buttons-lft-rgt" (click)="scrollLeft()">
+            <button
+              class="btn btn-neutral leftLst buttons-lft-rgt"
+              (click)="scrollLeft()"
+            >
               <i class="fa fa-angle-left" style="font-size: 30px"></i>
             </button>
-            <button class="btn btn-neutral rightLst buttons-lft-rgt" (click)="scrollRight()">
+            <button
+              class="btn btn-neutral rightLst buttons-lft-rgt"
+              (click)="scrollRight()"
+            >
               <i class="fa fa-angle-right" style="font-size: 30px"></i>
             </button>
           </div>
@@ -100,9 +125,16 @@
           <div class="slides-container">
             <div #widgetsSymptoms class="slides">
               <div *ngFor="let sym of symptomsImgs">
-                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 text-center" style="display: flex">
+                <div
+                  class="col-md-6 col-lg-3 mb-5 mb-lg-0 text-center"
+                  style="display: flex"
+                >
                   <div class="px-2">
-                    <img src="{{ sym.img }}" class="rounded img-center shadow shadow-lg--hover" style="width: 175px" />
+                    <img
+                      src="{{ sym.img }}"
+                      class="rounded img-center shadow shadow-lg--hover"
+                      style="width: 175px"
+                    />
                     <div class="pt-4 text-center">
                       <h5 class="title">
                         <span class="d-block mb-1">{{ sym.title }}</span>
@@ -114,10 +146,16 @@
             </div>
           </div>
           <div class="controls">
-            <button class="btn btn-neutral leftLst buttons-lft-rgt" (click)="scrollLeftSymp()">
+            <button
+              class="btn btn-neutral leftLst buttons-lft-rgt"
+              (click)="scrollLeftSymp()"
+            >
               <i class="fa fa-angle-left" style="font-size: 30px"></i>
             </button>
-            <button class="btn btn-neutral rightLst buttons-lft-rgt" (click)="scrollRightSymp()">
+            <button
+              class="btn btn-neutral rightLst buttons-lft-rgt"
+              (click)="scrollRightSymp()"
+            >
               <i class="fa fa-angle-right" style="font-size: 30px"></i>
             </button>
           </div>
@@ -138,10 +176,18 @@
           <div class="slides-container">
             <div #widgetsDiagnosis class="slides">
               <div *ngFor="let daigno of diagnosisImgs">
-                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 text-center" style="display: flex">
+                <div
+                  class="col-md-6 col-lg-3 mb-5 mb-lg-0 text-center"
+                  style="display: flex"
+                >
                   <div class="px-2">
-                    <img src="{{ daigno.img }}" alt="{{ daigno.title }}" class="img-center img-responsive"
-                      style="width: 170px" />
+                    <a routerLink="{{ daigno.url }}">
+                      <img
+                        src="{{ daigno.img }}"
+                        alt="{{ daigno.title }}"
+                        class="img-center img-responsive"
+                        style="width: 170px"
+                    /></a>
                     <div class="pt-4 text-center">
                       <h5 class="title">
                         <span class="d-block mb-1">{{ daigno.title }}</span>
@@ -153,10 +199,16 @@
             </div>
           </div>
           <div class="controls">
-            <button class="btn btn-neutral leftLst buttons-lft-rgt" (click)="scrollLeftDiagno()">
+            <button
+              class="btn btn-neutral leftLst buttons-lft-rgt"
+              (click)="scrollLeftDiagno()"
+            >
               <i class="fa fa-angle-left" style="font-size: 30px"></i>
             </button>
-            <button class="btn btn-neutral rightLst buttons-lft-rgt" (click)="scrollRightDiagno()">
+            <button
+              class="btn btn-neutral rightLst buttons-lft-rgt"
+              (click)="scrollRightDiagno()"
+            >
               <i class="fa fa-angle-right" style="font-size: 30px"></i>
             </button>
           </div>

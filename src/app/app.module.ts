@@ -22,6 +22,8 @@ import { NotificationsService } from "./services/notifications.service";
 import { SelfcheckComponent } from "./selfcheck/selfcheck.component";
 import { DoctorsComponent } from './doctors/doctors.component';
 import { PhysiciansComponent } from './physicians/physicians.component';
+import { MigrainetreatmentdocsComponent } from './migrainetreatmentdocs/migrainetreatmentdocs.component';
+import { DiabetestreatmentdocsComponent } from './diabetestreatmentdocs/diabetestreatmentdocs.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,8 @@ import { PhysiciansComponent } from './physicians/physicians.component';
     SelfcheckComponent,
     DoctorsComponent,
     PhysiciansComponent,
+    MigrainetreatmentdocsComponent,
+    DiabetestreatmentdocsComponent,
   ],
   imports: [
     BrowserModule,

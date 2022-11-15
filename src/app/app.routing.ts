@@ -9,19 +9,27 @@ import { LandingComponent } from "./landing/landing.component";
 import { LoginComponent } from "./login/login.component";
 import { SelfcheckComponent } from "./selfcheck/selfcheck.component";
 import { DoctorsComponent } from "./doctors/doctors.component";
-import { PhysiciansComponent } from './physicians/physicians.component';
-
+import { PhysiciansComponent } from "./physicians/physicians.component";
+import { MigrainetreatmentdocsComponent } from "./migrainetreatmentdocs/migrainetreatmentdocs.component";
+import { DiabetestreatmentdocsComponent } from "./diabetestreatmentdocs/diabetestreatmentdocs.component";
 const routes: Routes = [
   { path: "home", component: HomeComponent },
   { path: "user-profile", component: ProfileComponent },
   // { path: "register", component: SignupComponent },
   { path: "landing", component: LandingComponent },
   { path: "doctor", component: DoctorsComponent },
-// { path: "login", component: LoginComponent },
+  // { path: "login", component: LoginComponent },
   { path: "", redirectTo: "home", pathMatch: "full" },
   { path: "selfcheck", component: SelfcheckComponent },
   { path: "physicians", component: PhysiciansComponent },
-  
+  {
+    path: "migraine-treatment-doctors",
+    component: MigrainetreatmentdocsComponent,
+  },
+  {
+    path: "diabetes-treatment-doctors",
+    component: DiabetestreatmentdocsComponent,
+  },
 ];
 
 @NgModule({

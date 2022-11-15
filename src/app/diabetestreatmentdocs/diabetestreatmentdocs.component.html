@@ -1,0 +1,43 @@
+<main>
+  <div class="main_conatainer"></div>
+
+  <section class="section section-lg">
+    <div class="container1">
+      <div *ngFor="let docInfo of migrainedocInfo">
+        <div class="card mb-2 main_card">
+          <div class="row g-0" style="padding: 20px">
+            <div class="col-md-3 text-center">
+              <img
+                src="{{ docInfo.img }}"
+                class="img-fluid rounded img-center shadow shadow-lg--hover"
+              />
+              <div class="pt-2">
+                <button class="button btn btn-info btn-sm">
+                  {{ docInfo.exp }}
+                </button>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <div class="card-body">
+                <h6 class="card-title">{{ docInfo.name }}</h6>
+                <p class="card-text text-muted">{{ docInfo.quali }}</p>
+                <p class="card-text">{{ docInfo.prof }}</p>
+                <p class="card-text">
+                  <small>{{ docInfo.lang }}</small>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card-body text-center">
+                <button class="button btn btn-gray">Know More</button>
+                <div class="pt-5">
+                  <button class="button btn btn-warning">consult Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
