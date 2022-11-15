@@ -19,10 +19,20 @@
   }
 
   .signin_right_container {
-    flex: 0.4;
+    flex: 0.3;
 
     form {
       flex: 1;
     }
   }
+}
+
+.forgot_text {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 4%;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-size: small;
 }
