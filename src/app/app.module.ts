@@ -19,6 +19,7 @@ import { LoginComponent } from "./login/login.component";
 import { AuthenticationModule } from "./authentication/authentication.module";
 import { ToolConstService } from "./services/tool-const.service";
 import { NotificationsService } from "./services/notifications.service";
+import { DoctorsComponent } from './doctors/doctors.component';
 import { PhysiciansComponent } from './physicians/physicians.component';
 
 @NgModule({
@@ -29,6 +30,7 @@ import { PhysiciansComponent } from './physicians/physicians.component';
     NavbarComponent,
     FooterComponent,
     LoginComponent,
+    DoctorsComponent,
     PhysiciansComponent,
   ],
   imports: [

@@ -7,6 +7,7 @@ import { HomeComponent } from "./home/home.component";
 import { ProfileComponent } from "./profile/profile.component";
 import { LandingComponent } from "./landing/landing.component";
 import { LoginComponent } from "./login/login.component";
+import { DoctorsComponent } from "./doctors/doctors.component";
 import { PhysiciansComponent } from './physicians/physicians.component';
 
 const routes: Routes = [
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: "user-profile", component: ProfileComponent },
   // { path: "register", component: SignupComponent },
   { path: "landing", component: LandingComponent },
-  // { path: "login", component: LoginComponent },
+  { path: "doctor", component: DoctorsComponent },
+// { path: "login", component: LoginComponent },
   { path: "", redirectTo: "home", pathMatch: "full" },
   { path: "physicians", component: PhysiciansComponent },
 ];
