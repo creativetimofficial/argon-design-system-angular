@@ -9,7 +9,7 @@
   <div class="container">
     <a class="navbar-brand mr-lg-5" [routerLink]="['/landing']">
       <img src="./assets/img/first-aid-kit.png" />
-      <span class="logo">docCare</span>
+      <span class="logo hover__banner">docCare</span>
     </a>
     <button
       class="navbar-toggler"
@@ -55,7 +55,7 @@
             [routerLink]="['/physicians']"
           >
             <i class="ni ni-ui-04 d-lg-none"></i>
-            <span class="nav-link-inner--text"
+            <span class="nav-link-inner--text hover__banner"
               ><strong>Find Doctors</strong></span
             >
           </a>
@@ -126,13 +126,17 @@
             style="cursor: pointer"
           >
             <i class="ni ni-collection d-lg-none"></i>
-            <span class="nav-link-inner--text"
+            <span class="nav-link-inner--text hover__banner"
               ><strong>Health Checks</strong></span
             >
           </a>
           <div class="dropdown-menu">
-            <a [routerLink]="['/landing']" class="dropdown-item">Landing</a>
-            <a [routerLink]="['/user-profile']" class="dropdown-item"
+            <a [routerLink]="['/landing']" class="dropdown-item hover__banner"
+              >Landing</a
+            >
+            <a
+              [routerLink]="['/user-profile']"
+              class="dropdown-item hover__banner"
               >Profile</a
             >
             <!-- <a [routerLink]="['/doctor']" class="dropdown-item">Doctors</a>
@@ -149,7 +153,7 @@
             [routerLink]="['/selfcheck']"
           >
             <i class="ni ni-collection d-lg-none"></i>
-            <span class="nav-link-inner--text"
+            <span class="nav-link-inner--text hover__banner"
               ><strong>Self Checks</strong></span
             >
           </a>
@@ -168,7 +172,7 @@
         <li class="nav-item d-none d-lg-block ml-lg-4">
           <a [routerLink]="['/signin']" class="btn">
             <span
-              class="nav-link-inner--text"
+              class="nav-link-inner--text hover__banner"
               style="text-transform: capitalize"
               >Login/Register</span
             >
