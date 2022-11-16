@@ -48,13 +48,18 @@
       </div>
       <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
         <li class="nav-item dropdown">
-          <a class="nav-link no-caret" data-toggle="dropdown" role="button">
+          <a
+            class="nav-link no-caret"
+            data-toggle="dropdown"
+            role="button"
+            [routerLink]="['/physicians']"
+          >
             <i class="ni ni-ui-04 d-lg-none"></i>
             <span class="nav-link-inner--text"
               ><strong>Find Doctors</strong></span
             >
           </a>
-          <div class="dropdown-menu-xl dropdown-menu">
+          <!-- <div class="dropdown-menu-xl dropdown-menu">
             <div class="dropdown-menu-inner">
               <a
                 routerLinkActive="active"
@@ -111,10 +116,15 @@
                 </div>
               </a>
             </div>
-          </div>
+          </div> -->
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link no-caret" data-toggle="dropdown" role="button">
+          <a
+            class="nav-link no-caret"
+            data-toggle="dropdown"
+            role="button"
+            style="cursor: pointer"
+          >
             <i class="ni ni-collection d-lg-none"></i>
             <span class="nav-link-inner--text"
               ><strong>Health Checks</strong></span
@@ -125,19 +135,25 @@
             <a [routerLink]="['/user-profile']" class="dropdown-item"
               >Profile</a
             >
-            <a [routerLink]="['/doctor']" class="dropdown-item">Doctors</a>
+            <!-- <a [routerLink]="['/doctor']" class="dropdown-item">Doctors</a>
             <a [routerLink]="['/login']" class="dropdown-item">Login</a>
-            <a [routerLink]="['/register']" class="dropdown-item">Register</a>
+            <a [routerLink]="['/register']" class="dropdown-item">Register</a> -->
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link no-caret" data-toggle="dropdown" role="button">
+          <a
+            class="nav-link no-caret"
+            data-toggle="dropdown"
+            role="button"
+            style="cursor: pointer"
+            [routerLink]="['/selfcheck']"
+          >
             <i class="ni ni-collection d-lg-none"></i>
             <span class="nav-link-inner--text"
               ><strong>Self Checks</strong></span
             >
           </a>
-          <div class="dropdown-menu">
+          <!-- <div class="dropdown-menu">
             <a [routerLink]="['/landing']" class="dropdown-item">Landing</a>
             <a [routerLink]="['/user-profile']" class="dropdown-item"
               >Profile</a
@@ -145,7 +161,7 @@
             <a [routerLink]="['/doctor']" class="dropdown-item">Doctors</a>
             <a [routerLink]="['/signin']" class="dropdown-item">Login</a>
             <a [routerLink]="['/signup']" class="dropdown-item">Register</a>
-          </div>
+          </div> -->
         </li>
       </ul>
       <ul class="navbar-nav align-items-lg-center ml-lg-auto">
