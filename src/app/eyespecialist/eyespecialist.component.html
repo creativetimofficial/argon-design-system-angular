@@ -31,14 +31,23 @@
                         </div>
                         <div class="col-md-4">
                             <div class="card-body text-center">
-                                <button class="button1 btn btn-gray">Know More</button>
+                                <button class="button1 btn btn-gray">About</button>
                                 <div class="pt-5">
-                                    <button class="button btn btn-warning">consult Now</button>
+                                    <button class="button btn btn-warning" type="submit" (click)="openPopup()">consult Now</button>
+                                    <div class="popup" id="popup">
+                                        <img width="80" height="80" src="../../assets/img/tick.png" alt="">
+                                        <h3>Thank you</h3>
+                                        <p>Your appointment is booked successfully.</p>
+                                        <p>Your appointment id is: 20221116SP</p>
+                                        <p>Please visit the Hospital along with appointment id</p>
+                                        <button style="margin-top: 0;" type="button" (click)="closePopup()" >OK</button>
+                                    </div>
                                 </div> 
                             </div>
                         </div>
                     </div>
                 </div>
+                <hr>
             </div>
         </div>
     </section>

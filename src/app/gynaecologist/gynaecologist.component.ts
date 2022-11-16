@@ -24,6 +24,18 @@ export class GynaecologistComponent implements OnInit {
 
   constructor() { }
 
+  openPopup() {
+    let popup = document.getElementById("popup");
+
+    popup.classList.add("open-popup")
+  }
+
+  closePopup() {
+    let popup = document.getElementById("popup");
+
+    popup.classList.remove("open-popup")
+  }
+
   ngOnInit(): void {
   }
 
