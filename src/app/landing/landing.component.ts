@@ -22,7 +22,7 @@ export class LandingComponent implements OnInit {
     },
     {
       img: "./assets/img/hospital/physiotherapist.svg",
-      title: "physiotherapist", url: "#"
+      title: "Physiotherapist", url: "#"
     },
     { img: "./assets/img/hospital/dentist.svg", title: "Dentist", url: "/dentist" },
     { img: "./assets/img/hospital/more.svg", title: "View all", url: "/doctors" },
