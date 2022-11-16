@@ -75,18 +75,16 @@
                   class="col-md-6 col-lg-3 mb-5 mb-lg-0 text-center"
                   style="display: flex"
                 >
-                  <div
-                    class="px-2"
-                    [routerLink]="['/physicians']"
-                    routerLinkActive="router-link-active"
-                  >
+                  <div class="px-2">
+                  <a routerLink="{{ spl.url }}">
                     <img
                       src="{{ spl.img }}"
                       alt="{{ spl.title }}"
-                      [routerLink]="['/physicians']"
+                      [routerLink]="['{{ spl.link }}']"
                       routerLinkActive="router-link-active"
                       class="img-center img-responsive"
                     />
+                  </a>
                     <div class="pt-4">
                       <h5 class="title">
                         <span class="d-block mb-1 text-center">{{

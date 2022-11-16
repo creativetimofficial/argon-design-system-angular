@@ -12,20 +12,20 @@ export class LandingComponent implements OnInit {
   @ViewChild("widgetsDiagnosis") widgetsDiagnosis: ElementRef;
 
   specialitiesImgs = [
-    { img: "./assets/img/hospital/physician.svg", title: "Physician"},
-    { img: "./assets/img/hospital/gynaecologist.svg", title: "Gynaecologist" },
-    { img: "./assets/img/hospital/pediatrician.svg", title: "Pediatrician" },
-    { img: "./assets/img/hospital/orthopedician.svg", title: "Orthopedician" },
+    { img: "./assets/img/hospital/physician.svg", title: "Physician", url: "/physicians"},
+    { img: "./assets/img/hospital/gynaecologist.svg", title: "Gynaecologist", url: "/gynaecologist" },
+    { img: "./assets/img/hospital/pediatrician.svg", title: "Pediatrician", url: "/pediatrician" },
+    { img: "./assets/img/hospital/orthopedician.svg", title: "Orthopedician", url: "/ortho" },
     {
       img: "./assets/img/hospital/eye-specialist.svg",
-      title: "Eye Specialist",
+      title: "Eye Specialist", url: "/eyespecialist"
     },
     {
       img: "./assets/img/hospital/physiotherapist.svg",
-      title: "physiotherapist",
+      title: "physiotherapist", url: "#"
     },
-    { img: "./assets/img/hospital/dentist.svg", title: "Dentist" },
-    { img: "./assets/img/hospital/more.svg", title: "View all" },
+    { img: "./assets/img/hospital/dentist.svg", title: "Dentist", url: "/dentist" },
+    { img: "./assets/img/hospital/more.svg", title: "View all", url: "/doctors" },
   ];
 
   diagnosisImgs = [
@@ -104,7 +104,7 @@ export class LandingComponent implements OnInit {
 
   specialitiesRoute() {
     setTimeout(() => {
-      this.router.navigateByUrl("/physicians");
+      this.router.navigateByUrl("/doctors");
     }, 500);
   }
 
