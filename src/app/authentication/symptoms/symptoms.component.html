@@ -5,12 +5,15 @@
   <div class="WC_PrimarySymptom__Title">What is your concern?</div>
   <div class="WC_SymptomGroup__TopBar">
     <div class="WC_SymptomGroup__TopBar__Title">Most Selected Issues</div>
-    <!-- <div class="WC_SymptomGroup__TopBar__Divider"></div> -->
+    <div class="WC_SymptomGroup__TopBar__Divider"></div>
+    <div class="px-4">
+       <button class="button1" (click)="getSpecialitiesList()">Continue</button>
+    </div>
   </div>
 
   <div class="WC_SymptomGroup__Items">
     <div class="row" style="padding-left: 50px">
-      <button type="button" class="btn btn-outline-info btn-sm">
+      <button type="button" class="btn btn-outline-info btn-sm button-img">
         <div class="WC_SymptomPill">
           <div class="WC_SymptomPill__Image">
             <img
@@ -21,7 +24,7 @@
           <div class="WC_SymptomPill__Name">Fever</div>
         </div>
       </button>
-      <button class="btn btn-outline-info btn-sm">
+      <button class="btn btn-outline-info btn-sm button-img">
         <div class="WC_SymptomPill">
           <div class="WC_SymptomPill__Image">
             <img
@@ -32,7 +35,7 @@
           </div>
         </div>
       </button>
-      <button class="btn btn-outline-info btn-sm">
+      <button class="btn btn-outline-info btn-sm button-img">
         <div class="WC_SymptomPill">
           <div class="WC_SymptomPill__Image">
             <img
@@ -43,11 +46,7 @@
           </div>
         </div>
       </button>
-    </div>
-
-    <div class="row" style="padding-left: 50px">
-      <!-- <button class="btn btn-neutral leftLst buttons-lft-rgt">  -->
-      <button class="btn btn-outline-info btn-sm">
+      <button class="btn btn-outline-info btn-sm button-img">
         <div class="WC_SymptomPill">
           <div class="WC_SymptomPill__Image">
             <img
@@ -58,7 +57,7 @@
           <div class="WC_SymptomPill__Name">Cough</div>
         </div>
       </button>
-      <button class="btn btn-outline-info btn-sm">
+      <button class="btn btn-outline-info btn-sm button-img">
         <div class="WC_SymptomPill">
           <div class="WC_SymptomPill__Image">
             <img
@@ -69,7 +68,7 @@
           </div>
         </div>
       </button>
-      <button class="btn btn-outline-info btn-sm">
+      <button class="btn btn-outline-info btn-sm button-img">
         <div class="WC_SymptomPill">
           <div class="WC_SymptomPill__Image">
             <img
@@ -80,16 +79,19 @@
           <div class="WC_SymptomPill__Name">Hairfall</div>
         </div>
       </button>
-    </div>
+    </div>    
   </div>
 
   <div class="WC_SymptomGroup__TopBar">
     <div class="WC_SymptomGroup__TopBar__Title">Common Health Issues</div>
-    <!-- <div class="WC_SymptomGroup__TopBar__Divider"></div> -->
+    <div class="WC_SymptomGroup__TopBar__Divider"></div>
+    <div class="px-4">
+      <button class="button1" (click)="getSpecialitiesList()">Continue</button>
+   </div>
   </div>
   <div class="WC_SymptomGroup__Items">
     <div class="row" style="padding-left: 50px">
-      <button type="button" class="btn btn-outline-info btn-sm">
+      <button type="button" class="btn btn-outline-info btn-sm button-img">
         <div class="WC_SymptomPill">
           <div class="WC_SymptomPill__Image">
             <img
@@ -100,7 +102,7 @@
           <div class="WC_SymptomPill__Name">Back Pain</div>
         </div>
       </button>
-      <button class="btn btn-outline-info btn-sm">
+      <button class="btn btn-outline-info btn-sm button-img">
         <div class="WC_SymptomPill">
           <div class="WC_SymptomPill__Image">
             <img
@@ -111,7 +113,7 @@
           </div>
         </div>
       </button>
-      <button class="btn btn-outline-info btn-sm">
+      <button class="btn btn-outline-info btn-sm button-img">
         <div class="WC_SymptomPill">
           <div class="WC_SymptomPill__Image">
             <img
@@ -122,9 +124,7 @@
           </div>
         </div>
       </button>
-    </div>
-    <div class="row" style="padding-left: 50px">
-      <button type="button" class="btn btn-outline-info btn-sm">
+      <button type="button" class="btn btn-outline-info btn-sm button-img">
         <div class="WC_SymptomPill">
           <div class="WC_SymptomPill__Image">
             <img
@@ -135,7 +135,7 @@
           <div class="WC_SymptomPill__Name">Diabetes</div>
         </div>
       </button>
-      <button class="btn btn-outline-info btn-sm">
+      <button class="btn btn-outline-info btn-sm button-img">
         <div class="WC_SymptomPill">
           <div class="WC_SymptomPill__Image">
             <img
@@ -146,7 +146,7 @@
           </div>
         </div>
       </button>
-      <button class="btn btn-outline-info btn-sm">
+      <button class="btn btn-outline-info btn-sm button-img">
         <div class="WC_SymptomPill">
           <div class="WC_SymptomPill__Image">
             <img
@@ -161,142 +161,80 @@
   </div>
 
   <div class="WC_SymptomGroup__TopBar">
-    <div class="WC_SymptomGroup__TopBar__Title">Skin & Hair Issues</div>
-    <!-- <div class="WC_SymptomGroup__TopBar__Divider"></div> -->
+    <div class="WC_SymptomGroup__TopBar__Title">Skin And Hair Issues</div>
+    <div class="WC_SymptomGroup__TopBar__Divider"></div>
+    <div class="px-4">
+      <button class="button1" (click)="getSpecialitiesList()">Continue</button>
+   </div>
   </div>
   <div class="WC_SymptomGroup__Items">
     <div class="row" style="padding-left: 50px">
-      <button type="button" class="btn btn-outline-info btn-sm">
+      <button type="button" class="btn btn-outline-info btn-sm button-img">
         <div class="WC_SymptomPill">
           <div class="WC_SymptomPill__Image">
             <img
-              src="/assets/img/hospital/symptoms/back-pain.png"
+              src="/assets/img/hospital/symptoms/dark-circles.png"
               class="WC_SymptomPill__Image__Img"
             />
           </div>
-          <div class="WC_SymptomPill__Name">Back Pain</div>
+          <div class="WC_SymptomPill__Name">Dark Circles</div>
         </div>
       </button>
-      <button class="btn btn-outline-info btn-sm">
+      <button class="btn btn-outline-info btn-sm button-img">
         <div class="WC_SymptomPill">
           <div class="WC_SymptomPill__Image">
             <img
-              src="/assets/img/hospital/symptoms/high-bp.png"
+              src="/assets/img/hospital/symptoms/reddish-skin.png"
               class="WC_SymptomPill__Image__Img"
             />
-            <div class="WC_SymptomPill__Name">High BP</div>
+            <div class="WC_SymptomPill__Name">Reddish Skin</div>
           </div>
         </div>
       </button>
-      <button class="btn btn-outline-info btn-sm">
+      <button class="btn btn-outline-info btn-sm button-img">
         <div class="WC_SymptomPill">
           <div class="WC_SymptomPill__Image">
             <img
-              src="/assets/img/hospital/symptoms/constipation.png"
+              src="/assets/img/hospital/symptoms/itching.png"
               class="WC_SymptomPill__Image__Img"
             />
-            <div class="WC_SymptomPill__Name">Canstipation</div>
+            <div class="WC_SymptomPill__Name">Itching</div>
           </div>
         </div>
       </button>
-    </div>
-    <div class="row" style="padding-left: 50px">
-      <button type="button" class="btn btn-outline-info btn-sm">
+      <button type="button" class="btn btn-outline-info btn-sm button-img">
         <div class="WC_SymptomPill">
           <div class="WC_SymptomPill__Image">
             <img
-              src="/assets/img/hospital/symptoms/diabetes.png"
+              src="/assets/img/hospital/symptoms/rashes.png"
               class="WC_SymptomPill__Image__Img"
             />
           </div>
-          <div class="WC_SymptomPill__Name">Diabetes</div>
+          <div class="WC_SymptomPill__Name">Rashes</div>
         </div>
       </button>
-      <button class="btn btn-outline-info btn-sm">
+      <button class="btn btn-outline-info btn-sm button-img">
         <div class="WC_SymptomPill">
           <div class="WC_SymptomPill__Image">
             <img
-              src="/assets/img/hospital/symptoms/gas.png"
+              src="/assets/img/hospital/symptoms/pimples.png"
               class="WC_SymptomPill__Image__Img"
             />
-            <div class="WC_SymptomPill__Name">Gas</div>
+            <div class="WC_SymptomPill__Name">Pimples</div>
           </div>
         </div>
       </button>
-      <button class="btn btn-outline-info btn-sm">
+      <button class="btn btn-outline-info btn-sm button-img">
         <div class="WC_SymptomPill">
           <div class="WC_SymptomPill__Image">
             <img
-              src="/assets/img/hospital/symptoms/throat-pain.png"
+              src="/assets/img/hospital/symptoms/dandruff.png"
               class="WC_SymptomPill__Image__Img"
             />
-            <div class="WC_SymptomPill__Name">Throat Pain</div>
+            <div class="WC_SymptomPill__Name">Dandruff</div>
           </div>
         </div>
       </button>
     </div>
   </div>
 </div>
-<!-- <div class="column">
-    <img src="/assets/img/hospital/symptoms/symptoms.jpeg">
-</div> -->
-<!-- <div class="WC_SymptomGroup__TopBar">
-        <div class="WC_SymptomGroup__TopBar__Title">Bone & Joint Problems</div>
-        <div class="WC_SymptomGroup__TopBar__Divider"></div>          
-    </div>
-
-    <div class="WC_SymptomGroup__Items">
-        <div class="row" style="padding-left:50px">
-        <button type="button" class="btn btn-outline-info btn-sm">    
-            <div class="WC_SymptomPill">
-                <div class="WC_SymptomPill__Image">
-                    <img src="/assets/img/hospital/symptoms/elbow-pain.png" class="WC_SymptomPill__Image__Img">
-                </div>
-                <div class="WC_SymptomPill__Name">Elbow Pain</div>
-            </div>
-        </button>
-        <button class="btn btn-outline-info btn-sm"> 
-            <div class="WC_SymptomPill">
-                    <div class="WC_SymptomPill__Image">
-                        <img src="/assets/img/hospital/symptoms/joint-pain.png" class="WC_SymptomPill__Image__Img">
-                        <div class="WC_SymptomPill__Name">Joint Pain</div>
-                    </div>           
-                </div>
-        </button>
-        <button class="btn btn-outline-info btn-sm"> 
-            <div class="WC_SymptomPill">
-                    <div class="WC_SymptomPill__Image">
-                        <img src="/assets/img/hospital/symptoms/neck-pain.png" class="WC_SymptomPill__Image__Img">
-                        <div class="WC_SymptomPill__Name">Neck Pain</div>
-                    </div>           
-                </div>
-        </button>
-        </div>
-        <div class="row" style="padding-left:50px">
-            <button type="button" class="btn btn-outline-info btn-sm">    
-            <div class="WC_SymptomPill">
-                <div class="WC_SymptomPill__Image">
-                    <img src="/assets/img/hospital/symptoms/diabetes.png" class="WC_SymptomPill__Image__Img">
-                </div>
-                <div class="WC_SymptomPill__Name">Diabetes</div>
-            </div>
-            </button>
-            <button class="btn btn-outline-info btn-sm"> 
-            <div class="WC_SymptomPill">
-                    <div class="WC_SymptomPill__Image">
-                        <img src="/assets/img/hospital/symptoms/gas.png" class="WC_SymptomPill__Image__Img">
-                        <div class="WC_SymptomPill__Name">Gas</div>
-                    </div>           
-                </div>
-            </button>
-            <button class="btn btn-outline-info btn-sm"> 
-            <div class="WC_SymptomPill">
-                    <div class="WC_SymptomPill__Image">
-                        <img src="/assets/img/hospital/symptoms/throat-pain.png" class="WC_SymptomPill__Image__Img">
-                        <div class="WC_SymptomPill__Name">Throat Pain</div>
-                    </div>           
-                </div>
-            </button>
-        </div>
-    </div>
-             -->

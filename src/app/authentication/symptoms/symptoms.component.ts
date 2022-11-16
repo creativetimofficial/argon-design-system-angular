@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-symptoms',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SymptomsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+  getSpecialitiesList() {
+      console.log("in the list")
+      this.router.navigateByUrl("/physicians");
   }
 
 }
