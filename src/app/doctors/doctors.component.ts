@@ -3,25 +3,23 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-doctors',
   templateUrl: './doctors.component.html',
-  styleUrls: ['./doctors.component.css']
+  styleUrls: ['./doctors.component.scss']
 })
 export class DoctorsComponent implements OnInit {
 
   doctorsProfile = [
-    { img: "./assets/img/dental1.jpg", title: "Dr Raghunandan" },
-    { img: "./assets/img/hospital/gynaecologist.svg", title: "Gynaecologist" },
-    { img: "./assets/img/hospital/pediatrician.svg", title: "Pediatrician" },
-    { img: "./assets/img/hospital/orthopedician.svg", title: "Orthopedician" },
+    { img: "./assets/img/hospital/doctor1.jpeg", name: "Dr. John", exp: "22 years exp",
+    quali: "MBBS, MD (General Medicine)", prof: "Physician", lang: "English, Hindi", fee: "₹300 Consultation fee"},
+    { img: "./assets/img/hospital/doctor2.jpeg", name: "Dr. Timothy", exp: "18 years exp",
+    quali: "MBBS, DNB(Ortho)", prof: "Orthopedician", lang: "English", fee: "₹300 Consultation fee"},
+    { img: "./assets/img/hospital/doctor3.jpeg", name: "Dr. Jacob", exp: "18 years exp",
+    quali: "MBBS, DO", prof: "Pediatrician", lang: "English", fee: "₹300 Consultation fee" },
+    { img: "./assets/img/hospital/doctor4.jpeg", name: "Dr. Stella", exp: "12 years exp",
+    quali: "MBBS, DNB", prof: "Gynaecologist", lang: "English", fee: "₹300 Consultation fee" },
     {
-      img: "./assets/img/hospital/eye-specialist.svg",
-      title: "Eye Specialist",
+      img: "./assets/img/hospital/doctor5.jpeg", name: "Dr. Rebecca", exp: "8 years exp",
+      quali: "BDS, MDS", prof: "Dentist", lang: "English, Hindi",fee: "₹300 Consultation fee"
     },
-    {
-      img: "./assets/img/hospital/physiotherapist.svg",
-      title: "physiotherapist",
-    },
-    { img: "./assets/img/hospital/dentist.svg", title: "Dentist" },
-    { img: "./assets/img/hospital/more.svg", title: "View all" },
   ];
 
   constructor() { }
