@@ -12,7 +12,7 @@ export const PasswordStrengthValidator = function (
   let upperCaseCharacters = /[A-Z]+/g;
   if (upperCaseCharacters.test(value) === false) {
     return {
-      passwordStrength: `Password should contain Upper case characters `,
+      passwordStrength: `Password should contain Upper case characters`,
     };
   }
 
