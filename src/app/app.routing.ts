@@ -23,7 +23,7 @@ const routes: Routes = [
   { path: "user-profile", component: ProfileComponent },
   // { path: "register", component: SignupComponent },
   { path: "landing", component: LandingComponent },
-  { path: "doctor", component: DoctorsComponent },
+  { path: "doctors", component: DoctorsComponent },
   // { path: "login", component: LoginComponent },
   { path: "", redirectTo: "home", pathMatch: "full" },
   { path: "selfcheck", component: SelfcheckComponent },
