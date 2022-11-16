@@ -16,33 +16,45 @@
     <img src="/assets/img/pana.svg" style="height: 400px; object-fit: cover" />
   </div>
 
-  <section class="row">
+  <section class="banner">
     <div class="container">
       <div>
         <div>
-          <h1>
+          <h1 style="margin-left: 25px; margin-top: 60px">
             Consult<br />
             Doctor Online
           </h1>
-          <img src="/assets/img/circle-right.png" style="height: 50px; object-fit: cover" />
-        </div>
-      </div>
-      <img src="/assets/img/consult.png" style="height: 200px; object-fit: cover" />
-    </div>
-
-    <div class="container2">
-      <div>
-        <div>
-          <h1 style="margin-left: 25px; margin-top: 60px">
-            Book A Cab/Auto/Bike
-          </h1>
           <p style="margin-left: 25px">To consult a Doctor</p>
           <a href="" style="margin-left: 200px">
-            <img src="/assets/img/circle-right.png" style="height: 50px; object-fit: cover; margin-top: -100px" />
+            <img
+              src="/assets/img/circle-right.png"
+              style="height: 50px; object-fit: cover; margin-top: -100px"
+            />
           </a>
         </div>
       </div>
-      <img src="/assets/img/cab.png" style="height: 150px; object-fit: cover; margin-right: 25px" />
+      <img
+        src="/assets/img/consult.png"
+        style="height: 200px; object-fit: cover"
+      />
+    </div>
+    <div class="container2">
+      <div>
+        <div>
+          <h1 style="margin-left: 25px; margin-top: 60px">Book An Ambulance</h1>
+          <p style="margin-left: 25px">To Book an Ambulance</p>
+          <a href="" style="margin-left: 220px">
+            <img
+              src="/assets/img/circle-right.png"
+              style="height: 50px; object-fit: cover; margin-top: -100px"
+            />
+          </a>
+        </div>
+      </div>
+      <img
+        src="/assets/img/cab.png"
+        style="height: 150px; object-fit: cover; margin-right: 25px"
+      />
     </div>
   </section>
 
@@ -59,15 +71,27 @@
           <div class="slides-container">
             <div #widgetsContent class="slides">
               <div *ngFor="let spl of specialitiesImgs">
-                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 text-center" style="display: flex">
-                  <div class="px-2" [routerLink]="['/physicians']" routerLinkActive="router-link-active">
-                    <img src="{{ spl.img }}" alt="{{ spl.title }}" [routerLink]="['/physicians']"
-                      routerLinkActive="router-link-active" class="img-center img-responsive" />
+                <div
+                  class="col-md-6 col-lg-3 mb-5 mb-lg-0 text-center"
+                  style="display: flex"
+                >
+                  <div
+                    class="px-2"
+                    [routerLink]="['/physicians']"
+                    routerLinkActive="router-link-active"
+                  >
+                    <img
+                      src="{{ spl.img }}"
+                      alt="{{ spl.title }}"
+                      [routerLink]="['/physicians']"
+                      routerLinkActive="router-link-active"
+                      class="img-center img-responsive"
+                    />
                     <div class="pt-4">
                       <h5 class="title">
                         <span class="d-block mb-1 text-center">{{
                           spl.title
-                          }}</span>
+                        }}</span>
                       </h5>
                     </div>
                   </div>
@@ -76,10 +100,16 @@
             </div>
           </div>
           <div class="controls">
-            <button class="btn btn-neutral leftLst buttons-lft-rgt" (click)="scrollLeft()">
+            <button
+              class="btn btn-neutral leftLst buttons-lft-rgt"
+              (click)="scrollLeft()"
+            >
               <i class="fa fa-angle-left" style="font-size: 30px"></i>
             </button>
-            <button class="btn btn-neutral rightLst buttons-lft-rgt" (click)="scrollRight()">
+            <button
+              class="btn btn-neutral rightLst buttons-lft-rgt"
+              (click)="scrollRight()"
+            >
               <i class="fa fa-angle-right" style="font-size: 30px"></i>
             </button>
           </div>
@@ -101,9 +131,16 @@
           <div class="slides-container">
             <div #widgetsSymptoms class="slides">
               <div *ngFor="let sym of symptomsImgs">
-                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 text-center" style="display: flex">
+                <div
+                  class="col-md-6 col-lg-3 mb-5 mb-lg-0 text-center"
+                  style="display: flex"
+                >
                   <div class="px-2">
-                    <img src="{{ sym.img }}" class="rounded img-center shadow shadow-lg--hover" style="width: 175px" />
+                    <img
+                      src="{{ sym.img }}"
+                      class="rounded img-center shadow shadow-lg--hover"
+                      style="width: 175px"
+                    />
                     <div class="pt-4 text-center">
                       <h5 class="title">
                         <span class="d-block mb-1">{{ sym.title }}</span>
@@ -115,10 +152,16 @@
             </div>
           </div>
           <div class="controls">
-            <button class="btn btn-neutral leftLst buttons-lft-rgt" (click)="scrollLeftSymp()">
+            <button
+              class="btn btn-neutral leftLst buttons-lft-rgt"
+              (click)="scrollLeftSymp()"
+            >
               <i class="fa fa-angle-left" style="font-size: 30px"></i>
             </button>
-            <button class="btn btn-neutral rightLst buttons-lft-rgt" (click)="scrollRightSymp()">
+            <button
+              class="btn btn-neutral rightLst buttons-lft-rgt"
+              (click)="scrollRightSymp()"
+            >
               <i class="fa fa-angle-right" style="font-size: 30px"></i>
             </button>
           </div>
@@ -139,11 +182,18 @@
           <div class="slides-container">
             <div #widgetsDiagnosis class="slides">
               <div *ngFor="let daigno of diagnosisImgs">
-                <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 text-center" style="display: flex">
+                <div
+                  class="col-md-6 col-lg-3 mb-5 mb-lg-0 text-center"
+                  style="display: flex"
+                >
                   <div class="px-2">
                     <a routerLink="{{ daigno.url }}">
-                      <img src="{{ daigno.img }}" alt="{{ daigno.title }}" class="img-center img-responsive"
-                        style="width: 170px" /></a>
+                      <img
+                        src="{{ daigno.img }}"
+                        alt="{{ daigno.title }}"
+                        class="img-center img-responsive"
+                        style="width: 170px"
+                    /></a>
                     <div class="pt-4 text-center">
                       <h5 class="title">
                         <span class="d-block mb-1">{{ daigno.title }}</span>
@@ -155,10 +205,16 @@
             </div>
           </div>
           <div class="controls">
-            <button class="btn btn-neutral leftLst buttons-lft-rgt" (click)="scrollLeftDiagno()">
+            <button
+              class="btn btn-neutral leftLst buttons-lft-rgt"
+              (click)="scrollLeftDiagno()"
+            >
               <i class="fa fa-angle-left" style="font-size: 30px"></i>
             </button>
-            <button class="btn btn-neutral rightLst buttons-lft-rgt" (click)="scrollRightDiagno()">
+            <button
+              class="btn btn-neutral rightLst buttons-lft-rgt"
+              (click)="scrollRightDiagno()"
+            >
               <i class="fa fa-angle-right" style="font-size: 30px"></i>
             </button>
           </div>
