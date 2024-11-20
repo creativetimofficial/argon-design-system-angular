@@ -1,0 +1,24 @@
+.main_conatainer {
+  //height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+  background-color: aquamarine;
+  // box-shadow: ;
+}
+.surveysparrow-chat__split-layer {
+  //height: calc(100vh - 180px);
+  border-radius: 50%;
+}
+.card {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 0px 35px rgb(0 0 0 / 10%);
+  z-index: 1;
+}

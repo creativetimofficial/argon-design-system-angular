@@ -1,0 +1,54 @@
+<main>
+    <div class="main_conatainer">
+    </div>
+
+    <section class="section section-lg">
+        <div class="container1">
+            <div *ngFor="let docInfo of orthopedicianInfo">
+                <div class="card mb-2 main_card">
+                    <div class="row g-0" style="padding: 20px;">
+                        <div class="col-md-3 text-center">
+                            <img width="150" height="150"
+                            src={{docInfo.img}}
+                            class="img-fluid rounded img-center shadow shadow-lg--hover "
+                            />
+                            <div class="pt-2">
+                                <button class="button2 btn btn-info btn-sm">{{docInfo.exp}}</button>
+                            </div> 
+                        </div>
+                        <div class="col-md-5">
+                            <div class="card-body">
+                            <h6 class="card-title">{{docInfo.name}}</h6>
+                            <p class="card-text text-muted">{{docInfo.quali}}</p>
+                            <p class="card-text">{{docInfo.prof}}</p>
+                            <p class="card-text">
+                                <small >{{docInfo.lang}}</small>
+                            </p>
+                            <p class="card-text">
+                                <small >{{docInfo.fee}}</small>
+                            </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card-body text-center">
+                                <button class="button1 btn btn-gray">About</button>
+                                <div class="pt-5">
+                                    <button class="button btn btn-warning" type="submit" (click)="openPopup()">consult Now</button>
+                                    <div class="popup" id="popup">
+                                        <img width="80" height="80" src="../../assets/img/tick.png" alt="">
+                                        <h3>Thank you</h3>
+                                        <p>Your appointment is booked successfully.</p>
+                                        <p>Your appointment id is: 20221116SP</p>
+                                        <p>Please visit the Hospital along with appointment id</p>
+                                        <button style="margin-top: 0;" type="button" (click)="closePopup()" >OK</button>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </section>
+</main>

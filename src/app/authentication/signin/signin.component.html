@@ -1,0 +1,119 @@
+<div class="signin_container">
+  <div class="signin_left_container">
+    <img src="/assets/img/new/10130.jpg" />
+  </div>
+
+  <div class="signin_right_container">
+    <form [formGroup]="login">
+      <div class="card card-login card-hidden">
+        <div class="card-header card-header-info text-center">
+          <h4 class="card-title">Signin with</h4>
+          <div class="social-line">
+            <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
+              <i class="fa fa-facebook-square"></i>
+            </a>
+            <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a href="#pablo" class="btn btn-just-icon btn-link btn-white">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </div>
+        </div>
+        <div class="forgot_text" style="margin-top: 20px">
+          Don't have an account? &nbsp;
+          <a href="/signup"> Signup </a>
+        </div>
+        <div class="card-body">
+          <div class="bmd-form-group" style="padding-bottom: 10px">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="material-icons">email</i>
+                </span>
+              </div>
+
+              <input
+                formControlName="email"
+                placeholder="Email/Phone"
+                id="email"
+                type="text"
+                required
+                class="form-control"
+              />
+            </div>
+            <span
+              style="color: red; padding-left: 10px; font-size: small"
+              class="text-danger input-group"
+              *ngIf="
+                login.controls['email'].hasError('required') &&
+                (login.controls['email'].dirty ||
+                  login.controls['email'].touched)
+              "
+              >This field is required</span
+            >
+            <span
+              style="color: red; padding-left: 10px; font-size: small"
+              class="text-danger input-group"
+              *ngIf="
+                login.controls['email'].hasError('pattern') &&
+                (login.controls['email'].dirty ||
+                  login.controls['email'].touched)
+              "
+              >Please enter valid email address or phone number</span
+            >
+          </div>
+          <div class="bmd-form-group" style="padding-bottom: 10px">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="material-icons">lock_outline</i>
+                </span>
+              </div>
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Password"
+                formControlName="password"
+                [type]="showPassword ? 'text' : 'password'"
+                required
+              />
+              <div class="input-group-append">
+                <span class="input-group-text">
+                  <i
+                    class="fa"
+                    [ngClass]="{
+                      'fa-eye-slash': !showPassword,
+                      'fa-eye': showPassword
+                    }"
+                    (click)="showHidePassword()"
+                  ></i>
+                </span>
+              </div>
+              <span
+                style="color: red; padding-left: 10px; font-size: small"
+                class="text-danger input-group"
+                *ngIf="
+                  login.controls['password'].hasError('required') &&
+                  (login.controls['password'].dirty ||
+                    login.controls['password'].touched)
+                "
+              >
+                This field is required
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="forgot_text">
+          <a href="/forgot"> Forgot password? </a>
+        </div>
+        <div
+          class="justify-content-center text-center"
+          style="padding-bottom: 10px"
+        >
+          <button (click)="submitForm()" class="btn btn-info">Signin</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

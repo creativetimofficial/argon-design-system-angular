@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+.WC_PrimarySymptom__Title {
+  color: #011c23;
+  font-size: 2em;
+  font-weight: 500;
+  margin: 0.5em 0;
+  padding-left: 50px;
+}
+
+.WC_SymptomGroup__TopBar__Title {
+  color: #000000;
+  white-space: nowrap;
+  margin-right: 0.5em;
+  padding-left: 50px;
+  font-family: "Poppins", sans-serif;
+  font-size: 26px;
+}
+
+.WC_SymptomGroup__TopBar__Divider {
+  width: 60%;
+  border: 1px solid #226cc7;
+}
+
+.WC_SymptomGroup__TopBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 1em 0;
+}
+
+.WC_SymptomPill__Image__Img {
+  width: 50%;
+  height: 50%;
+}
+
+.WC_SymptomPill__Name {
+  color: #333;
+  font-size: 0.8em;
+  font-weight: 500;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.btn-color {
+  border-radius: 50%;
+  background-color: #fff2ee;
+  width: 150px;
+  height: 150px;
+  top: 30px;
+  font-size: 25px;
+  color: #d17d7d;
+}
+
+.main_conatainer {
+  height: 50px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  width: 70% !important;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+.WC_SymptomGroup__Items {
+  display: flex;
+  flex-direction: row;
+}
+
+.button-img {
+  width: 150px !important;
+  height: 150px !important;
+  border-radius: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+$fuschia: #16b3ac;
+$button-bg: $fuschia;
+$button-text-color: #fff;
+$baby-blue: #f8faff;
+
+.button1 {
+  background-image: linear-gradient(120deg, #16b3ac, #d2dc02);
+  color: white;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  font-size: 14px;
+  padding: 10px 2em;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: $button-bg;
+  color: $button-text-color;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px rgba(22, 179, 172, 0.5);
+  width: fit-content;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:before,
+  &:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 140%;
+    height: 100%;
+    left: -20%;
+    z-index: -1000;
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+  }
+
+  &:before {
+    display: none;
+    top: -75%;
+    background-image: radial-gradient(circle, $button-bg 20%, transparent 20%),
+      radial-gradient(circle, transparent 20%, $button-bg 20%, transparent 30%),
+      radial-gradient(circle, $button-bg 20%, transparent 20%),
+      radial-gradient(circle, $button-bg 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, $button-bg 15%, transparent 20%),
+      radial-gradient(circle, $button-bg 20%, transparent 20%),
+      radial-gradient(circle, $button-bg 20%, transparent 20%),
+      radial-gradient(circle, $button-bg 20%, transparent 20%),
+      radial-gradient(circle, $button-bg 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%,
+      15% 15%, 10% 10%, 18% 18%;
+  }
+
+  &:after {
+    display: none;
+    bottom: -75%;
+    background-image: radial-gradient(circle, $button-bg 20%, transparent 20%),
+      radial-gradient(circle, $button-bg 20%, transparent 20%),
+      radial-gradient(circle, transparent 10%, $button-bg 15%, transparent 20%),
+      radial-gradient(circle, $button-bg 20%, transparent 20%),
+      radial-gradient(circle, $button-bg 20%, transparent 20%),
+      radial-gradient(circle, $button-bg 20%, transparent 20%),
+      radial-gradient(circle, $button-bg 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%,
+      20% 20%;
+    //background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+  }
+
+  &:active {
+    transform: scale(0.9);
+    background-color: darken($button-bg, 5%);
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+  }
+
+  &.animate {
+    &:before {
+      display: block;
+      animation: topBubbles ease-in-out 0.75s forwards;
+    }
+    &:after {
+      display: block;
+      animation: bottomBubbles ease-in-out 0.75s forwards;
+    }
+  }
+}
